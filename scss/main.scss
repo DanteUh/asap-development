@@ -1,18 +1,21 @@
 //Fonts
 @font-face {
     font-family: 'open_sanslight';
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-light-webfont.woff') format('woff');
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'rudaregular';
-    src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'),
-         url('../fonts/ruda-regular-webfont.woff') format('woff');
+    src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'), url('../fonts/ruda-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+//HTML & Body
+html {
+    height: 100%;
 }
 
 body {
@@ -21,7 +24,11 @@ body {
     font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
 }
 
-h1, h2, h3, h4 {
+// Font-storlekar
+h1,
+h2,
+h3,
+h4 {
     font: 5.063rem "rudaregular", "Arial", sans-serif;
 }
 
@@ -45,3 +52,8 @@ $red: #df5a49;
 $orange: #e27a3f;
 $yellow: #efc94c;
 $blue: #324d5c;
+//
+//Media queries
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
