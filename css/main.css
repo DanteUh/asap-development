@@ -4,6 +4,11 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -16,7 +21,10 @@ body {
   background: #333;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font: 5.063rem "rudaregular", "Arial", sans-serif; }
 
 h2 {
@@ -38,6 +46,7 @@ h4 {
   width: 10rem; }
 
 .btn-submit {
+  font-family: 'open_sansregular';
   font-size: 1.5rem;
   color: white;
   background-color: #e27a3f;

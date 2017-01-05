@@ -7,6 +7,13 @@
 }
 
 @font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'rudaregular';
     src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'), url('../fonts/ruda-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -22,7 +29,6 @@ $brown: #97522a;
 $orange: #e27a3f;
 $yellow: #efc94c;
 $blue: #324d5c;
-
 //HTML & Body
 html {
     height: 100%;
@@ -35,7 +41,10 @@ body {
 }
 
 // Font-storlekar
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font: 5.063rem "rudaregular", "Arial", sans-serif;
 }
 
@@ -63,6 +72,7 @@ h4 {
 }
 
 .btn-submit {
+    font-family: 'open_sansregular';
     font-size: 1.5rem;
     color: white;
     background-color: $orange;
@@ -74,8 +84,7 @@ h4 {
 }
 
 //Grid
-$main-margin: 1rem;    //Gutter
-
+$main-margin: 1rem; //Gutter
 .container {
     width: 100%;
     display: flex;
