@@ -1,17 +1,47 @@
+//Fonts
 @font-face {
     font-family: 'open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2'),
-         url('opensans-light-webfont.woff') format('woff');
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'rudaregular';
-    src: url('ruda-regular-webfont.woff2') format('woff2'),
-         url('ruda-regular-webfont.woff') format('woff');
+    src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ruda-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
+body {
+    width: 100%;
+    height: 100%;
+    font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font: 5.063rem "rudaregular", "Arial", sans-serif;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+//Colors
+$black: #333;
+$white: #e8e8e8;
+$green: #45b29d;
+$red: #df5a49;
+$orange: #e27a3f;
+$yellow: #efc94c;
+$blue: #324d5c;
