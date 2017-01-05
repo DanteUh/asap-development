@@ -13,22 +13,29 @@
     font-style: normal;
 }
 
+//Colors
+$black: #333;
+$white: #e8e8e8;
+$green: #45b29d;
+$red: #df5a49;
+$brown: #97522a;
+$orange: #e27a3f;
+$yellow: #efc94c;
+$blue: #324d5c;
+
 //HTML & Body
 html {
     height: 100%;
 }
 
 body {
-    width: 100%;
     height: 100%;
+    background: $black;
     font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
 }
 
 // Font-storlekar
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font: 5.063rem "rudaregular", "Arial", sans-serif;
 }
 
@@ -44,15 +51,38 @@ h4 {
     font-size: 1.5rem;
 }
 
-//Colors
-$black: #333;
-$white: #e8e8e8;
-$green: #45b29d;
-$red: #df5a49;
-$orange: #e27a3f;
-$yellow: #efc94c;
-$blue: #324d5c;
-//
+//Buttons
+.btn-default {
+    color: white;
+    padding: 15px;
+    border: 1px white solid;
+    border-bottom: 5px white solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 10rem;
+}
+
+.btn-submit {
+    font-size: 1.5rem;
+    color: white;
+    background-color: $orange;
+    padding: 15px;
+    border-bottom: 5px $brown solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 20rem;
+}
+
+//Grid
+$main-margin: 1rem;    //Gutter
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //Media queries
 @media (min-width: 480px) {}
 
