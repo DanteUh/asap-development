@@ -1,3 +1,21 @@
+//Mixins
+@mixin flex-center() {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+//Grid variables and grid elements
+$main-margin: 1rem;
+$main-padding: 1rem;
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //Fonts
 @font-face {
     font-family: 'open_sanslight';
@@ -5,14 +23,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'open_sansregular';
     src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'rudaregular';
     src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'), url('../fonts/ruda-regular-webfont.woff') format('woff');
@@ -20,7 +36,7 @@
     font-style: normal;
 }
 
-//Colors
+//Color variables
 $black: #333;
 $white: #e8e8e8;
 $green: #45b29d;
@@ -29,6 +45,7 @@ $brown: #97522a;
 $orange: #e27a3f;
 $yellow: #efc94c;
 $blue: #324d5c;
+
 //HTML & Body
 html {
     height: 100%;
@@ -36,15 +53,12 @@ html {
 
 body {
     height: 100%;
-    background: $black;
+    background-color: dimgray;
     font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
 }
 
-// Font-storlekar
-h1,
-h2,
-h3,
-h4 {
+//Text
+h1, h2, h3, h4 {
     font: 5.063rem "rudaregular", "Arial", sans-serif;
 }
 
@@ -60,36 +74,55 @@ h4 {
     font-size: 1.5rem;
 }
 
+p {
+    margin: $main-margin;
+}
+
 //Buttons
-.btn-default {
+button {
+    @include flex-center;
+    font-size: 1.5rem;
+    background-color: transparent;
     color: white;
-    padding: 15px;
+    margin: $main-margin;
+    padding: $main-padding;
     border: 1px white solid;
     border-bottom: 5px white solid;
     border-radius: 10px;
     text-align: center;
-    width: 10rem;
+    width: 30rem;
 }
 
 .btn-submit {
     font-family: 'open_sansregular';
-    font-size: 1.5rem;
-    color: white;
     background-color: $orange;
-    padding: 15px;
+    border-style: none;
     border-bottom: 5px $brown solid;
-    border-radius: 10px;
-    text-align: center;
-    width: 20rem;
+    width: 40rem;
 }
 
-//Grid
-$main-margin: 1rem; //Gutter
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-green {
+    color: $green;
+    border: 1px $green solid;
+    border-bottom: 5px $green solid;
+}
+
+.btn-yellow {
+    color: $yellow;
+    border: 1px $yellow solid;
+    border-bottom: 5px $yellow solid;
+}
+
+.btn-black {
+    color: $black;
+    border: 1px $black solid;
+    border-bottom: 5px $black solid;
+}
+
+.btn-red {
+    color: $red;
+    border: 1px $red solid;
+    border-bottom: 5px $red solid;
 }
 
 //Media queries
