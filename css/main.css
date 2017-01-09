@@ -203,7 +203,8 @@ header {
 form {
   font-family: 'open_sansregular';
   display: flex;
-  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   text-align: inherit;
   font-size: 1rem;
@@ -235,22 +236,22 @@ input[type="tel"] {
   input[type="tel"] input[type="email"],
   input[type="tel"] input[type="tel"] {
     font-size: 1rem; }
-  input[type="text"] footer,
-  input[type="email"] footer,
-  input[type="tel"] footer {
+  input[type="text"] .footer,
+  input[type="email"] .footer,
+  input[type="tel"] .footer {
     width: 100%;
     color: white;
     background-color: #324d5c;
     padding: 1rem; }
-  input[type="text"] footer .container,
-  input[type="email"] footer .container,
-  input[type="tel"] footer .container {
+  input[type="text"] .footer .container,
+  input[type="email"] .footer .container,
+  input[type="tel"] .footer .container {
     flex-direction: column;
     align-items: flex-start;
     margin: 0 1rem 1rem 1rem; }
-  input[type="text"] footer h4,
-  input[type="email"] footer h4,
-  input[type="tel"] footer h4 {
+  input[type="text"] .footer h4,
+  input[type="email"] .footer h4,
+  input[type="tel"] .footer h4 {
     font-family: 'open_sanslight'; }
   input[type="text"] address,
   input[type="email"] address,
@@ -264,19 +265,19 @@ input[type="tel"] {
     list-style: none;
     margin: 0;
     padding: 0; }
-  input[type="text"] footer .ul-social li,
-  input[type="email"] footer .ul-social li,
-  input[type="tel"] footer .ul-social li {
+  input[type="text"] .footer .ul-social li,
+  input[type="email"] .footer .ul-social li,
+  input[type="tel"] .footer .ul-social li {
     display: inline;
     margin: 0 5px 1rem 0; }
-  input[type="text"] footer .ul-social li a,
-  input[type="email"] footer .ul-social li a,
-  input[type="tel"] footer .ul-social li a {
+  input[type="text"] .footer .ul-social li a,
+  input[type="email"] .footer .ul-social li a,
+  input[type="tel"] .footer .ul-social li a {
     text-decoration: none;
     color: white; }
-  input[type="text"] footer .ul-social li a:hover,
-  input[type="email"] footer .ul-social li a:hover,
-  input[type="tel"] footer .ul-social li a:hover {
+  input[type="text"] .footer .ul-social li a:hover,
+  input[type="email"] .footer .ul-social li a:hover,
+  input[type="tel"] .footer .ul-social li a:hover {
     color: #95b4c5; }
   @media screen and (min-width: 480px) {
     input[type="text"] .main-headline,
