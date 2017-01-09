@@ -136,10 +136,14 @@
         fill: $red;
     }
     
-    // header-sektionen
+    // header-section
     header {
         width: 100%;
         height: 100vh;
+    }
+    
+    header h3 {
+        color: white;
     }
     
     .header-img {

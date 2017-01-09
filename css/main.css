@@ -97,6 +97,9 @@ header {
   width: 100%;
   height: 100vh; }
 
+header h3 {
+  color: white; }
+
 .header-img {
   width: 100%;
   height: 100%;
