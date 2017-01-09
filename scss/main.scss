@@ -87,16 +87,16 @@ p {
 //Buttons
 button {
     @include flex-center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: transparent;
     color: white;
     margin: $main-margin;
     padding: $main-padding;
     border: 1px white solid;
     border-bottom: 5px white solid;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align: center;
-    width: 30rem;
+    width: 15rem;
 }
 
 .btn-submit{
@@ -106,9 +106,9 @@ button {
     margin: 1rem 0 2rem 0;
     border: 1px $red solid;
     border-bottom: 5px $brown solid;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
-    height: 3rem;
+    height: 3.25rem;
     width: 15rem;
 }
 
@@ -180,16 +180,16 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 //Footer
 footer {
+    width: 100%;
     color: white;
     background-color: $blue;
-    width: 100%;
     padding: $main-padding;
 }
 
 footer .container {
     flex-direction: column;
     align-items: flex-start;
-    margin: $main-margin;
+    margin: 0 $main-margin $main-margin $main-margin;
 }
 
 footer h4 {
@@ -197,14 +197,12 @@ footer h4 {
 }
 
 address {
-    font-size: 1.125rem;
     font-style: normal;
     color: #ababab;
     margin-bottom: $main-margin;
 }
 
 .ul-social {
-    font-size: 1.125rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -212,7 +210,16 @@ address {
 
 footer .ul-social li {
     display: inline;
-    margin: 5px;
+    margin: 0 5px $main-margin 0;
+}
+
+footer .ul-social li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .ul-social li a:hover {
+    color: lighten($blue, 40%);
 }
 
 //Media queries
