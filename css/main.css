@@ -24,10 +24,14 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
   background-color: dimgray;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font: 5.063rem "rudaregular", "Arial", sans-serif; }
 
 h2 {
@@ -46,6 +50,7 @@ button {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
   font-size: 1.5rem;
   background-color: transparent;
   color: white;
@@ -83,5 +88,42 @@ button {
   color: #df5a49;
   border: 1px #df5a49 solid;
   border-bottom: 5px #df5a49 solid; }
+
+.bg-red {
+  background: #df5a49;
+  fill: #df5a49; }
+
+header {
+  width: 100%;
+  height: 100vh; }
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom 100px;
+  background-blend-mode: multiply;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; }
+
+.header-diagonal-top {
+  display: block;
+  width: 100%;
+  height: 100px; }
+
+.header-diagonal-bottom {
+  width: 100%;
+  height: 28%; }
+
+#racecar {
+  background-image: url("../images/img/Formula-1-1280.png"); }
+
+@media screen and (min-width: 1280px) {
+  .header-img {
+    background-position: center bottom; } }
 
 /*# sourceMappingURL=main.css.map */
