@@ -1,8 +1,14 @@
 //Mixins
 @mixin flex-center() {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+}
+
+@mixin flex-right() {
+    display: flex;
+    align-content: center;
+    justify-content: start;
 }
 
 //Grid variables and grid elements
@@ -53,7 +59,7 @@ html {
 
 body {
     height: 100%;
-    background-color: dimgray;
+    background-color: white;
     font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
 }
 
@@ -94,18 +100,16 @@ button {
 }
 
 .btn-submit{
-    @include flex-center;
-    font-size: 2.25rem;
     background-color: $red;
     color: white;
-    margin: 2rem;
-    padding: $main-padding;
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
     border: 1px $red solid;
     border-bottom: 5px $brown solid;
     border-radius: 10px;
     text-align: center;
-    height: 5rem;
-    width: 40rem;
+    height: 3rem;
+    width: 15rem;
 }
 
 .btn-green {
@@ -134,44 +138,81 @@ button {
 
 //Form-section
 .form-section {
-    @include flex-center;
     background-color: $white;
 }
 
 .form-section .container {
+    @include flex-center;
     flex-direction: column;
     background-color: white;
-    margin: $main-margin;
 }
 
-.form-section h3 {
+.form-section h4 {
     color: $red;
 }
 
 form {
-    @include flex-center;
+    font-family: 'open_sansregular';
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    font-size: 1.5rem;
+    text-align: inherit;
+    font-size: 1rem;
     color: $red;
 }
 
 input, textarea {
     margin-bottom: $main-margin;
-    height: 3rem; 
+    border-color: $red;
+    width: 15rem;
+    height: 2rem; 
 }
 
 textarea {
-    height: 10rem;
+    height: 5rem;
     border-color: $red;
     font-size: 16px;
 }
 
 input[type="text"], input[type="email"], input[type="tel"] {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
-form input {
-    border-color: $red;
+//Footer
+footer {
+    color: white;
+    background-color: $blue;
+    width: 100%;
+    padding: $main-padding;
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: $main-margin;
+}
+
+footer h4 {
+    font-family: 'open_sanslight';
+}
+
+address {
+    font-size: 1.125rem;
+    font-style: normal;
+    color: #ababab;
+    margin-bottom: $main-margin;
+}
+
+.ul-social {
+    font-size: 1.125rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .ul-social li {
+    display: inline;
+    margin: 5px;
 }
 
 //Media queries
