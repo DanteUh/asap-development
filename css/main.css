@@ -34,6 +34,9 @@ h3,
 h4 {
   font: 5.063rem "rudaregular", "Arial", sans-serif; }
 
+h1 {
+  font-size: 2.25rem; }
+
 h2 {
   font-size: 3.375rem; }
 
@@ -89,6 +92,9 @@ button {
   border: 1px #df5a49 solid;
   border-bottom: 5px #df5a49 solid; }
 
+.white-text {
+  color: white; }
+
 .bg-red {
   background: #df5a49;
   fill: #df5a49; }
@@ -97,26 +103,35 @@ header {
   width: 100%;
   height: 100vh; }
 
-header h3 {
-  color: white; }
-
 .header-img {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center bottom 100px;
+  background-position: center bottom 150px;
   background-blend-mode: multiply;
   display: flex;
   align-content: center;
   justify-content: flex-end;
   flex-direction: column; }
 
+.main-headline-box {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; }
+
+.main-headline {
+  margin: 2rem; }
+
 .header-diagonal-top {
   display: block;
   width: 100%;
-  height: 100px; }
+  height: 22%; }
 
 .header-diagonal-bottom {
   width: 100%;
@@ -125,6 +140,15 @@ header h3 {
 #racecar {
   background-image: url("../images/img/Formula-1-1280.png"); }
 
+@media screen and (min-width: 480px) {
+  .main-headline {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column; } }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem; } }
 @media screen and (min-width: 1280px) {
   .header-img {
     background-position: center bottom; } }
