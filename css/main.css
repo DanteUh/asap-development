@@ -1,292 +1,41 @@
-.headline-margin {
-    margin: 1rem 2rem;
-}
+/*
+Error: Invalid CSS after "...dd52884a2dd5f7d": expected "{", was ""
+        on line 446 of scss/main.scss
 
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+441: //Media queries
+442: @media (min-width: 480px) {}
+443: 
+444: @media (min-width: 768px) {}
+445: >>>>>>> eda9a7dd9efbd5fbb8770cebcdd52884a2dd5f7d
 
-@font-face {
-    font-family: 'open_sanslight';
-    src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sanslight_italic';
-    src: url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'rudaregular';
-    src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    background-color: dimgray;
-    font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font: 5.063rem "rudaregular", "Arial", sans-serif;
-}
-
-h1 {
-    font-size: 2.25rem;
-}
-
-h2 {
-    font-size: 3.375rem;
-}
-
-h3 {
-    font-size: 2.25rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-p {
-    margin: 1rem;
-}
-
-.lead {
-    font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif;
-}
-
-.text-center {
-    text-align: center;
-}
-
-button {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px white solid;
-    border-bottom: 5px white solid;
-    border-radius: 10px;
-    text-align: center;
-    width: 30rem;
-}
-
-.btn-submit {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 2.25rem;
-    background-color: #df5a49;
-    color: white;
-    margin: 2rem;
-    padding: 1rem;
-    border: 1px #df5a49 solid;
-    border-bottom: 5px #97522a solid;
-    border-radius: 10px;
-    text-align: center;
-    height: 5rem;
-    width: 40rem;
-}
-
-.btn-green {
-    color: #45b29d;
-    border: 1px #45b29d solid;
-    border-bottom: 5px #45b29d solid;
-}
-
-.btn-yellow {
-    color: #efc94c;
-    border: 1px #efc94c solid;
-    border-bottom: 5px #efc94c solid;
-}
-
-.btn-black {
-    color: #333;
-    border: 1px #333 solid;
-    border-bottom: 5px #333 solid;
-}
-
-.btn-red {
-    color: #df5a49;
-    border: 1px #df5a49 solid;
-    border-bottom: 5px #df5a49 solid;
-}
-
-.white-text {
-    color: white;
-}
-
-.bg-red {
-    background: #df5a49;
-    fill: #df5a49;
-}
-
-header {
-    width: 100%;
-    height: 100vh;
-}
-
-.header-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center bottom 150px;
-    background-blend-mode: multiply;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-.main-headline-box {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-#large-flash {
-    width: 57px;
-    height: auto;
-    align-self: center;
-    display: none;
-}
-
-#small-flash {
-    position: absolute;
-    right: 16px;
-    bottom: 30%;
-    width: 38px;
-    height: auto;
-    position: -100px;
-}
-
-.header-diagonal-top {
-    display: block;
-    width: 100%;
-    height: 22%;
-}
-
-.header-diagonal-bottom {
-    width: 100%;
-    height: 28%;
-}
-
-#racecar {
-    background-image: url("../images/img/Formula-1-1280.png");
-}
-
-@media screen and (min-width: 480px) {
-    .main-headline {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    #large-flash {
-        display: block;
-    }
-    #small-flash {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 3.75rem;
-    }
-    .lead {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .header-img {
-        background-position: center bottom;
-    }
-}
-
-.form-section {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #e8e8e8;
-}
-
-.form-section .container {
-    flex-direction: column;
-    background-color: white;
-    margin: 1rem;
-}
-
-.form-section h3 {
-    color: #df5a49;
-}
-
-form {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1.5rem;
-    color: #df5a49;
-}
-
-input,
-textarea {
-    margin-bottom: 1rem;
-    height: 3rem;
-}
-
-textarea {
-    height: 10rem;
-    border-color: #df5a49;
-    font-size: 16px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    font-size: 2rem;
-}
-
-form input {
-    border-color: #df5a49;
-}
-
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+scss/main.scss:446
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...dd52884a2dd5f7d\": expected \"{\", was \"\"\A         on line 446 of scss/main.scss\A \A 441: //Media queries\A 442: @media (min-width: 480px) {}\A 443: \A 444: @media (min-width: 768px) {}\A 445: >>>>>>> eda9a7dd9efbd5fbb8770cebcdd52884a2dd5f7d"; }
