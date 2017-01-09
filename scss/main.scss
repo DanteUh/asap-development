@@ -93,11 +93,18 @@ button {
     width: 30rem;
 }
 
-.btn-submit {
-    font-family: 'open_sansregular';
-    background-color: $orange;
-    border-style: none;
+.btn-submit{
+    @include flex-center;
+    font-size: 2.25rem;
+    background-color: $red;
+    color: white;
+    margin: 2rem;
+    padding: $main-padding;
+    border: 1px $red solid;
     border-bottom: 5px $brown solid;
+    border-radius: 10px;
+    text-align: center;
+    height: 5rem;
     width: 40rem;
 }
 
@@ -123,6 +130,48 @@ button {
     color: $red;
     border: 1px $red solid;
     border-bottom: 5px $red solid;
+}
+
+//Form-section
+.form-section {
+    @include flex-center;
+    background-color: $white;
+}
+
+.form-section .container {
+    flex-direction: column;
+    background-color: white;
+    margin: $main-margin;
+}
+
+.form-section h3 {
+    color: $red;
+}
+
+form {
+    @include flex-center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: $red;
+}
+
+input, textarea {
+    margin-bottom: $main-margin;
+    height: 3rem; 
+}
+
+textarea {
+    height: 10rem;
+    border-color: $red;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    font-size: 2rem;
+}
+
+form input {
+    border-color: $red;
 }
 
 //Media queries
