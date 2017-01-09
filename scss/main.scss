@@ -63,6 +63,30 @@
             font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
         }
         
+        .green {
+            background-color: $green;
+        }
+        
+        .white {
+            background-color: $white;
+        }
+        
+        .blue {
+            background-color: $blue;
+        }
+        
+        .red {
+            background-color: $red;
+        }
+        
+        .black {
+            background-color: $black;
+        }
+
+.none {
+    background-color: white;
+}
+        
         //Text
         h1,
         h2,
@@ -363,4 +387,5 @@
                 .header-img {
                     background-position: center bottom;
                 }
-            }}
+            }
+        }
