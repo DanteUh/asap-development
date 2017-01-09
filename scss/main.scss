@@ -9,7 +9,10 @@
     //Grid variables and grid elements
     $main-margin: 1rem;
     $main-padding: 1rem;
-    $double-margin: 2rem;
+    .headline-margin {
+        margin: $main-margin * 2;
+    }
+    
     .container {
         width: 100%;
         display: flex;
@@ -86,6 +89,15 @@
     
     p {
         margin: $main-margin;
+    }
+    
+    .lead {
+        font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif;
+    }
+    
+    //Text-align
+    .text-center {
+        text-align: center;
     }
     
     //Buttons
@@ -168,14 +180,9 @@
     .main-headline-box {
         width: 100%;
         height: 50%;
-        text-align: center;
         @include flex-center(center,
         flex-end,
         column);
-    }
-    
-    .main-headline {
-        margin: $double-margin;
     }
     
     .header-diagonal-top {
@@ -206,6 +213,9 @@
     @media (min-width: 768px) {
         h1 {
             font-size: 3.75rem;
+        }
+        .lead {
+            font-size: 1.5rem;
         }
     }
     
