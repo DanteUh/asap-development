@@ -1,185 +1,292 @@
 .headline-margin {
-  margin: 1rem 2rem; }
+    margin: 1rem 2rem;
+}
 
 .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @font-face {
-  font-family: 'open_sanslight';
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'open_sanslight';
+    src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
-  font-family: 'open_sansregular';
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'open_sansregular';
+    src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
-  font-family: 'rudaregular';
-  src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'open_sanslight_italic';
+    src: url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rudaregular';
+    src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-  height: 100%; }
+    height: 100%;
+}
 
 body {
-  height: 100%;
-  margin: 0;
-  background-color: dimgray;
-  font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
+    height: 100%;
+    margin: 0;
+    background-color: dimgray;
+    font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
+}
 
 h1,
 h2,
 h3,
 h4 {
-  font: 5.063rem "rudaregular", "Arial", sans-serif; }
+    font: 5.063rem "rudaregular", "Arial", sans-serif;
+}
 
 h1 {
-  font-size: 2.25rem; }
+    font-size: 2.25rem;
+}
 
 h2 {
-  font-size: 3.375rem; }
+    font-size: 3.375rem;
+}
 
 h3 {
-  font-size: 2.25rem; }
+    font-size: 2.25rem;
+}
 
 h4 {
-  font-size: 1.5rem; }
+    font-size: 1.5rem;
+}
 
 p {
-  margin: 1rem; }
+    margin: 1rem;
+}
 
 .lead {
-  font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif; }
+    font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif;
+}
 
 .text-center {
-  text-align: center; }
+    text-align: center;
+}
 
 button {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  font-size: 1.5rem;
-  background-color: transparent;
-  color: white;
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px white solid;
-  border-bottom: 5px white solid;
-  border-radius: 10px;
-  text-align: center;
-  width: 30rem; }
-
-.btn-submit {
-  font-family: 'open_sansregular';
-  background-color: #e27a3f;
-  border-style: none;
-  border-bottom: 5px #97522a solid;
-  width: 40rem; }
-
-.btn-green {
-  color: #45b29d;
-  border: 1px #45b29d solid;
-  border-bottom: 5px #45b29d solid; }
-
-.btn-yellow {
-  color: #efc94c;
-  border: 1px #efc94c solid;
-  border-bottom: 5px #efc94c solid; }
-
-.btn-black {
-  color: #333;
-  border: 1px #333 solid;
-  border-bottom: 5px #333 solid; }
-
-.btn-red {
-  color: #df5a49;
-  border: 1px #df5a49 solid;
-  border-bottom: 5px #df5a49 solid; }
-
-.white-text {
-  color: white; }
-
-.bg-red {
-  background: #df5a49;
-  fill: #df5a49; }
-
-header {
-  width: 100%;
-  height: 100vh; }
-
-.header-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center bottom 150px;
-  background-blend-mode: multiply;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  flex-direction: column; }
-
-.main-headline-box {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  flex-direction: column; }
-
-#large-flash {
-  width: 57px;
-  height: auto;
-  align-self: center;
-  display: none; }
-
-#small-flash {
-  position: absolute;
-  right: 16px;
-  bottom: 30%;
-  width: 38px;
-  height: auto;
-  position: -100px; }
-
-.header-diagonal-top {
-  display: block;
-  width: 100%;
-  height: 22%; }
-
-.header-diagonal-bottom {
-  width: 100%;
-  height: 28%; }
-
-#racecar {
-  background-image: url("../images/img/Formula-1-1280.png"); }
-
-@media screen and (min-width: 480px) {
-  .main-headline {
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: row;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px white solid;
+    border-bottom: 5px white solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 30rem;
+}
 
-  #large-flash {
-    display: block; }
+.btn-submit {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    background-color: #df5a49;
+    color: white;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px #df5a49 solid;
+    border-bottom: 5px #97522a solid;
+    border-radius: 10px;
+    text-align: center;
+    height: 5rem;
+    width: 40rem;
+}
 
-  #small-flash {
-    display: none; } }
+.btn-green {
+    color: #45b29d;
+    border: 1px #45b29d solid;
+    border-bottom: 5px #45b29d solid;
+}
+
+.btn-yellow {
+    color: #efc94c;
+    border: 1px #efc94c solid;
+    border-bottom: 5px #efc94c solid;
+}
+
+.btn-black {
+    color: #333;
+    border: 1px #333 solid;
+    border-bottom: 5px #333 solid;
+}
+
+.btn-red {
+    color: #df5a49;
+    border: 1px #df5a49 solid;
+    border-bottom: 5px #df5a49 solid;
+}
+
+.white-text {
+    color: white;
+}
+
+.bg-red {
+    background: #df5a49;
+    fill: #df5a49;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom 150px;
+    background-blend-mode: multiply;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.main-headline-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#large-flash {
+    width: 57px;
+    height: auto;
+    align-self: center;
+    display: none;
+}
+
+#small-flash {
+    position: absolute;
+    right: 16px;
+    bottom: 30%;
+    width: 38px;
+    height: auto;
+    position: -100px;
+}
+
+.header-diagonal-top {
+    display: block;
+    width: 100%;
+    height: 22%;
+}
+
+.header-diagonal-bottom {
+    width: 100%;
+    height: 28%;
+}
+
+#racecar {
+    background-image: url("../images/img/Formula-1-1280.png");
+}
+
+@media screen and (min-width: 480px) {
+    .main-headline {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #large-flash {
+        display: block;
+    }
+    #small-flash {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
-  h1 {
-    font-size: 3.75rem; }
+    h1 {
+        font-size: 3.75rem;
+    }
+    .lead {
+        font-size: 1.5rem;
+    }
+}
 
-  .lead {
-    font-size: 1.5rem; } }
 @media screen and (min-width: 1280px) {
-  .header-img {
-    background-position: center bottom; } }
+    .header-img {
+        background-position: center bottom;
+    }
+}
+
+.form-section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #e8e8e8;
+}
+
+.form-section .container {
+    flex-direction: column;
+    background-color: white;
+    margin: 1rem;
+}
+
+.form-section h3 {
+    color: #df5a49;
+}
+
+form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: #df5a49;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    height: 3rem;
+}
+
+textarea {
+    height: 10rem;
+    border-color: #df5a49;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-size: 2rem;
+}
+
+form input {
+    border-color: #df5a49;
+}
+
 
 /*# sourceMappingURL=main.css.map */
