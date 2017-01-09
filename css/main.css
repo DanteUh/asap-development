@@ -31,23 +31,39 @@ body {
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
 
-.green {
+.bg-green {
   background-color: #45b29d; }
 
-.white {
+.bg-white {
   background-color: #e8e8e8; }
 
-.blue {
+.bg-blue {
   background-color: #324d5c; }
 
-.red {
-  background-color: #df5a49; }
-
-.black {
+.bg-black {
   background-color: #333; }
 
-.none {
+.bg-none {
   background-color: white; }
+
+.bg-red {
+  background: #df5a49;
+  fill: #df5a49; }
+
+.white-text {
+  color: white; }
+
+.green-text {
+  color: #45b29d; }
+
+.red-text {
+  color: #df5a49; }
+
+.orange-text {
+  color: #e27a3f; }
+
+.black-text {
+  color: #333; }
 
 h1,
 h2,
@@ -123,13 +139,6 @@ button {
   color: #df5a49;
   border: 1px #df5a49 solid;
   border-bottom: 5px #df5a49 solid; }
-
-.white-text {
-  color: white; }
-
-.bg-red {
-  background: #df5a49;
-  fill: #df5a49; }
 
 header {
   width: 100%;
