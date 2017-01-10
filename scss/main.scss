@@ -11,7 +11,7 @@
 @import 'media';
 @import 'header';
 @import 'top-nav';
-//HTML & Body
+@import 'contact-medarbetare';
 html {
     height: 100%;
 }
@@ -22,6 +22,3 @@ body {
     background-color: white;
     font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
 }
-
-
-/*testar om det funkar*/

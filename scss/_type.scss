@@ -9,7 +9,11 @@ h4 {
 }
 
 h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
+    //768px 
+    @media (min-width: 768px) {
+        font-size: 3.75rem;
+    }
 }
 
 h2 {
@@ -36,6 +40,10 @@ p {
 //lead - open sans light 18px
 .lead {
     font: 1.125rem/1.5 $font-family-sans-serif;
+    //768px
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 //TEXT-ALIGN
@@ -66,4 +74,9 @@ p {
 
 .black-text {
     color: $gray-dark;
+}
+
+//Alla länkar
+a {
+    text-decoration: none;
 }
