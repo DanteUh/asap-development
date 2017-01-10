@@ -1,5 +1,37 @@
-.contact-card {
-    width: 19.5625rem;
-    height: 8.75rem;
+//Ändra detta med media queries!!!!
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    width: 19.5625rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-card-inner {
+    width: 19.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5625rem;
+    padding-bottom: 1.9375rem;
+}
+
+//Annorlunda marginaler för text
+.contact-font {
+    color: #777777;
+    margin: 0rem 0rem 0.875rem 0rem;
+}
+
+.contact-heading {
+    margin: 0;
+}
+
+//Resize:a ikoner
+.contact-card-inner div i {
+    font-size: 1.3rem;
+}
