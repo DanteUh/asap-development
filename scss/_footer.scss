@@ -1,0 +1,36 @@
+//Footer
+footer {
+    width: 100%;
+    color: white;
+    background-color: $blue;
+    padding: $main-padding;
+}
+footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 $main-margin $main-margin $main-margin;
+}
+footer h4 {
+    font-family: 'open_sanslight';
+}
+address {
+    font-style: normal;
+    color: #ababab;
+    margin-bottom: $main-margin;
+}
+.ul-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer .ul-social li {
+    display: inline;
+    margin: 0 5px $main-margin 0;
+}
+footer .ul-social li a {
+    text-decoration: none;
+    color: white;
+}
+footer .ul-social li a:hover {
+    color: lighten($blue, 40%);
+}

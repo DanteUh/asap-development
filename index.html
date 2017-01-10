@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <!--Navbar-->
+    <div class="navbar">
+        <!--Inre kallas nav p.g.a. screenreaders-->
+        <nav>
+            <a href="views/vad-vi-gor.html">Vad vi gör</a>
+            <a href="views/kundcase.html">Kundcase</a>
+            <a href="views/kontakt.html">Kontakt</a>
+        </nav>
+    </div>
     <!--- header-section-->
     <header>
         <div class="header-img bg-red" id="racecar">
@@ -29,58 +38,55 @@
     </header>
     <!-- /end header section -->
 
-    <!--Navbar-->
-    <div class="navbar">
-        <!--Inre kallas nav p.g.a. screenreaders-->
-        <nav>
-            <a href="views/vad-vi-gor.html">Vad vi gör</a>
-            <a href="views/kundcase.html">Kundcase</a>
-            <a href="views/kontakt.html">Kontakt</a>
-        </nav>
-    </div>
+    <section class="darfor-snabbaste bg-white ">
+        <h2 class="text-center">Därför är vi Sveriges snabbaste webbyrå</h2>
+        <div class="container">
+            <div class="col-4">
+                <h3>Effektivt</h3>
+                <p>Inga möten. Inga fikapauser. Inget julbord. Vi jobbar.</p>
+            </div>
+            <div class="green col-4">
+                <h3>Globalt</h3>
+                <p>Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
+            </div>
+            <div class="col-4">
+                <h3>Flexibelt</h3>
+                <p>Vårt unika nätverk av konsulter är alltid redo kasta sig över ditt projekt.</p>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn-green btn" href="#">Så jobbar vi</button>
+        </div>
+    </section>
 
+    <section class="portfolio bg-smoke">
+        <h2 class="text-center">Våra projekt</h2> 
 
-    <h2>Därför är vi Sveriges snabbaste webbyrå</h2>
-    <div>
-        <h3>Effektivt</h3>
-        <p>Inga möten. Inga fikapauser. Inget julbord. Vi jobbar.</p>
-    </div>
-    <div class="green">
-        <h3>Globalt</h3>
-        <p>Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
-    </div>
-    <div>
-        <h3>Flexibelt</h3>
-        <p>Vårt unika nätverk av konsulter är alltid redo kasta sig över ditt projekt.</p>
-    </div>
-    <button class="btn-green">Så jobbar vi</button>
+        <div class="container projekt-item bg-white vandeley">
+            <img src="images/corner" alt="På plats intom 2 timmar" />
+            <div class="col-6">
+                <img src="images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" />
+            </div>
+            <div class="col-6">
+                <h3>Vandelay Industries</h3>
+                <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
+            </div>
+        </div>
 
-    <div class="white">
-        <h2>Våra projekt</h2>
-    </div>
-
-    <img src="images/corner" alt="På plats intom 2 timmar" />
-
-    <img src="images/vandelay" alt="Vandelay industries" />
-
-    <h3>Vandelay Industries</h3>
-    <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
-
-    <h1>Snabb, snabbare, snabbast</h1>
-    <!--Byt namn på bilden!-->
-    <img src="images/blixt.svg" alt="blixt" />
-    <p class="">ASAP Development är webbyrån som bygger din sajt på 24 timmar. Med högsta kvalitet och full support.</p>
-
-
-
-    <div class="black">
-        <img src="images/corner2" alt="Sajten fixad på 36 timmar" />
-        <h3>LexCorp</h3>
-        <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
-        <img src="images/lexcorp" alt="Lexcorp" />
-    </div>
-
-    <button class="btn-green">Se hela vårt portfolio</button>
+        <div class="container projekt-item bg-lexcorp lexcorp">
+            <img src="images/corner2" alt="Sajten fixad på 36 timmar" />
+            <div class="col-6">
+                <h3>LexCorp</h3>
+                <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
+            </div>
+            <div class="col-6">
+                <img src="images/img/projekt-logo-mob-lexcorp.jpg" alt="Lexcorp" />
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn-green">Se hela vårt portfolio</button>
+        </div>
+    </section>
 
     <h2>Vår story</h2>
     <p>ASAP Development startades 2016 av fyra utvecklare som märkte att andra webbyråer mest fikar och spelar pingis.</p>

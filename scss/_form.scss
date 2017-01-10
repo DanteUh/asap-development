@@ -1,0 +1,48 @@
+//Form-section
+.form-section {
+    background-color: $white;
+}
+
+.form-section .container {
+    @include flex-center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.form-section h4 {
+    color: $red;
+}
+
+form {
+    font-family: 'open_sansregular';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: inherit;
+    font-size: 1rem;
+    color: $red;
+}
+
+input,
+textarea {
+    margin-bottom: $main-margin;
+    height: 3rem;
+    border-color: $red;
+    width: 15rem;
+}
+
+textarea {
+    height: 5rem;
+    border-color: $red;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-size: 2rem;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 1rem;
+    }

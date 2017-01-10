@@ -1,0 +1,56 @@
+//Buttons
+button, 
+.btn {
+    @include flex-center;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    margin: $main-margin;
+    padding: $main-padding;
+    border: 1px white solid;
+    border-bottom: 5px white solid;
+    border-radius: 6px;
+    text-align: center;
+    width: 15rem;
+    text-transform: uppercase;
+}
+.btn {
+    display: block;
+}
+
+.btn-submit {
+    background-color: $red;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
+    border: 1px $red solid;
+    border-bottom: 5px $brown solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 3.25rem;
+    width: 15rem;
+}
+
+.btn-green {
+    color: $green;
+    border: 1px $green solid;
+    border-bottom: 5px $green solid;
+}
+
+.btn-yellow {
+    color: $yellow;
+    border: 1px $yellow solid;
+    border-bottom: 5px $yellow solid;
+}
+
+.btn-gray-dark {
+    color: $gray-dark;
+    border: 1px $gray-dark solid;
+    border-bottom: 5px $gray-dark solid;
+}
+
+.btn-red {
+    color: $red;
+    border: 1px $red solid;
+    border-bottom: 5px $red solid;
+}

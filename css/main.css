@@ -1,5 +1,38 @@
-.headline-margin {
-  margin: 1rem 2rem; }
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'rudaregular';
+  src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.bg-green {
+  background-color: #45b29d; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-blue {
+  background-color: #324d5c; }
+
+.bg-red {
+  background-color: #df5a49; }
+
+.bg-gray-dark {
+  background-color: #333; }
+
+.bg-smoke {
+  background-color: #e8e8e8; }
 
 .container {
   width: 100%;
@@ -7,62 +40,22 @@
   justify-content: center;
   align-items: center; }
 
-@font-face {
-  font-family: 'open_sanslight';
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'rudaregular';
-  src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-html {
-  height: 100%; }
-
-body {
-  height: 100%;
-  margin: 0;
-  background-color: white;
-  font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
-
-.green {
-  background-color: #45b29d; }
-
-.white {
-  background-color: #e8e8e8; }
-
-.blue {
-  background-color: #324d5c; }
-
-.red {
-  background-color: #df5a49; }
-
-.black {
-  background-color: #333; }
-
-.none {
-  background-color: white; }
-
 h1,
 h2,
 h3,
 h4 {
-  font: 5.063rem "rudaregular", "Arial", sans-serif; }
+  font-family: "rudaregular", "Arial", sans-serif;
+  line-height: 1.1;
+  font-weight: normal; }
 
 h1 {
-  font-size: 2.25rem; }
+  font-size: 3.75rem; }
 
 h2 {
-  font-size: 3.375rem; }
+  font-size: 2.25rem; }
 
 h3 {
-  font-size: 2.25rem; }
+  font-size: 1.875rem; }
 
 h4 {
   font-size: 1.5rem; }
@@ -114,7 +107,7 @@ button {
   border: 1px #efc94c solid;
   border-bottom: 5px #efc94c solid; }
 
-.btn-black {
+.btn-gray-dark {
   color: #333;
   border: 1px #333 solid;
   border-bottom: 5px #333 solid; }
@@ -123,6 +116,18 @@ button {
   color: #df5a49;
   border: 1px #df5a49 solid;
   border-bottom: 5px #df5a49 solid; }
+
+.headline-margin {
+  margin: 1rem 2rem; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
 
 .white-text {
   color: white; }
@@ -189,23 +194,23 @@ header {
     align-content: center;
     justify-content: center;
     flex-direction: column; }
-
   #large-flash {
     display: block; }
-
   #small-flash {
     display: none; } }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 3.75rem; }
-
   .lead {
     font-size: 1.5rem; } }
+
 @media screen and (min-width: 1280px) {
   .header-img {
     background-position: center bottom; } }
+
 .form-section {
-  background-color: #e8e8e8; }
+  background-color: #fff; }
 
 .form-section .container {
   display: flex;
@@ -326,5 +331,3 @@ input[type="tel"] {
     input[type="email"] .header-img,
     input[type="tel"] .header-img {
       background-position: center bottom; } }
-
-/*# sourceMappingURL=main.css.map */
