@@ -1,12 +1,13 @@
 //Buttons
-button {
+.btn {
     @include flex-center;
-    font-size: 1rem;
+    font-family: 'open_sansregular';
+    text-transform: uppercase;
     background-color: transparent;
     color: white;
     margin: $main-margin;
     padding: $main-padding;
-    border: 1px white solid;
+    border: 2px white solid;
     border-bottom: 5px white solid;
     border-radius: 6px;
     text-align: center;
@@ -26,26 +27,41 @@ button {
     width: 15rem;
 }
 
+.btn-to-top {
+    border: 2px white solid;
+    border-radius: 5px;
+    font-size: 3rem;
+    padding: $main-padding/3 $main-padding/1.5;
+    color: white;
+    line-height: 1;
+    margin-top: $main-margin*2;
+    margin-bottom: -$main-margin*1.5;
+}
+
+.btn-to-top i {
+    margin: $main-margin/2;
+}
+
 .btn-green {
     color: $green;
-    border: 1px $green solid;
+    border-color: $green;
     border-bottom: 5px $green solid;
 }
 
 .btn-yellow {
     color: $yellow;
-    border: 1px $yellow solid;
+    border-color: $yellow;
     border-bottom: 5px $yellow solid;
 }
 
 .btn-gray-dark {
     color: $gray-dark;
-    border: 1px $gray-dark solid;
+    border-color: $gray-dark;
     border-bottom: 5px $gray-dark solid;
 }
 
 .btn-red {
     color: $red;
-    border: 1px $red solid;
+    border-color: $red;
     border-bottom: 5px $red solid;
 }

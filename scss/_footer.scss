@@ -2,19 +2,21 @@
 footer {
     color: white;
     background-color: $blue;
-    padding: $main-padding;
+    padding: $main-padding*2;
 }
-footer .container {
+footer .footer-container {
     flex-direction: column;
     align-items: flex-start;
 }
 footer h4 {
     font-family: 'open_sanslight';
+    margin-top: $main-margin;
 }
 address {
     font-style: normal;
     color: #ababab;
-    margin-bottom: $main-margin;
+    margin-bottom: $main-margin*2;
+    line-height: 2;
 }
 .ul-social {
     list-style: none;

@@ -30,7 +30,8 @@ h4 {
 
 //TEXT MARGINS
 p {
-    margin: $main-margin;
+    margin-bottom: $main-margin;
+    margin-top: 0;
 }
 
 .headline-margin {
