@@ -1,6 +1,5 @@
 //Buttons
-button, 
-.btn {
+button {
     @include flex-center;
     font-size: 1rem;
     background-color: transparent;
@@ -12,10 +11,6 @@ button,
     border-radius: 6px;
     text-align: center;
     width: 15rem;
-    text-transform: uppercase;
-}
-.btn {
-    display: block;
 }
 
 .btn-submit {

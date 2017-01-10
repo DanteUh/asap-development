@@ -1,0 +1,30 @@
+//Media queries
+//MOBILE 480px
+@media screen and (min-width: 480px) {
+    .main-headline {
+        @include flex-center(center, center, column);
+    }
+    #large-flash {
+        display: block;
+    }
+    #small-flash {
+        display: none;
+    }
+}
+
+//TABLET 768px 
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+    .lead {
+        font-size: 1.5rem;
+    }
+}
+
+// DESKTOP 1280px
+@media screen and (min-width:1280px) {
+    .header-img {
+        background-position: center bottom;
+    }
+}

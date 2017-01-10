@@ -1,0 +1,70 @@
+//remove
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+//--end remove
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: $main-padding ($main-padding * 2);
+    transition: 0.5s linear;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-list li {
+    display: none;
+    text-transform: uppercase;
+}
+
+.nav-list li a {
+    @extend .white-text;
+    text-decoration: none;
+    padding: 0 0 ($main-padding / 3) 0;
+    margin: $main-margin;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+    &:hover {
+        border-bottom: 3px solid white;
+    }
+}
+
+#logo {
+    width: 90px;
+    transition: 0.5s linear;
+}
+
+#hamburger {
+    width: 50px;
+    display: block;
+}
+
+//flytta till _media
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+    .nav-list li {
+        display: inline;
+    }
+    #logo {
+        width: 124px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .navbar {
+        padding: $main-padding ($main-padding * 5);
+    }
+}

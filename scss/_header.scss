@@ -1,0 +1,56 @@
+// header-section
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom 150px;
+    background-blend-mode: multiply;
+    @include flex-center(center, flex-end, column);
+}
+
+.main-headline-box {
+    width: 100%;
+    height: 50%;
+    @include flex-center(center, flex-end, column);
+}
+
+.header-diagonal-top {
+    display: block;
+    width: 100%;
+    height: 22%;
+}
+
+.header-diagonal-bottom {
+    width: 100%;
+    height: 28%;
+}
+
+//blixt-ikon 
+#large-flash {
+    width: 57px;
+    height: auto;
+    align-self: center;
+    display: none;
+}
+
+#small-flash {
+    position: absolute;
+    right: 16px;
+    bottom: 30%;
+    width: 38px;
+    height: auto;
+    position: -100px;
+}
+
+// De olika sidornas bakgrundsbilder  
+#racecar {
+    background-image: url("../images/img/Formula-1-1280.png");
+}

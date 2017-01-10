@@ -1,4 +1,4 @@
-//Text
+//HEADER SIZES
 h1,
 h2,
 h3,
@@ -24,15 +24,46 @@ h4 {
     font-size: 1.5rem;
 }
 
+//TEXT MARGINS
 p {
     margin: $main-margin;
 }
 
+.headline-margin {
+    margin: $main-margin ($main-margin * 2);
+}
+
+//lead - open sans light 18px
 .lead {
     font: 1.125rem/1.5 $font-family-sans-serif;
 }
 
-//Text-align
+//TEXT-ALIGN
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+//TEXT COLORS
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: $red;
+}
+
+.green-text {
+    color: $green;
+}
+
+.black-text {
+    color: $gray-dark;
 }
