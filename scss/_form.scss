@@ -1,6 +1,6 @@
 //Form-section
 .form-section {
-    background-color: $white;
+    padding: $main-padding;
 }
 
 .form-section .container {
@@ -26,27 +26,13 @@ form {
     
 }
 
-input,
-textarea {
+input, textarea {
     margin-bottom: $main-margin;
-    height: 3rem;
-    border-color: $red;
+    padding: $main-padding/2;
+    border: $red 2px solid;
     width: 15rem;
 }
 
-textarea {
-    height: 5rem;
-    border-color: $red;
-    font-size: 16px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    font-size: 2rem;
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
+input[type="text"], input[type="email"], input[type="tel"] {
         font-size: 1rem;
-    }
 }
