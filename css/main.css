@@ -17,11 +17,11 @@
   background-color: #45b29d;
   fill: #45b29d; }
 
-.bg-offwhite {
+.bg-white {
   background-color: #fff;
   fill: #fff; }
 
-.bg-white {
+.bg-none {
   background-color: white;
   fill: white; }
 
@@ -359,6 +359,10 @@ body {
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 1rem 5rem; } }
+.contact-card {
+  width: 19.5625rem;
+  height: 8.75rem; }
+
 html {
   height: 100%; }
 
