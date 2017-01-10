@@ -1,69 +1,77 @@
-//HEADER SIZES
-h1,
-h2,
-h3,
-h4 {
-    font-family: $font-family-headings;
-    line-height: 1.1;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 3.75rem;
-}
-
-h2 {
-    font-size: 2.25rem;
-}
-
-h3 {
-    font-size: 1.875rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-//TEXT MARGINS
-p {
-    margin: $main-margin;
-}
-
-.headline-margin {
-    margin: $main-margin ($main-margin * 2);
-}
-
-//lead - open sans light 18px
-.lead {
-    font: 1.125rem/1.5 $font-family-sans-serif;
-}
-
-//TEXT-ALIGN
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-//TEXT COLORS
-.white-text {
-    color: white;
-}
-
-.red-text {
-    color: $red;
-}
-
-.green-text {
-    color: $green;
-}
-
-.black-text {
-    color: $gray-dark;
-}
+                        //HEADER SIZES
+                        h1,
+                        h2,
+                        h3,
+                        h4 {
+                            font-family: $font-family-headings;
+                            line-height: 1.1;
+                            font-weight: normal;
+                        }
+                        
+                        h1 {
+                            font-size: 3rem;
+                            //768px 
+                            @media (min-width: 768px) {
+                                font-size: 3.75rem;
+                            }
+                        }
+                        
+                        h2 {
+                            font-size: 2.25rem;
+                        }
+                        
+                        h3 {
+                            font-size: 1.875rem;
+                        }
+                        
+                        h4 {
+                            font-size: 1.5rem;
+                        }
+                        
+                        //TEXT MARGINS
+                        p {
+                            margin: $main-margin;
+                        }
+                        
+                        .headline-margin {
+                            margin: $main-margin ($main-margin * 2);
+                        }
+                        
+                        //lead - open sans light 18px
+                        .lead {
+                            font: 1.125rem/1.5 $font-family-sans-serif;
+                            //768px
+                            @media (min-width: 768px) {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        
+                        //TEXT-ALIGN
+                        .text-center {
+                            text-align: center;
+                        }
+                        
+                        .text-left {
+                            text-align: left;
+                        }
+                        
+                        .text-right {
+                            text-align: right;
+                        }
+                        
+                        //TEXT COLORS
+                        .white-text {
+                            color: white;
+                        }
+                        
+                        .red-text {
+                            color: $red;
+                        }
+                        
+                        .green-text {
+                            color: $green;
+                        }
+                        
+                        .black-text {
+                            color: $gray-dark;
+                        }
