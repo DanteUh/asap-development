@@ -31,6 +31,24 @@ body {
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
 
+.green {
+  background-color: #45b29d; }
+
+.white {
+  background-color: #e8e8e8; }
+
+.blue {
+  background-color: #324d5c; }
+
+.red {
+  background-color: #df5a49; }
+
+.black {
+  background-color: #333; }
+
+.none {
+  background-color: white; }
+
 h1,
 h2,
 h3,
