@@ -800,6 +800,39 @@ section.om-oss .section-heading {
     height: 120px;
     width: auto; }
 
+.projekt {
+  padding-bottom: 0; }
+
+.projekt-item {
+  position: relative; }
+
+.projekt-alert {
+  position: absolute;
+  width: 120px;
+  height: auto; }
+  .projekt-alert.left {
+    left: 0;
+    top: 0; }
+  .projekt-alert.right {
+    right: 0;
+    top: 0; }
+
+.alert-text {
+  position: absolute;
+  margin: 0;
+  padding: 1rem 0;
+  width: 100px;
+  text-align: center;
+  list-style: none;
+  color: #fff;
+  font-size: 0.8rem; }
+  .alert-text.left {
+    left: 0;
+    top: 0; }
+  .alert-text.right {
+    right: 0;
+    top: 0; }
+
 .contact-card {
   width: 19.5625rem;
   height: 8.75rem; }
