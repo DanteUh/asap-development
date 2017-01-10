@@ -63,29 +63,49 @@
             font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
         }
         
-        .green {
+        //bg-colors
+        .bg-green {
             background-color: $green;
         }
         
-        .white {
+        .bg-white {
             background-color: $white;
         }
         
-        .blue {
+        .bg-blue {
             background-color: $blue;
         }
         
-        .red {
-            background-color: $red;
-        }
-        
-        .black {
+        .bg-black {
             background-color: $black;
         }
-
-.none {
-    background-color: white;
-}
+        
+        .bg-none {
+            background-color: white;
+        }
+        
+        //bg-colors for boxes
+        .bg-red {
+            background: $red;
+            fill: $red;
+        }
+        
+        //colors for text
+        .white-text {
+            color: white;
+        }
+        
+        .green-text {
+            color: $green;
+        }
+        
+        .red-text {
+            color: $red;
+        }
+        
+        .black-text {
+            color: $black;
+        }
         
         //Text
         h1,
@@ -174,17 +194,6 @@
             color: $red;
             border: 1px $red solid;
             border-bottom: 5px $red solid;
-        }
-        
-        //colors for text
-        .white-text {
-            color: white;
-        }
-        
-        //bg-colors for boxes
-        .bg-red {
-            background: $red;
-            fill: $red;
         }
         
         // header-section
