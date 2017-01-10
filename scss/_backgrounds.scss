@@ -2,6 +2,7 @@
 .bg-green {
     background-color: $green;
     fill: $green;
+    color: $white;
 }
 
 .bg-white {
@@ -12,16 +13,19 @@
 .bg-blue {
     background-color: $blue;
     fill: $blue;
+    color: $white;
 }
 
 .bg-red {
     background-color: $red;
     fill: $red;
+    color: $white;
 }
 
 .bg-gray-dark {
     background-color: $gray-dark;
     fill: $gray-dark;
+    color: $white;
 }
 
 .bg-smoke {

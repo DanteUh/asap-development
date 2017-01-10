@@ -374,19 +374,23 @@ th {
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 .bg-green {
   background-color: #45b29d;
-  fill: #45b29d; }
+  fill: #45b29d;
+  color: #fff; }
 
 .bg-white {
   background-color: #fff;
@@ -394,25 +398,53 @@ th {
 
 .bg-blue {
   background-color: #324d5c;
-  fill: #324d5c; }
+  fill: #324d5c;
+  color: #fff; }
 
 .bg-red {
   background-color: #df5a49;
-  fill: #df5a49; }
+  fill: #df5a49;
+  color: #fff; }
 
 .bg-gray-dark {
   background-color: #333;
-  fill: #333; }
+  fill: #333;
+  color: #fff; }
 
 .bg-smoke {
   background-color: #e8e8e8;
   fill: #e8e8e8; }
 
-.container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row; }
+.grid-container {
+  max-width: 970px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row; } }
+
+.section-padding-lg {
+  padding-top: 8rem;
+  padding-bottom: 3.75rem; }
+
+.section-padding-md {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem; }
+
+.col-4 {
+  width: 33.3333%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-6 {
+  width: 50%; }
+
+.well {
+  padding: 1rem; }
 
 h1,
 h2,
@@ -420,7 +452,8 @@ h3,
 h4 {
   font-family: "rudaregular", "Arial", sans-serif;
   line-height: 1.1;
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 0.75rem 0; }
 
 h1 {
   font-size: 3rem; }
@@ -429,7 +462,8 @@ h1 {
       font-size: 3.75rem; } }
 
 h2 {
-  font-size: 2.25rem; }
+  font-size: 2.25rem;
+  margin-bottom: 3rem; }
 
 h3 {
   font-size: 1.875rem; }
@@ -611,7 +645,7 @@ footer .ul-social li a:hover {
   color: #95b4c5; }
 
 /*Media querys. 
-/L├ñgg dessa i respektive element.
+/Lägg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
@@ -645,8 +679,8 @@ header {
   justify-content: flex-end;
   flex-direction: column;
   /*@media screen and (min-width: 480px) {
-      @include flex-center(center, center, column);
-  }*/ }
+        @include flex-center(center, center, column);
+    }*/ }
 
 .header-diagonal-top {
   display: block;
@@ -738,15 +772,34 @@ body {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
-
   .nav-list li {
     display: inline; }
-
   #logo {
     width: 124px; } }
+
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 1rem 5rem; } }
+
+section.om-oss .section-heading {
+  color: #45b29d; }
+
+.marketing-list {
+  margin-bottom: 1.5rem; }
+  .marketing-list .marketing-item {
+    text-align: center; }
+    .marketing-list .marketing-item .marketing-heading {
+      color: #df5a49; }
+    .marketing-list .marketing-item.bg-green .marketing-heading {
+      color: #fff; }
+
+.marketing-image {
+  padding: 2rem 0;
+  text-align: center; }
+  .marketing-image .svg-icon {
+    height: 120px;
+    width: auto; }
+
 .contact-card {
   width: 19.5625rem;
   height: 8.75rem; }
@@ -758,6 +811,4 @@ body {
   height: 100%;
   margin: 0;
   background-color: white;
-  font: 16px/1.5 "open_sanslight", "Arial", sans-serif; }
-
-/*# sourceMappingURL=main.css.map */
+  font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
