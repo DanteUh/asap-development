@@ -12,7 +12,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom 150px;
-    background-blend-mode: multiply;
+    //background-blend-mode: multiply;
     @include flex-center(center, flex-end, column);
     // DESKTOP 1280px
     @media screen and (min-width: 1280px) {
@@ -68,5 +68,22 @@ header {
 
 // De olika sidornas bakgrundsbilder  
 #racecar {
-    background-image: url("../images/img/Formula-1-1280.png");
+    background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
+}
+
+#bolt {
+    background-image: url("../images/img/header-desktop-hem@2x.jpg");
+    background-position-y: 0px;
+    background-position-x: -550px;
+    //480px
+    @media screen and (min-width: 480px) {
+        background-position: center bottom;
+    }
+    @media screen and (min-width: 1280px) {
+        background-position: center bottom -65px;
+    }
+}
+
+#city {
+    background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
 }

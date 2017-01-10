@@ -629,7 +629,6 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center bottom 150px;
-  background-blend-mode: multiply;
   display: flex;
   align-content: center;
   justify-content: flex-end;
@@ -679,7 +678,21 @@ header {
       display: none; } }
 
 #racecar {
-  background-image: url("../images/img/Formula-1-1280.png"); }
+  background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg"); }
+
+#bolt {
+  background-image: url("../images/img/header-desktop-hem@2x.jpg");
+  background-position-y: 0px;
+  background-position-x: -550px; }
+  @media screen and (min-width: 480px) {
+    #bolt {
+      background-position: center bottom; } }
+  @media screen and (min-width: 1280px) {
+    #bolt {
+      background-position: center bottom -65px; } }
+
+#city {
+  background-image: url("../images/img/header-desktop-kundcase@2x.jpg"); }
 
 html,
 body {
