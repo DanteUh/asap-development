@@ -11,7 +11,10 @@
 @import 'media';
 @import 'header';
 @import 'top-nav';
+@import 'om-oss';
+@import 'projekt';
 @import 'contact-medarbetare';
+
 html {
     height: 100%;
 }
@@ -20,5 +23,5 @@ body {
     height: 100%;
     margin: 0;
     background-color: white;
-    font: 16px/1.5 "open_sanslight", "Arial", sans-serif;
+    font: 16px/1.5 $font-family-sans-serif, "Arial", sans-serif;
 }

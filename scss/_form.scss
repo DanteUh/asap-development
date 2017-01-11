@@ -1,6 +1,21 @@
 //Form-section
+.form-wrapper {
+    @media (min-width: 768px) {
+        padding-top: 0; 
+    }   
+}
 .form-section {
     padding: $main-padding;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.form-container {
+    padding-top: $section-padding-md-top;
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
 }
 
 .form-section .container {
@@ -8,10 +23,10 @@
     flex-direction: column;
 }
 
-.form-section h4 {
+.form-section .section-heading {
     color: $red;
-    line-height: 1.5;
     text-align: center;
+
 }
 
 form {
