@@ -12,22 +12,13 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom 150px;
-    //background-blend-mode: multiply;
     @include flex-center(center, flex-end, column);
-    // DESKTOP 1280px
-    @media screen and (min-width: 1280px) {
-        background-position: center bottom;
-    }
 }
 
 .main-headline-box {
     width: 100%;
     height: 50%;
     @include flex-center(center, flex-end, column);
-    //480px
-    /*@media screen and (min-width: 480px) {
-        @include flex-center(center, center, column);
-    }*/
 }
 
 .header-diagonal-top {
@@ -67,23 +58,32 @@ header {
 }
 
 // De olika sidornas bakgrundsbilder  
-#racecar {
+#vad-vi-gor-bg {
     background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
 }
 
-#bolt {
-    background-image: url("../images/img/header-desktop-hem@2x.jpg");
+#index-bg {
+    background-image: url("../images/img/header-mobile-hem@2x.jpg");
     background-position-y: 0px;
-    background-position-x: -550px;
     //480px
     @media screen and (min-width: 480px) {
+        background-image: url("../images/img/header-desktop-hem@2x.jpg");
         background-position: center bottom;
-    }
-    @media screen and (min-width: 1280px) {
-        background-position: center bottom -65px;
     }
 }
 
-#city {
-    background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+#kundcase-bg {
+    background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
+    background-position: center left;
+    @media screen and (min-width: 480px) {
+        background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+    }
+    // 1280px
+    @media screen and (min-width: 1280px) {
+        background-position: center bottom;
+    }
+}
+
+#kontakt-bg {
+    background-image: url("../images/img/header-desktop-kontakt@2x.jpg");
 }
