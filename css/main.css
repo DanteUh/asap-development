@@ -848,8 +848,9 @@ section.om-oss .section-heading {
 
 .contact-main {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-content: center;
+  justify-content: flex-start;
+  flex-direction: column; }
 
 .contact-card {
   display: flex;
