@@ -8,12 +8,12 @@
     }
 }
 .section-padding-lg {
-	padding-top: 8rem;
-	padding-bottom: 3.75rem;
+	padding-top: $section-padding-lg-top;
+	padding-bottom: $section-padding-lg-bottom;
 }
 .section-padding-md {
-	padding-top: 3.75rem;
-	padding-bottom: 3.75rem;
+	padding-top: $section-padding-md-top;
+	padding-bottom: $section-padding-md-bottom;
 }
 
 .col-4 {
@@ -27,5 +27,5 @@
 }
 
 .well {
-	padding: $main-padding;
+	padding: $well-padding;
 }

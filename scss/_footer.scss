@@ -22,15 +22,18 @@ address {
     list-style: none;
     margin: 0;
     padding: 0;
+    @media (min-width: 768px) {
+        text-align: center;
+    }
 }
-footer .ul-social li {
+.ul-social li {
     display: inline;
     margin: 0 5px $main-margin 0;
 }
-footer .ul-social li a {
+.ul-social li a {
     text-decoration: none;
     color: white;
 }
-footer .ul-social li a:hover {
+.ul-social li a:hover {
     color: lighten($blue, 40%);
 }

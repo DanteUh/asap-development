@@ -13,11 +13,13 @@
     <!--Navbar-->
     <div class="navbar">
         <!--Inre kallas nav p.g.a. screenreaders-->
+        <!--
         <nav>
             <a href="views/vad-vi-gor.html">Vad vi gör</a>
             <a href="views/kundcase.html">Kundcase</a>
             <a href="views/kontakt.html">Kontakt</a>
         </nav>
+        -->
     </div>
     <!--- header-section-->
     <header>
@@ -102,7 +104,7 @@
         </div>
     </div>
 
-    <div class="projekt-item bg-gray-dark lexcorp section-padding-md">
+    <div class="projekt-item bg-lexcorp section-padding-md">
         <div class="alert projekt-alert right">
             <ul class="alert-text right">
             <li class="">Sajten fixad på</li>
@@ -123,7 +125,7 @@
             </div>
         </div>
     </div>
-        <div class="container">
+        <div class="container section-padding-md">
             <a href="#" class="btn btn-green">Se hela vårt portfolio</a>
         </div>
     </section>
@@ -140,51 +142,53 @@
         </div>
     </section>
 
-    <section class="form-section bg-smoke section-padding-md">
-        <div class="container form-container bg-white">
-            <h4>Vi svarar innan<br>du hinner blinka</h4>
-            <form action="">
-                <div>
-                    Namn
-                    <br>
-                    <input type="text" name="name">
-                </div>
-                <div>
-                    E-mail
-                    <br>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    Telefon
-                    <br>
-                    <input type="tel">
-                </div>
-                <div>
-                    Meddelande
-                    <br>
-                    <textarea></textarea>
-                </div>
-                <input type="submit" value="SKICKA MEDDELANDE" class="btn-submit">
-            </form>
+    <section class="form-wrapper section-padding-md">
+        <div class="form-section bg-smoke">
+            <div class="container form-container bg-white">
+            <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
+                <form>
+                    <div>
+                        Namn
+                        <br>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        E-mail
+                        <br>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        Telefon
+                        <br>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        Meddelande
+                        <br>
+                        <textarea></textarea>
+                    </div>
+                    <input type="submit" value="SKICKA MEDDELANDE" class="btn btn-submit">
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-container bg-blue">
             <h4 class="white-text">ASAP DEVELOPMENT</h4>
-            <address class="white-text">
+            <address>
                 Tomtebodavägen 3A<br>
                 171 65 Solna<br>
                 info@asapdev.se<br>
                 +46 8 466 60 00
             </address>
-            <ul class="ul-social white-text">
+            <ul class="ul-social">
                 <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
                 <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
                 <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
             </ul>
             <div class="container">
-                <a href="#" class="btn-to-top"><i class="fa fa-angle-up"></i> </a>
+                <a href="#" class="btn btn-to-top"><i class="fa fa-angle-up"></i> </a>
             </div>
         </div>
     </footer>
