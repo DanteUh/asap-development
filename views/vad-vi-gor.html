@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ASAP - Vad vi gör</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -86,20 +86,42 @@
         <p class="white-text">Vi är specialister på responsiv webb, HTML, CSS och JavaScript.</p>
         <button class="btn-white">Kontakta oss idag</button>
     </div>
+    <section class="form-wrapper section-padding-md">
+        <div class="form-section bg-smoke">
+            <div class="container form-container bg-white">
+                <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
+                <form>
+                    <div> Namn
+                        <br>
+                        <input type="text" name="name"> </div>
+                    <div> E-mail
+                        <br>
+                        <input type="email" name="email"> </div>
+                    <div> Telefon
+                        <br>
+                        <input type="tel"> </div>
+                    <div> Meddelande
+                        <br>
+                        <textarea></textarea>
+                    </div>
+                    <input type="submit" value="SKICKA MEDDELANDE" class="btn btn-submit"> </form>
+            </div>
+        </div>
+    </section>
     <footer>
-        <div class="container bg-blue">
-            <h4 class="white-text">ASAP DEVELOPMENT</h4>
-            <address class="white-text">
-                Tomtebodavägen 3A 171 65<br>
-                Solna<br>
+        <div class="footer-container bg-blue">
+            <h4 class="white-text">ASAP DEVELOPMENT</h4> <address>
+                Tomtebodavägen 3A<br>
+                171 65 Solna<br>
                 info@asapdev.se<br>
                 +46 8 466 60 00
             </address>
-            <ul class="ul-social white-text">
-                <li><a href="#">FACEBOOK</a></li>
-                <li><a href="#">TWITTER</a></li>
-                <li><a href="#">INSTAGRAM</a></li>
+            <ul class="ul-social">
+                <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
+                <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
+                <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
             </ul>
+            <div class="container"> <a href="#" class="btn btn-to-top"><i class="fa fa-angle-up"></i> </a> </div>
         </div>
     </footer>
 </body>
