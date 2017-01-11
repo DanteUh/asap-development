@@ -1,3 +1,31 @@
+.grid-container {
+	max-width: 970px;
+	margin: 0 auto;
+}
 .container {
-    @include flex-center();
+	@media (min-width: 768px) {
+    	@include flex-center();
+    }
+}
+.section-padding-lg {
+	padding-top: $section-padding-lg-top;
+	padding-bottom: $section-padding-lg-bottom;
+}
+.section-padding-md {
+	padding-top: $section-padding-md-top;
+	padding-bottom: $section-padding-md-bottom;
+}
+
+.col-4 {
+	width: 33.3333%
+}
+.col-3 {
+	width: 25%
+}
+.col-6 {
+	width: 50%;
+}
+
+.well {
+	padding: $well-padding;
 }

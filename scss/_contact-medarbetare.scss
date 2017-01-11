@@ -1,8 +1,6 @@
 //Ändra detta med media queries!!!!
 .contact-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-center(center, flex-start, column);
 }
 
 .contact-card {

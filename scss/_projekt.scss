@@ -1,0 +1,44 @@
+.projekt {
+	.section-heading {
+		color: $green;
+	}
+	padding-bottom: 0;
+}
+
+.projekt-item {
+	position: relative;
+}
+
+.projekt-alert {
+	position: absolute;
+	width: 120px;
+	height: auto;
+	&.left {
+		left: 0;
+		top: 0;
+	}
+	&.right {
+		right: 0;
+		top: 0;		
+	}
+}
+
+.alert-text {
+	position: absolute;
+	margin: 0;
+	padding: 1rem 0;
+	width: 100px;
+	text-align: center;
+	list-style: none;
+	color: $white;
+	font-size: 0.8rem;
+
+	&.left {
+		left: 0;
+		top: 0;
+	}
+	&.right {
+		right: 0;
+		top: 0;		
+	}
+}

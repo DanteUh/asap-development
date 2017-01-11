@@ -6,32 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ASAP Development</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> </head>
 
 <body>
     <!--Navbar-->
     <div class="navbar">
         <!--Inre kallas nav p.g.a. screenreaders-->
+        <!--
         <nav>
             <a href="views/vad-vi-gor.html">Vad vi gör</a>
             <a href="views/kundcase.html">Kundcase</a>
             <a href="views/kontakt.html">Kontakt</a>
         </nav>
+        -->
     </div>
     <!--- header-section-->
     <header>
         <div class="header-img bg-red" id="index-bg">
             <div class="main-headline-box">
-                <h1 class="white-text text-center headline-margin">Snabb, snabbare, snabbast</h1>
-                <img id="large-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash">
-                <img id="small-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash">
-            </div>
-
+                <h1 class="white-text text-center headline-margin">Snabb, snabbare, snabbast</h1> <img id="large-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash"> <img id="small-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash"> </div>
             <svg class="header-diagonal-top" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none">
-                <polygon class="bg-red" points="100 0 100 10 0 10" />
-            </svg>
-
+                <polygon class="bg-red" points="100 0 100 10 0 10" /> </svg>
             <div class="header-diagonal-bottom bg-red">
                 <p class="lead white-text text-center headline-margin">ASAP Development är webbyrån som bygger din sajt på 24 timmar.
                     <br>Med högsta kvalitet och full support.</p>
@@ -39,111 +34,130 @@
         </div>
     </header>
     <!-- /end header section -->
-
-    <section class="darfor-snabbaste bg-white ">
-        <h2 class="text-center">Därför är vi Sveriges snabbaste webbyrå</h2>
-        <div class="container">
-            <div class="col-4">
-                <div class="">
+    <section class="bg-white om-oss section-padding-lg">
+        <div class="grid-container">
+            <h2 class="section-heading text-center">Därför är vi Sveriges snabbaste webbyrå</h2>
+            <div class="container marketing-list">
+                <div class="col-4 marketing-item">
+                    <div class="marketing-image"> <img class="svg-icon" src="images/icons/icon-flat3d-arrow.svg" onerror="this.onerror=null; this.src='image.png'"> </div>
+                    <div class="well">
+                        <h3 class="marketing-heading">Effektivt</h3>
+                        <p>Inga möten. Inga fikapauser. Inget julbord. Vi jobbar.</p>
+                    </div>
                 </div>
-                <h3>Effektivt</h3>
-                <p>Inga möten. Inga fikapauser. Inget julbord. Vi jobbar.</p>
+                <div class="col-4 bg-green marketing-item">
+                    <div class="marketing-image"> <img class="svg-icon" src="images/icons/icon-flat3d-bullseye.svg" onerror="this.onerror=null; this.src='image.png'"> </div>
+                    <div class="well">
+                        <h3 class="marketing-heading">Globalt</h3>
+                        <p>Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
+                    </div>
+                </div>
+                <div class="col-4 marketing-item">
+                    <div class="marketing-image"> <img class="svg-icon" src="images/icons/icon-flat3d-bars.svg" onerror="this.onerror=null; this.src='image.png'"> </div>
+                    <div class="well">
+                        <h3 class="marketing-heading">Flexibelt</h3>
+                        <p>Vårt unika nätverk av konsulter är alltid redo kasta sig över ditt projekt.</p>
+                    </div>
+                </div>
             </div>
-            <div class="green col-4">
-                <h3>Globalt</h3>
-                <p>Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
-            </div>
-            <div class="col-4">
-                <h3>Flexibelt</h3>
-                <p>Vårt unika nätverk av konsulter är alltid redo kasta sig över ditt projekt.</p>
-            </div>
-        </div>
-        <div class="container">
-            <button class="btn-green btn" href="#">Så jobbar vi</button>
-        </div>
-    </section>
-
-    <section class="portfolio bg-smoke">
-        <h2 class="text-center">Våra projekt</h2>
-
-        <div class="container projekt-item bg-smoke vandeley">
-            <img src="images/corner" alt="På plats intom 2 timmar" />
-            <div class="col-6">
-                <img src="images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" />
-            </div>
-            <div class="col-6">
-                <h3>Vandelay Industries</h3>
-                <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
-            </div>
-        </div>
-
-        <div class="container projekt-item bg-lexcorp lexcorp">
-            <img src="images/corner2" alt="Sajten fixad på 36 timmar" />
-            <div class="col-6">
-                <h3>LexCorp</h3>
-                <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
-            </div>
-            <div class="col-6">
-                <img src="images/img/projekt-logo-mob-lexcorp.jpg" alt="Lexcorp" />
-            </div>
-        </div>
-        <div class="container bg-smoke">
-            <a href="#" class="btn btn-green">Se hela vårt portfolio</a>
+            <div class="container"> <a href="#" class="btn btn-green">Så jobbar vi</a> </div>
         </div>
     </section>
+    <section class="projekt bg-smoke section-padding-md">
+       <h2 class="section-heading text-center">Våra projekt</h2>
+       <div class="projekt-item bg-white vandeley section-padding-md">
+       <div class="alert projekt-alert left">
+           <ul class="alert-text left">
+           <li class="">På plats inom</li>
+           <li class="alert-num">2</li>
+           <li class="">timmar</li>
+           </ul>
+           <img src="images/svg/alert-circle-projekt-left.svg" alt="På plats inom 2 timmar" />
+           </div>
+           <div class="grid-container">
+             <div class="container">
+               <div class="col-6">
+                   <img src="images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" />
+               </div>
+               <div class="col-6">
+                   <h3>Vandelay Industries</h3>
+                   <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
+               </div>
+           </div>
+       </div>
+   </div>
 
-    <h2 class="green-text">Vår story</h2>
-    <p class="black-text">ASAP Development startades 2016 av fyra utvecklare som märkte att andra webbyråer mest fikar och spelar pingis.</p>
-    <p class="black-text">Samtidigt vet vi att tidsaspekten ofta är det viktigaste för dagens kunder. Det måste gå snabbt.
-    </p>
-    <p class="black-text">Därför har vi sett till att ASAP Development blivit Sveriges, kanske världens, snabbaste webbyrå.</p>
-
-
-    <section class="form-section bg-smoke">
-        <div class="container form-container bg-white">
-            <h4>Vi svarar innan<br>du hinner blinka</h4>
-            <form action="">
-                <div>
-                    Namn
-                    <br>
-                    <input type="text" name="name">
-                </div>
-                <div>
-                    E-mail
-                    <br>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    Telefon
-                    <br>
-                    <input type="tel">
-                </div>
-                <div>
-                    Meddelande
-                    <br>
-                    <textarea></textarea>
-                </div>
-                <input type="submit" value="SKICKA MEDDELANDE" class="btn-submit">
-            </form>
+   <div class="projekt-item bg-lexcorp section-padding-md">
+       <div class="alert projekt-alert right">
+           <ul class="alert-text right">
+           <li class="">Sajten fixad på</li>
+               <li class="alert-num">36</li>
+               <li class="">timmar</li>
+           </ul>
+           <img src="images/svg/alert-circle-projekt-right.svg" alt="Sajten fixad på 36 timmar" />
+       </div>
+       <div class="grid-container">
+           <div class="container">
+               <div class="col-6">
+                   <h3>LexCorp</h3>
+                   <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
+               </div>
+               <div class="col-6">
+                   <img src="images/img/projekt-logo-mob-lexcorp.jpg" alt="Lexcorp" />
+               </div>
+           </div>
+       </div>
+   </div>
+       <div class="container section-padding-md">
+           <a href="#" class="btn btn-green">Se hela vårt portfolio</a>
+       </div>
+   </section>
+    <section class="bg-white section-padding-md">
+        <div class="container">
+            <div class="col-7">
+                <h2 class="green-text">Vår story</h2>
+                <p>ASAP Development startades 2016 av fyra utvecklare som märkte att andra webbyråer mest fikar och spelar pingis.</p>
+                <p>Samtidigt vet vi att tidsaspekten ofta är det viktigaste för dagens kunder. Det måste gå snabbt. </p>
+                <p>Därför har vi sett till att ASAP Development blivit Sveriges, kanske världens, snabbaste webbyrå.</p>
+            </div>
+        </div>
+    </section>
+    <section class="form-wrapper section-padding-md">
+        <div class="form-section bg-smoke">
+            <div class="container form-container bg-white">
+                <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
+                <form>
+                    <div> Namn
+                        <br>
+                        <input type="text" name="name"> </div>
+                    <div> E-mail
+                        <br>
+                        <input type="email" name="email"> </div>
+                    <div> Telefon
+                        <br>
+                        <input type="tel"> </div>
+                    <div> Meddelande
+                        <br>
+                        <textarea></textarea>
+                    </div>
+                    <input type="submit" value="SKICKA MEDDELANDE" class="btn btn-submit"> </form>
+            </div>
         </div>
     </section>
     <footer>
         <div class="footer-container bg-blue">
-            <h4 class="white-text">ASAP DEVELOPMENT</h4>
-            <address class="white-text">
-                Tomtebodavägen 3A 171 65<br>
-                Solna<br>
+            <h4 class="white-text">ASAP DEVELOPMENT</h4> <address>
+                Tomtebodavägen 3A<br>
+                171 65 Solna<br>
                 info@asapdev.se<br>
                 +46 8 466 60 00
             </address>
-            <ul class="ul-social white-text">
+            <ul class="ul-social">
                 <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
                 <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
                 <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
             </ul>
-            <div class="container">
-                <a href="#" class="btn-to-top"><i class="fa fa-angle-up"></i></a>
-            </div>
+            <div class="container"> <a href="#" class="btn btn-to-top"><i class="fa fa-angle-up"></i> </a> </div>
         </div>
     </footer>
     <script src="js/main.js"></script>
