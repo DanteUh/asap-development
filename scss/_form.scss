@@ -14,9 +14,10 @@
 .form-container {
     padding-top: $section-padding-md-top;
     padding-bottom: $section-padding-md-top;
+    padding-left: $gutter-size;
+    padding-right: $gutter-size;
     @media (min-width: 768px) {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
     }
 }
 

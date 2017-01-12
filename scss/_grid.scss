@@ -1,10 +1,12 @@
 .grid-container {
+	padding-left: $gutter-size;
+	padding-right: $gutter-size;
 	box-sizing: border-box;
 	max-width: 1002px;
 	margin: 0 auto;
 	@media (min-width: 768px) {
-		padding-left: $gutter-size;
-		padding-right: $gutter-size;
+		padding-left: 0;
+		padding-right: 0;
 	}
     content:" ";
     display:block;
@@ -13,10 +15,10 @@
 
 // flex-container
 .container {
+	margin-left: -$gutter-size;
+	margin-right: -$gutter-size;
 	@media (min-width: 768px) {
     	@include flex-center();
-    	margin-left: -$gutter-size;
-    	margin-right: -$gutter-size;
     }
 }
 .section-padding-lg {
@@ -96,4 +98,8 @@
     content:" ";
     display:block;
     clear:both;
+}
+
+a, header, nav, div {
+	box-sizing: border-box;
 }
