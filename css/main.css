@@ -1135,9 +1135,7 @@ section.om-oss .section-heading {
   display: flex;
   align-content: center;
   justify-content: center;
-  flex-direction: row;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  flex-direction: row; }
 
 .cirkel {
   background-color: #45b29d;
