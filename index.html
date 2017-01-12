@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> </head>
 
-<body>
+<body class="hem">
     <!-- Nav section -->
-    <nav class="navbar">
+    <nav class="navbar clearfix">
         <div id="nav-bg-wrapper">
-            <div class="grid-container">
-            <div id="nav-top-row clearfix">
+            <div id="nav-top-row" class="clearfix"">
                     <a class="site-logo" href="index.html">
                     <img id="logo" src="images/svg/asap-logo.svg" alt="ASAP logo">
                     </a>
@@ -23,8 +22,9 @@
                         <li><a href="views/kundcase.html ">Kundcase</a></li>
                         <li><a href="views/kontakt.html ">Kontakt</a></li>
                     </ul>
-                     <img id="hamburger" src="images/svg/icon-hamburger.svg" alt="hamburger menu">
-                </div>
+                    <a id="hamburger" href="#" class="nav-collapse">
+                     <img src="images/svg/icon-hamburger.svg" alt="hamburger menu">
+                     </a>
             </div>
         </div>
         <div id="menu-up" class="nav-menu lead bg-green">
@@ -78,6 +78,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="grid-container">
             <a href="#" class="center-block btn btn-green">Så jobbar vi</a>
         </div>
     </section>
@@ -127,12 +129,13 @@
                 </div>
             </div>
         </div>
-        <div class="section-padding-md">
+        <div class="grid-container section-padding-md">
             <a href="#" class="center-block btn btn-green">Se hela vårt portfolio</a>
         </div>
     </section>
 
-    <section class="bg-white section-padding-md">
+    <section class="contact-section bg-white section-padding-md">
+     <div class="grid-container">
         <div class="container">
             <div class="col-7">
                 <h2 class="green-text">Vår story</h2>
@@ -188,7 +191,7 @@
         <div class="bg-blue">
             <div class="grid-container">
                 <div class="container">
-                    <div class="col4">
+                    <div class="col-4">
                         <h4>ASAP DEVELOPMENT</h4> 
                         <address>
                         Tomtebodavägen 3A<br>
@@ -197,9 +200,9 @@
                         +46 8 466 60 00
                     </address>
                 </div>
-                <div class="col8"></div>
+                <div class="col-8"></div>
             </div>
-            <ul class="center-block ul-social">
+            <ul class="ul-social">
                 <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
                 <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
                 <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
