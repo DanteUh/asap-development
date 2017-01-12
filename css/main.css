@@ -582,14 +582,15 @@ a {
   padding: 0.7rem 1rem;
   text-align: center;
   text-transform: uppercase;
-  width: 18rem; }
+  width: 15rem; }
 
 .btn-submit {
   background-color: #df5a49;
   border-radius: 6px;
   border-color: #df5a49;
   border-bottom-color: #97522a;
-  color: white; }
+  color: white;
+  width: 100%; }
 
 .btn-to-top {
   border-bottom-color: white;
@@ -793,7 +794,6 @@ header {
 
 .navbar {
   position: fixed;
-  width: 100%;
   min-height: 3.75rem;
   top: 0;
   left: 0;
