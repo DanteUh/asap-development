@@ -374,16 +374,19 @@ th {
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 .bg-green {
   background-color: #45b29d;
   fill: #45b29d;
@@ -419,15 +422,21 @@ th {
   background-image: -ms-linear-gradient(90deg, #292524 0%, #342f2c 20%, #3d3a37 45%, #403f3d 70%, #3f4448 100%); }
 
 .grid-container {
-  max-width: 970px;
+  max-width: 1002px;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .grid-container {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 @media (min-width: 768px) {
   .container {
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: row; } }
+    flex-direction: row;
+    margin-left: -1rem;
+    margin-right: -1rem; } }
 
 .section-padding-lg {
   padding-top: 8rem;
@@ -437,17 +446,59 @@ th {
   padding-top: 3rem;
   padding-bottom: 3.75rem; }
 
-.col-4 {
-  width: 33.3333%; }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
-.col-3 {
-  width: 25%; }
-
-.col-6 {
-  width: 50%; }
+@media (min-width: 768px) {
+  .col-1 {
+    width: 12%; }
+  .col-2 {
+    width: 16.6666%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.3333%; }
+  .col-5 {
+    width: 41.6666%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.3333%; }
+  .col-8 {
+    width: 66.6666%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.3333%; }
+  .col-11 {
+    width: 91.6666%; }
+  .col-12 {
+    width: 100%; } }
 
 .well {
   padding: 1rem; }
+
+.center-block {
+  margin: 0 auto; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
 
 h1,
 h2,
@@ -524,7 +575,7 @@ a {
   color: white;
   font-family: 'open_sansregular';
   font-size: 1.125rem;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   text-align: center;
   text-transform: uppercase;
   width: 18rem; }
@@ -567,52 +618,48 @@ a {
   border-color: #df5a49; }
 
 @media (min-width: 768px) {
-  .form-wrapper {
+  .form-section {
     padding-top: 0; } }
 
-.form-section {
+.form-wrapper {
   padding: 1rem; }
   @media (min-width: 768px) {
-    .form-section {
+    .form-wrapper {
       padding: 0; } }
 
 .form-container {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
   @media (min-width: 768px) {
     .form-container {
-      padding-top: 0; } }
+      padding-top: 0;
+      padding-bottom: 0; } }
 
-.form-section .container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-direction: column; }
-
-.form-section .section-heading {
+.form-wrapper .section-heading {
   color: #df5a49;
   text-align: center; }
 
 form {
   font-family: 'open_sansregular';
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   text-align: inherit;
   font-size: 1rem;
   color: #df5a49; }
 
 input, textarea {
+  box-sizing: border-box;
   margin-bottom: 0.75rem;
-  padding: 0.5rem;
+  padding: 0.7rem 1rem;
   border: #df5a49 2px solid;
-  width: 15rem; }
+  width: 100%; }
 
 input:focus, textarea:focus {
   outline: none; }
 
 textarea {
   height: 6rem; }
+  @media (min-width: 768px) {
+    textarea {
+      height: 9.2rem; } }
 
 input[type="text"], input[type="email"], input[type="tel"] {
   font-size: 1rem; }
@@ -622,7 +669,7 @@ footer {
   background-color: #324d5c;
   padding: 2rem; }
 
-footer .footer-container {
+footer .container {
   flex-direction: column;
   align-items: flex-start; }
 
@@ -656,7 +703,7 @@ address {
   color: #95b4c5; }
 
 /*Media querys. 
-/L├ñgg dessa i respektive element.
+/Lägg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
@@ -762,10 +809,13 @@ header {
   top: 5px; }
 
 .nav-list li {
-  display: none; }
+  display: none;
+  float: left; }
 
 .nav-list li a,
 .nav-menu li a {
+  display: block;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 0 0.33333rem 0;
@@ -795,7 +845,6 @@ header {
     padding: 2rem; }
 
 #nav-bg-wrapper {
-  padding: 1rem 2rem 0 2rem;
   position: fixed;
   transition: 1s linear;
   top: 0;
@@ -807,14 +856,20 @@ header {
   position: relative;
   top: -5px; }
 
+.site-logo {
+  float: left;
+  padding: 0.7rem 1rem; }
+
 #logo {
-  width: 90px; }
+  width: 80px; }
 
 #hamburger {
+  float: right;
   width: 37px;
   display: block;
   position: relative;
-  top: -2px; }
+  top: 13px;
+  right: 16px; }
 
 #hamburger,
 #logo {
@@ -833,25 +888,23 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
-
   .nav-menu {
     max-height: 0; }
-
   #menu-down {
     max-height: 0;
     padding: 0; }
-
   .nav-list li {
     display: inline; }
-
+  .site-logo {
+    display: block;
+    float: left; }
   #logo {
-    width: 124px; } }
+    width: 80px; } }
+
 @media screen and (min-width: 480px) {
   .navbar {
-    padding: 1rem 5rem; }
+    padding: 1rem 5rem; } }
 
-  #nav-bg-wrapper {
-    padding: 1rem 4rem 0 4rem; } }
 section.om-oss .section-heading {
   color: #45b29d; }
 
@@ -878,7 +931,11 @@ section.om-oss .section-heading {
     color: #45b29d; }
 
 .projekt-item {
-  position: relative; }
+  position: relative;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .projekt-item {
+      text-align: left; } }
 
 .projekt-alert {
   position: absolute;
@@ -937,6 +994,10 @@ section.om-oss .section-heading {
 .contact-card-inner div i {
   font-size: 1.3rem; }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto; }
+
 html {
   height: 100%; }
 
@@ -945,5 +1006,3 @@ body {
   margin: 0;
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
-
-/*# sourceMappingURL=main.css.map */

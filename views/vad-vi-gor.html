@@ -86,43 +86,70 @@
         <p class="white-text">Vi är specialister på responsiv webb, HTML, CSS och JavaScript.</p>
         <button class="btn-white">Kontakta oss idag</button>
     </div>
-    <section class="form-wrapper section-padding-md">
-        <div class="form-section bg-smoke">
-            <div class="container form-container bg-white">
+<section class="form-section section-padding-md">
+        <div class="form-wrapper bg-smoke grid-container">
+            <div class="form-container bg-white">
                 <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
                 <form>
-                    <div> Namn
-                        <br>
-                        <input type="text" name="name"> </div>
-                    <div> E-mail
-                        <br>
-                        <input type="email" name="email"> </div>
-                    <div> Telefon
-                        <br>
-                        <input type="tel"> </div>
-                    <div> Meddelande
-                        <br>
-                        <textarea></textarea>
+                    <div class="container">
+                        <div class="col-5">
+                            <div class="form-group"> 
+                                <label for="name">Namn</label>
+                                <div class="form-input">
+                                    <input type="text" name="name" required=""> 
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                              <label for="email">E-mail</label>
+                              <div class="form-input">
+                                <input type="email" name="email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">  
+                         <label>Telefon</label>
+                         <div class="form-input">
+                            <input type="tel"> </div>
+                        </div>
                     </div>
-                    <input type="submit" value="SKICKA MEDDELANDE" class="btn btn-submit"> </form>
+                    <div class="col-5">
+                        <div class="form-group">  
+                         <label>Meddelande</label>
+                         <div class="form-input">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">  
+                        <input type="submit" value="Skicka Meddelande" class="btn btn-submit"> 
+                    </div>
+                </div>
+            </div>
+        </form>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer-container bg-blue">
-            <h4 class="white-text">ASAP DEVELOPMENT</h4> <address>
-                Tomtebodavägen 3A<br>
-                171 65 Solna<br>
-                info@asapdev.se<br>
-                +46 8 466 60 00
-            </address>
-            <ul class="ul-social">
+        <div class="bg-blue">
+            <div class="grid-container">
+                <div class="container">
+                    <div class="col4">
+                        <h4>ASAP DEVELOPMENT</h4> 
+                        <address>
+                        Tomtebodavägen 3A<br>
+                        171 65 Solna<br>
+                        info@asapdev.se<br>
+                        +46 8 466 60 00
+                    </address>
+                </div>
+                <div class="col8"></div>
+            </div>
+            <ul class="center-block ul-social">
                 <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
                 <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
                 <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
             </ul>
-            <div class="container"> <a href="#" class="btn btn-to-top"><i class="fa fa-angle-up"></i> </a> </div>
+            <a href="#" class="center-block btn btn-to-top"><i class="fa fa-angle-up"></i> </a>
         </div>
+    </div>
     </footer>
 </body>
 

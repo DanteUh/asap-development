@@ -20,10 +20,13 @@
 
 .nav-list li {
     display: none;
+    float: left;
 }
 
 .nav-list li a,
 .nav-menu li a {
+    display: block;
+    font-size: 1rem;
     @extend .white-text;
     text-transform: uppercase;
     text-decoration: none;
@@ -55,7 +58,7 @@
 }
 
 #nav-bg-wrapper {
-    padding: $main-padding ($main-padding * 2) 0 ($main-padding * 2);
+    //padding: $main-padding ($main-padding * 2) 0 ($main-padding * 2);
     position: fixed;
     transition: 1s linear;
     top: 0;
@@ -68,16 +71,21 @@
     position: relative;
     top: -5px;
 }
-
+.site-logo { 
+    float: left;
+    padding: 0.7rem 1rem;
+}
 #logo {
-    width: 90px;
+    width: 80px;
 }
 
 #hamburger {
+    float: right;
     width: 37px;
     display: block;
     position: relative;
-    top: -2px;
+    top: 13px;
+    right: 16px;
 }
 
 #hamburger,
@@ -112,8 +120,12 @@
     .nav-list li {
         display: inline;
     }
+    .site-logo {
+        display:block;
+        float: left;
+    }
     #logo {
-        width: 124px;
+        width: 80px;
     }
 }
 
@@ -122,6 +134,6 @@
         padding: $main-padding ($main-padding * 5);
     }
     #nav-bg-wrapper {
-        padding: $main-padding ($main-padding * 4) 0 ($main-padding * 4);
+        //padding: $main-padding ($main-padding * 4) 0 ($main-padding * 4);
     }
 }
