@@ -1,12 +1,21 @@
 //Ändra detta med media queries!!!!
 .contact-main {
     display: flex;
-    @media (min-width: 20rem) and (max-width: 40rem) {
-        flex-flow: column wrap;
-    }
-    @media (max-width: 20rem) {
+    align-items: center;
+    @media (max-width: 40rem) {
         flex-flow: column nowrap;
-        align-items: center;
+    }
+    @media (min-width: 40rem) and (max-width: 60rem) {
+        flex-flow: column wrap;
+        height: 50rem;
+        max-width: 60rem;
+        align-content: space-around;
+    }
+    @media (min-width: 60rem) {
+        flex-flow: column wrap;
+        height: 50rem;
+        align-content: space-around;
+
     }
 }
 
@@ -39,4 +48,19 @@
 //Resize:a ikoner
 .contact-card-inner div i {
     font-size: 1.3rem;
+}
+
+#contact-heading {
+    padding-bottom: 6rem;
+    padding-top: 5.75rem;
+    @media (min-width: 60rem) {
+        padding-top: 9.375rem;
+        padding-bottom: 3.75rem;
+    }
+}
+
+#contact-media-query-squasher {
+    @media (min-width: 60rem) {
+        height: 45rem;
+    }
 }
