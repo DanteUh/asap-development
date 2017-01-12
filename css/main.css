@@ -374,19 +374,16 @@ th {
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 .bg-green {
   background-color: #45b29d;
   fill: #45b29d;
@@ -469,29 +466,39 @@ th {
 @media (min-width: 768px) {
   .col-1 {
     width: 12%; }
+
   .col-2 {
     width: 16.6666%; }
+
   .col-3 {
     width: 25%; }
+
   .col-4 {
     width: 33.3333%; }
+
   .col-5 {
     width: 41.6666%; }
+
   .col-6 {
     width: 50%; }
+
   .col-7 {
     width: 58.3333%; }
+
   .col-8 {
     width: 66.6666%; }
+
   .col-9 {
     width: 75%; }
+
   .col-10 {
     width: 83.3333%; }
+
   .col-11 {
     width: 91.6666%; }
+
   .col-12 {
     width: 100%; } }
-
 .well {
   padding: 1rem; }
 
@@ -711,7 +718,7 @@ address {
   color: #95b4c5; }
 
 /*Media querys. 
-/Lägg dessa i respektive element.
+/L├ñgg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
@@ -894,26 +901,30 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
+
   .nav-menu {
     max-height: 0; }
+
   #menu-down {
     max-height: 0;
     padding: 0; }
+
   .nav-list li {
     display: inline; }
+
   .nav-list li a {
     display: block;
     margin: 1rem 0.75rem 0.5rem 0.95rem; }
+
   .site-logo {
     display: block;
     float: left; }
+
   #logo {
     width: 80px; } }
-
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
-
 section.om-oss .section-heading {
   color: #45b29d; }
 
@@ -1050,6 +1061,71 @@ section.om-oss .section-heading {
   padding: 1rem;
   text-align: center; }
 
+.karta {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 2rem;
+  max-width: 100%; }
+  @media (min-width: 1280px) {
+    .karta {
+      background-image: url(../images/img/bg-desktop-konsulter-map@2x.jpg);
+      height: 49.5rem; } }
+  @media (min-width: 640px) and (max-width: 1280px) {
+    .karta {
+      background-image: url(../images/img/bg-desktop-konsulter-map.jpg);
+      height: 24.75rem; } }
+  @media (min-width: 480px) and (max-width: 640px) {
+    .karta {
+      background-image: url(../images/img/bg-desktop-konsulter-map@0,5x.jpg);
+      height: 12.375rem; } }
+  @media (min-width: 240px) and (max-width: 480px) {
+    .karta {
+      background-image: url(../images/img/bg-mobile-konsulter.jpg);
+      height: 43.6875rem; } }
+  @media (max-width: 240px) {
+    .karta {
+      background-image: url(../images/img/bg-mobile-konsulter@0,5x.jpg);
+      height: 21.875rem; } }
+
+.contact-story-text {
+  margin-bottom: 2.5rem; }
+
+#contact-story {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+  @media (min-width: 480px) {
+    #contact-story {
+      max-width: 30rem; } }
+  @media (min-width: 768px) {
+    #contact-story {
+      margin-left: 10rem;
+      margin-right: 4rem; } }
+
+#contact-circle {
+  margin-top: 3rem;
+  margin-bottom: 6.5rem;
+  height: 10.5rem;
+  width: 10.5rem; }
+
+#contact-circle-text {
+  margin-top: 2.5rem; }
+
+#contact-circle-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row; }
+  @media (min-width: 768px) {
+    #contact-circle-container {
+      padding-top: 3.5rem; } }
+
+#contact-story-positioner {
+  display: flex;
+  flex-flow: column nowrap; }
+  @media (min-width: 768px) {
+    #contact-story-positioner {
+      flex-flow: row nowrap; } }
+
 html {
   height: 100%; }
 
@@ -1058,3 +1134,5 @@ body {
   margin: 0;
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
