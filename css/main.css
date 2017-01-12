@@ -987,6 +987,17 @@ section.om-oss .section-heading {
       background-image: url(../images/img/bg-mobile-konsulter@0,5x.jpg);
       height: 21.875rem; } }
 
+.contact-story-text {
+  margin-bottom: 2.5rem; }
+
+#contact-story {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+#contact-circle {
+  margin-top: 3rem;
+  margin-bottom: 6.5rem; }
+
 html {
   height: 100%; }
 
