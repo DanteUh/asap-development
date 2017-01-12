@@ -30,6 +30,14 @@ h4 {
     font-size: 1.5rem;
 }
 
+//DYNAMIC HEADINGS
+.h3-to-h4 {
+    font-size: 1.5rem;
+    @media (min-width: 768px) {
+        font-size: 1.875rem;
+    }
+}
+
 //TEXT MARGINS
 p {
     margin-bottom: $main-margin;
@@ -40,13 +48,26 @@ p {
     margin: $main-margin ($main-margin * 2);
 }
 
-//lead - open sans light 18px
+//LEAD / BODY TEXT
+//open sans light 18px mobile / 24px desktop
 .lead {
     font: 1.125rem/1.5 $font-family-sans-serif;
-    //768px
     @media (min-width: 768px) {
         font-size: 1.5rem;
     }
+}
+
+//18px desktop 16px mobile
+.lg-body-text {
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.125rem;
+    }
+}
+
+//18 px across
+.lg-body-text-static {
+    font-size: 1.125rem;
 }
 
 //TEXT-ALIGN

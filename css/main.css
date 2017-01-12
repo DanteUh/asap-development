@@ -374,19 +374,16 @@ th {
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 .bg-green {
   background-color: #45b29d;
   fill: #45b29d;
@@ -441,6 +438,15 @@ th {
       justify-content: center;
       flex-direction: row; } }
 
+@media (min-width: 768px) {
+  .container-col {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -1rem;
+    margin-right: -1rem; } }
+
 .section-padding-lg {
   padding-top: 8rem;
   padding-bottom: 3.75rem; }
@@ -469,29 +475,39 @@ th {
 @media (min-width: 768px) {
   .col-1 {
     width: 12%; }
+
   .col-2 {
     width: 16.6666%; }
+
   .col-3 {
     width: 25%; }
+
   .col-4 {
     width: 33.3333%; }
+
   .col-5 {
     width: 41.6666%; }
+
   .col-6 {
     width: 50%; }
+
   .col-7 {
     width: 58.3333%; }
+
   .col-8 {
     width: 66.6666%; }
+
   .col-9 {
     width: 75%; }
+
   .col-10 {
     width: 83.3333%; }
+
   .col-11 {
     width: 91.6666%; }
+
   .col-12 {
     width: 100%; } }
-
 .well {
   padding: 1rem; }
 
@@ -503,7 +519,10 @@ th {
   display: block;
   clear: both; }
 
-a, header, nav, div {
+a,
+header,
+nav,
+div {
   box-sizing: border-box; }
 
 h1,
@@ -531,6 +550,12 @@ h3 {
 h4 {
   font-size: 1.5rem; }
 
+.h3-to-h4 {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .h3-to-h4 {
+      font-size: 1.875rem; } }
+
 p {
   margin-bottom: 0.75rem;
   margin-top: 0; }
@@ -543,6 +568,15 @@ p {
   @media (min-width: 768px) {
     .lead {
       font-size: 1.5rem; } }
+
+.lg-body-text {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .lg-body-text {
+      font-size: 1.125rem; } }
+
+.lg-body-text-static {
+  font-size: 1.125rem; }
 
 .text-center {
   text-align: center; }
@@ -711,15 +745,29 @@ address {
   color: #95b4c5; }
 
 /*Media querys. 
-/Lägg dessa i respektive element.
+/L├ñgg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
 /MOBILE 480px
 */
+@media screen and (min-width: 768px) {
+  .hide-on-desktop {
+    display: none !important; } }
+
+@media screen and (min-width: 768px) {
+  .circle-on-desktop {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; } }
+
 header {
   width: 100%;
   height: 100vh; }
+
+#header-vadvigor {
+  width: 100%;
+  height: 80vh; }
 
 .header-img {
   position: relative;
@@ -894,26 +942,30 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
+
   .nav-menu {
     max-height: 0; }
+
   #menu-down {
     max-height: 0;
     padding: 0; }
+
   .nav-list li {
     display: inline; }
+
   .nav-list li a {
     display: block;
     margin: 1rem 0.75rem 0.5rem 0.95rem; }
+
   .site-logo {
     display: block;
     float: left; }
+
   #logo {
     width: 80px; } }
-
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
-
 section.om-oss .section-heading {
   color: #45b29d; }
 
@@ -1038,6 +1090,57 @@ section.om-oss .section-heading {
   max-width: 100%;
   height: auto; }
 
+#handshake {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+  background-position: -200px 0px;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/img/sektion-darfor-desktop@2x.jpg"); }
+  @media screen and (min-width: 768px) {
+    #handshake {
+      background-image: url("../images/img/sektion-darfor-desktop@2x.jpg");
+      background-position: 0 0;
+      position: static; } }
+
+.content-diagonal-top {
+  display: block;
+  width: 100%;
+  height: 30%; }
+
+#darfor {
+  position: relative;
+  top: -60px; }
+  @media screen and (min-width: 768px) {
+    #darfor {
+      position: static; } }
+
+#darfor-boxes {
+  position: relative;
+  top: -60px; }
+  @media screen and (min-width: 768px) {
+    #darfor-boxes {
+      position: static; } }
+
+.svg-icon-dyn {
+  height: 60px;
+  width: auto; }
+  @media screen and (min-width: 768px) {
+    .svg-icon-dyn {
+      height: 120px; } }
+
+.container-row-static {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row; }
+
 .cirkel {
   background-color: #45b29d;
   fill: #45b29d;
@@ -1123,3 +1226,5 @@ body {
   margin: 0;
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
