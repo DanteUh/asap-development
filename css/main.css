@@ -496,7 +496,8 @@ p {
 .text-right {
   text-align: right; }
 
-.white-text, .nav-list li a {
+.white-text, .nav-list li a,
+.nav-menu li a {
   color: white; }
 
 .red-text {
@@ -739,11 +740,6 @@ header {
 #kontakt-bg {
   background-image: url("../images/img/header-desktop-kontakt@2x.jpg"); }
 
-html,
-body {
-  margin: 0;
-  padding: 0; }
-
 .navbar {
   position: fixed;
   top: 0;
@@ -751,38 +747,99 @@ body {
   right: 0;
   z-index: 9999;
   padding: 1rem 2rem;
-  transition: 0.5s linear; }
+  transition: 0.5s linear;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; }
 
 .nav-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float: right; }
+  float: right;
+  position: relative;
+  top: 5px; }
 
 .nav-list li {
-  display: none;
-  text-transform: uppercase; }
+  display: none; }
 
-.nav-list li a {
+.nav-list li a,
+.nav-menu li a {
+  text-transform: uppercase;
   text-decoration: none;
   padding: 0 0 0.33333rem 0;
   margin: 0.75rem;
   border-bottom: 3px solid transparent;
   transition: 0.5s; }
-  .nav-list li a:hover {
+  .nav-list li a:hover,
+  .nav-menu li a:hover {
     border-bottom: 3px solid white; }
 
+.nav-menu {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: max-height 1s ease-in-out;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  top: 35px; }
+
+.menu-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 2rem; }
+  .menu-list li {
+    padding: 2rem; }
+
+#nav-bg-wrapper {
+  padding: 1rem 2rem 0 2rem;
+  position: fixed;
+  transition: 1s linear;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; }
+
+#nav-top-row {
+  position: relative;
+  top: -5px; }
+
 #logo {
-  width: 90px;
-  transition: 0.5s linear; }
+  width: 90px; }
 
 #hamburger {
-  width: 50px;
-  display: block; }
+  width: 37px;
+  display: block;
+  position: relative;
+  top: -2px; }
+
+#hamburger,
+#logo {
+  transition: 0.5s linear; }
+  #hamburger:hover,
+  #logo:hover {
+    transform: scale(1.05); }
+
+#menu-up {
+  max-height: 0;
+  padding: 0; }
+
+#menu-down {
+  max-height: 1000px; }
 
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
+
+  .nav-menu {
+    max-height: 0; }
+
+  #menu-down {
+    max-height: 0;
+    padding: 0; }
 
   .nav-list li {
     display: inline; }
@@ -791,7 +848,10 @@ body {
     width: 124px; } }
 @media screen and (min-width: 480px) {
   .navbar {
-    padding: 1rem 5rem; } }
+    padding: 1rem 5rem; }
+
+  #nav-bg-wrapper {
+    padding: 1rem 4rem 0 4rem; } }
 section.om-oss .section-heading {
   color: #45b29d; }
 

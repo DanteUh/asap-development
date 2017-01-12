@@ -1,11 +1,3 @@
-//remove
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-//--end remove
 .navbar {
     position: fixed;
     top: 0;
@@ -14,6 +6,7 @@ body {
     z-index: 9999;
     padding: $main-padding ($main-padding * 2);
     transition: 0.5s linear;
+    @include flex-center(center, center, column);
 }
 
 .nav-list {
@@ -21,15 +14,18 @@ body {
     margin: 0;
     padding: 0;
     float: right;
+    position: relative;
+    top: 5px;
 }
 
 .nav-list li {
     display: none;
-    text-transform: uppercase;
 }
 
-.nav-list li a {
+.nav-list li a,
+.nav-menu li a {
     @extend .white-text;
+    text-transform: uppercase;
     text-decoration: none;
     padding: 0 0 ($main-padding / 3) 0;
     margin: $main-margin;
@@ -40,20 +36,78 @@ body {
     }
 }
 
+.nav-menu {
+    @include flex-center(center, center, column);
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    top: 35px;
+}
+
+.menu-list {
+    list-style-type: none;
+    text-align: center;
+    padding: $main-padding * 2;
+    li {
+        padding: $main-padding * 2;
+    }
+}
+
+#nav-bg-wrapper {
+    padding: $main-padding ($main-padding * 2) 0 ($main-padding * 2);
+    position: fixed;
+    transition: 1s linear;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#nav-top-row {
+    position: relative;
+    top: -5px;
+}
+
 #logo {
     width: 90px;
-    transition: 0.5s linear;
 }
 
 #hamburger {
-    width: 50px;
+    width: 37px;
     display: block;
+    position: relative;
+    top: -2px;
 }
 
-//flytta till _media
+#hamburger,
+#logo {
+    transition: 0.5s linear;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+#menu-up {
+    max-height: 0;
+    padding: 0;
+}
+
+#menu-down {
+    max-height: 1000px;
+}
+
+//MEDIA 
 @media (min-width: 768px) {
     #hamburger {
         display: none;
+    }
+    .nav-menu {
+        max-height: 0;
+    }
+    #menu-down {
+        max-height: 0;
+        padding: 0;
     }
     .nav-list li {
         display: inline;
@@ -66,5 +120,8 @@ body {
 @media screen and (min-width: 480px) {
     .navbar {
         padding: $main-padding ($main-padding * 5);
+    }
+    #nav-bg-wrapper {
+        padding: $main-padding ($main-padding * 4) 0 ($main-padding * 4);
     }
 }

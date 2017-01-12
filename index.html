@@ -9,19 +9,33 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> </head>
 
 <body>
-    <!--Navbar-->
-    <div class="navbar">
-        <!--Inre kallas nav p.g.a. screenreaders-->
-        <!--
-        <nav>
-            <a href="views/vad-vi-gor.html">Vad vi gör</a>
-            <a href="views/kundcase.html">Kundcase</a>
-            <a href="views/kontakt.html">Kontakt</a>
-        </nav>
-        -->
-    </div>
+    <!-- Nav section -->
+    <nav class="navbar">
+        <div id="nav-bg-wrapper">
+            <div id="nav-top-row">
+                <a href="index.html"><img id="logo" src="images/svg/asap-logo.svg" alt="ASAP logo"></a>
+
+                <ul class="nav-list lead">
+                    <li><a href="views/vad-vi-gor.html ">Vad vi gör</a></li>
+                    <li><a href="views/kundcase.html ">Kundcase</a></li>
+                    <li><a href="views/kontakt.html ">Kontakt</a></li>
+                    <img id="hamburger" src="images/svg/icon-hamburger.svg" alt="hamburger menu">
+                </ul>
+            </div>
+        </div>
+        <div id="menu-up" class="nav-menu lead bg-green">
+            <ul class="menu-list">
+                <li class="lead"><a href="views/vad-vi-gor.html ">Vad vi gör</a></li>
+                <li class="lead"><a href="views/kundcase.html ">Kundcase</a></li>
+                <li class="lead"><a href="views/kontakt.html ">Kontakt</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+    <!-- //End nav section -->
     <!--- header-section-->
-    <header>
+    <header id="header">
         <div class="header-img bg-red" id="index-bg">
             <div class="main-headline-box">
                 <h1 class="white-text text-center headline-margin">Snabb, snabbare, snabbast</h1> <img id="large-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash"> <img id="small-flash" src="images/icons/icon-flat3d-flash.svg" alt="flash"> </div>
@@ -64,54 +78,54 @@
         </div>
     </section>
     <section class="projekt bg-smoke section-padding-md">
-       <h2 class="section-heading text-center">Våra projekt</h2>
-       <div class="projekt-item bg-white vandeley section-padding-md">
-       <div class="alert projekt-alert left">
-           <ul class="alert-text left">
-           <li class="">På plats inom</li>
-           <li class="alert-num">2</li>
-           <li class="">timmar</li>
-           </ul>
-           <img src="images/svg/alert-circle-projekt-left.svg" alt="På plats inom 2 timmar" />
-           </div>
-           <div class="grid-container">
-             <div class="container">
-               <div class="col-6">
-                   <img src="images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" />
-               </div>
-               <div class="col-6">
-                   <h3>Vandelay Industries</h3>
-                   <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
-               </div>
-           </div>
-       </div>
-   </div>
+        <h2 class="section-heading text-center">Våra projekt</h2>
+        <div class="projekt-item bg-white vandeley section-padding-md">
+            <div class="alert projekt-alert left">
+                <ul class="alert-text left">
+                    <li class="">På plats inom</li>
+                    <li class="alert-num">2</li>
+                    <li class="">timmar</li>
+                </ul>
+                <img src="images/svg/alert-circle-projekt-left.svg" alt="På plats inom 2 timmar" />
+            </div>
+            <div class="grid-container">
+                <div class="container">
+                    <div class="col-6">
+                        <img src="images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" />
+                    </div>
+                    <div class="col-6">
+                        <h3>Vandelay Industries</h3>
+                        <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-   <div class="projekt-item bg-lexcorp section-padding-md">
-       <div class="alert projekt-alert right">
-           <ul class="alert-text right">
-           <li class="">Sajten fixad på</li>
-               <li class="alert-num">36</li>
-               <li class="">timmar</li>
-           </ul>
-           <img src="images/svg/alert-circle-projekt-right.svg" alt="Sajten fixad på 36 timmar" />
-       </div>
-       <div class="grid-container">
-           <div class="container">
-               <div class="col-6">
-                   <h3>LexCorp</h3>
-                   <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
-               </div>
-               <div class="col-6">
-                   <img src="images/img/projekt-logo-mob-lexcorp.jpg" alt="Lexcorp" />
-               </div>
-           </div>
-       </div>
-   </div>
-       <div class="container section-padding-md">
-           <a href="#" class="btn btn-green">Se hela vårt portfolio</a>
-       </div>
-   </section>
+        <div class="projekt-item bg-lexcorp section-padding-md">
+            <div class="alert projekt-alert right">
+                <ul class="alert-text right">
+                    <li class="">Sajten fixad på</li>
+                    <li class="alert-num">36</li>
+                    <li class="">timmar</li>
+                </ul>
+                <img src="images/svg/alert-circle-projekt-right.svg" alt="Sajten fixad på 36 timmar" />
+            </div>
+            <div class="grid-container">
+                <div class="container">
+                    <div class="col-6">
+                        <h3>LexCorp</h3>
+                        <p>Koncernen LexCorp behövde informera om ett olyckligt kemiskt utsläpp. Självklart valde de ASAP.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/img/projekt-logo-mob-lexcorp.jpg" alt="Lexcorp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container section-padding-md">
+            <a href="#" class="btn btn-green">Se hela vårt portfolio</a>
+        </div>
+    </section>
     <section class="bg-white section-padding-md">
         <div class="container">
             <div class="col-7">
@@ -161,6 +175,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
