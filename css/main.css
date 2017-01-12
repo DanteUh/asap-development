@@ -435,6 +435,15 @@ th {
     margin-left: -1rem;
     margin-right: -1rem; } }
 
+@media (min-width: 768px) {
+  .container-col {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -1rem;
+    margin-right: -1rem; } }
+
 .section-padding-lg {
   padding-top: 8rem;
   padding-bottom: 3.75rem; }
@@ -532,6 +541,12 @@ h3 {
 h4 {
   font-size: 1.5rem; }
 
+.h3-to-h4 {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .h3-to-h4 {
+      font-size: 1.875rem; } }
+
 p {
   margin-bottom: 0.75rem;
   margin-top: 0; }
@@ -544,6 +559,15 @@ p {
   @media (min-width: 768px) {
     .lead {
       font-size: 1.5rem; } }
+
+.lg-body-text {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .lg-body-text {
+      font-size: 1.125rem; } }
+
+.lg-body-text-static {
+  font-size: 1.125rem; }
 
 .text-center {
   text-align: center; }
@@ -716,9 +740,19 @@ address {
 /TABLET 768px
 /MOBILE 480px
 */
+@media screen and (min-width: 768px) {
+  .hide-on-desktop {
+    display: none !important; } }
+
+@media screen and (min-width: 768px) {
+  .circle-on-desktop {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; } }
+
 header {
   width: 100%;
-  height: 100vh; }
+  height: 80vh; }
 
 .header-img {
   position: relative;
@@ -1007,6 +1041,59 @@ section.om-oss .section-heading {
 .img-responsive {
   max-width: 100%;
   height: auto; }
+
+#handshake {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+  background-position: -200px 0px;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/img/sektion-darfor-desktop@2x.jpg"); }
+  @media screen and (min-width: 768px) {
+    #handshake {
+      background-image: url("../images/img/sektion-darfor-desktop@2x.jpg");
+      background-position: 0 0;
+      position: static; } }
+
+.content-diagonal-top {
+  display: block;
+  width: 100%;
+  height: 30%; }
+
+#darfor {
+  position: relative;
+  top: -60px; }
+  @media screen and (min-width: 768px) {
+    #darfor {
+      position: static; } }
+
+#darfor-boxes {
+  position: relative;
+  top: -60px; }
+  @media screen and (min-width: 768px) {
+    #darfor-boxes {
+      position: static; } }
+
+.svg-icon-dyn {
+  height: 60px;
+  width: auto; }
+  @media screen and (min-width: 768px) {
+    .svg-icon-dyn {
+      height: 120px; } }
+
+.container-row-static {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: -1rem;
+  margin-right: -1rem; }
 
 html {
   height: 100%; }

@@ -1,0 +1,52 @@
+#handshake {
+    @include flex-center(center, flex-end, column);
+    position: relative;
+    top: -60px;
+    background-position: -200px 0px;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/img/sektion-darfor-desktop@2x.jpg");
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/img/sektion-darfor-desktop@2x.jpg");
+        background-position: 0 0;
+        position: static;
+    }
+}
+
+.content-diagonal-top {
+    display: block;
+    width: 100%;
+    height: 30%;
+}
+
+#darfor {
+    position: relative;
+    top: -60px;
+    @media screen and (min-width: 768px) {
+        position: static;
+    }
+}
+
+#darfor-boxes {
+    position: relative;
+    top: -60px;
+    @media screen and (min-width: 768px) {
+        position: static;
+    }
+}
+
+.svg-icon-dyn {
+    height: 60px;
+    width: auto;
+    @media screen and (min-width: 768px) {
+        height: 120px;
+    }
+}
+
+.container-row-static {
+    @include flex-center();
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
