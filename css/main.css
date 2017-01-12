@@ -912,10 +912,13 @@ header {
   .nav-list li {
     display: inline; }
 
+<<<<<<< HEAD
   .nav-list li a {
     display: block;
     margin: 1rem 0.75rem 0.5rem 0.95rem; }
 
+=======
+>>>>>>> contact-circle
   .site-logo {
     display: block;
     float: left; }
@@ -924,7 +927,11 @@ header {
     width: 80px; } }
 @media screen and (min-width: 480px) {
   .navbar {
+<<<<<<< HEAD
     padding: 0; } }
+=======
+    padding: 1rem 5rem; } }
+>>>>>>> contact-circle
 section.om-oss .section-heading {
   color: #45b29d; }
 
@@ -989,9 +996,21 @@ section.om-oss .section-heading {
 
 .contact-main {
   display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  flex-direction: column; }
+  align-items: center; }
+  @media (max-width: 40rem) {
+    .contact-main {
+      flex-flow: column nowrap; } }
+  @media (min-width: 40rem) and (max-width: 60rem) {
+    .contact-main {
+      flex-flow: column wrap;
+      height: 50rem;
+      max-width: 60rem;
+      align-content: space-around; } }
+  @media (min-width: 60rem) {
+    .contact-main {
+      flex-flow: column wrap;
+      height: 50rem;
+      align-content: space-around; } }
 
 .contact-section p {
   font-size: 1.125rem;
@@ -1021,9 +1040,33 @@ section.om-oss .section-heading {
 .contact-card-inner div i {
   font-size: 1.3rem; }
 
+#contact-heading {
+  padding-bottom: 6rem;
+  padding-top: 5.75rem; }
+  @media (min-width: 60rem) {
+    #contact-heading {
+      padding-top: 9.375rem;
+      padding-bottom: 3.75rem; } }
+
+@media (min-width: 60rem) {
+  #contact-media-query-squasher {
+    height: 45rem; } }
+
 .img-responsive {
   max-width: 100%;
   height: auto; }
+
+.cirkel {
+  background-color: #45b29d;
+  fill: #45b29d;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  text-align: center; }
 
 html {
   height: 100%; }
