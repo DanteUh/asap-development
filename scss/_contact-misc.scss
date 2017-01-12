@@ -34,10 +34,37 @@
 #contact-story {
     margin-left: 3rem;
     margin-right: 3rem;
+    @media (min-width: 480px) {
+        max-width: 30rem;
+    }
+    @media (min-width: 768px) {
+        margin-left: 10rem;
+        margin-right: 4rem;
+    }
 }
 
 #contact-circle {
-    //svg-bild här!!!!!!!!!!!!!!
     margin-top: 3rem;
     margin-bottom: 6.5rem;
+    height: 10.5rem;
+    width: 10.5rem;
+}
+
+#contact-circle-text {
+    margin-top: 2.5rem;
+}
+
+#contact-circle-container {
+    @include flex-center;
+    @media (min-width: 768px) {
+        padding-top: 3.5rem;
+    }
+}
+
+#contact-story-positioner {
+    display: flex;
+    flex-flow: column nowrap;
+    @media (min-width: 768px) {
+        flex-flow: row nowrap;
+    }
 }

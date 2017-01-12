@@ -1,6 +1,7 @@
 .cirkel {
-    background-color: $green;
-    fill: $green;
+    //Av någon anledning fungerade inte $green...
+    background-color: #45b29d;
+    fill: #45b29d;
     border-radius: 50%;
     @include flex-center;
     align-items: center;
