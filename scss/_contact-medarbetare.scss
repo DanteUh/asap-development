@@ -3,6 +3,13 @@
     @include flex-center(center, flex-start, column);
 }
 
+.contact-section {
+    p {
+        font-size: 1.125rem;
+        line-height: 2;
+    }
+}
+
 .contact-card {
     display: flex;
     flex-direction: column;

@@ -945,6 +945,9 @@ section.om-oss .section-heading {
   @media (min-width: 768px) {
     .projekt-item {
       text-align: left; } }
+  .projekt-item p {
+    font-size: 1.125rem;
+    line-height: 2; }
 
 .projekt-alert {
   position: absolute;
@@ -978,6 +981,10 @@ section.om-oss .section-heading {
   align-content: center;
   justify-content: flex-start;
   flex-direction: column; }
+
+.contact-section p {
+  font-size: 1.125rem;
+  line-height: 2; }
 
 .contact-card {
   display: flex;
