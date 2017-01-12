@@ -1,10 +1,14 @@
 .grid-container {
+	box-sizing: border-box;
 	max-width: 1002px;
 	margin: 0 auto;
 	@media (min-width: 768px) {
 		padding-left: $gutter-size;
 		padding-right: $gutter-size;
 	}
+    content:" ";
+    display:block;
+    clear:both;	
 }
 
 // flex-container
