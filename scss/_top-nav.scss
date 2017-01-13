@@ -39,6 +39,10 @@
     }
 }
 
+.nav-list .active a {
+   border-bottom: 3px solid white; 
+}
+
 .nav-menu {
     overflow: hidden;
     position: relative;
