@@ -412,6 +412,14 @@ th {
   background-color: #e8e8e8;
   fill: #e8e8e8; }
 
+.bg-orange {
+  background-color: #e27a3f;
+  fill: #e27a3f; }
+
+.bg-yellow {
+  background-color: #efc94c;
+  fill: #efc94c; }
+
 .bg-lexcorp {
   color: #fff;
   background-image: -moz-linear-gradient(90deg, #292524 0%, #342f2c 20%, #3d3a37 45%, #403f3d 70%, #3f4448 100%);
@@ -1037,12 +1045,13 @@ section.om-oss .section-heading {
     right: 0;
     top: 0; }
 
-@mdia (min-width: 768px) {
+@media (min-width: 768px) {
   .quote-section .quote-header {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: row; } }
+
 .quote-section .quote {
   padding: 1rem;
   display: flex;
@@ -1158,19 +1167,44 @@ section.om-oss .section-heading {
   width: 100%;
   height: 30%; }
 
-#darfor {
-  position: relative;
-  top: -60px; }
-  @media screen and (min-width: 768px) {
-    #darfor {
-      position: static; } }
+.small-diagonal {
+  display: block;
+  width: 100%;
+  height: 50px; }
+  .small-diagonal polygon {
+    fill: #e8e8e8; }
+    @media screen and (min-width: 768px) {
+      .small-diagonal polygon {
+        fill: #fff; } }
 
+#darfor,
 #darfor-boxes {
   position: relative;
   top: -60px; }
   @media screen and (min-width: 768px) {
+    #darfor,
     #darfor-boxes {
       position: static; } }
+
+#questions,
+#specialister {
+  position: relative;
+  top: -100px; }
+  @media screen and (min-width: 768px) {
+    #questions,
+    #specialister {
+      top: -40px; } }
+
+#page-end {
+  position: relative;
+  top: -148px; }
+  @media screen and (min-width: 768px) {
+    #page-end {
+      top: -40px; } }
+
+#world-green {
+  background: url("../images/img/about-globalt-dsktop-bg@2x.jpg");
+  background-size: cover; }
 
 .svg-icon-dyn {
   height: 60px;
@@ -1184,6 +1218,28 @@ section.om-oss .section-heading {
   align-content: center;
   justify-content: center;
   flex-direction: row; }
+
+.container-flex-start {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: row; }
+
+.dynamic-margin {
+  margin: 0.375rem 0 0.375rem 0; }
+  @media screen and (min-width: 768px) {
+    .dynamic-margin {
+      margin: 0.75rem; } }
+
+.square {
+  height: 12px;
+  width: 12px;
+  margin: 0.40rem;
+  float: left; }
+
+.block {
+  display: block;
+  float: right; }
 
 .cirkel {
   background-color: #45b29d;

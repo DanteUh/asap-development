@@ -1,58 +1,57 @@
 .projekt {
-	.section-heading {
-		color: $green;
-	}
-	padding-bottom: 0;
+    .section-heading {
+        color: $green;
+    }
+    padding-bottom: 0;
 }
 
 .projekt-item {
-	position: relative;
-	text-align: center;
-	@media (min-width: 768px) {
-		text-align: left;
-	}
-	p {
-		font-size: 1.125rem;
-		line-height: 2;
-	}
+    position: relative;
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 2;
+    }
 }
 
 .projekt-alert {
-	position: absolute;
-	width: 120px;
-	height: auto;
-	&.left {
-		left: 0;
-		top: 0;
-	}
-	&.right {
-		right: 0;
-		top: 0;		
-	}
+    position: absolute;
+    width: 120px;
+    height: auto;
+    &.left {
+        left: 0;
+        top: 0;
+    }
+    &.right {
+        right: 0;
+        top: 0;
+    }
 }
 
 .alert-text {
-	position: absolute;
-	margin: 0;
-	padding: 1rem 0;
-	width: 100px;
-	text-align: center;
-	list-style: none;
-	color: $white;
-	font-size: 0.8rem;
-
-	&.left {
-		left: 0;
-		top: 0;
-	}
-	&.right {
-		right: 0;
-		top: 0;		
-	}
+    position: absolute;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100px;
+    text-align: center;
+    list-style: none;
+    color: $white;
+    font-size: 0.8rem;
+    &.left {
+        left: 0;
+        top: 0;
+    }
+    &.right {
+        right: 0;
+        top: 0;
+    }
 }
 
 .quote-section .quote-header {
-    @mdia (min-width: 768px){
+    @media (min-width: 768px) {
         @include flex-center();
     }
 }
@@ -64,13 +63,12 @@
 
 .quote-section .quote img {
     height: 50px;
-    
 }
 
 .quote-section .quote-text {
     padding: 1.5rem 0;
     border-bottom: 1px black solid;
-    border-color: lighten( $blue, 10% );
+    border-color: lighten( $blue, 10%);
     @media (min-width: 768px) {
         border-style: none;
     }

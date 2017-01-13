@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ASAP - Vad vi gör</title>
+    <title>ASAP Development - Vad vi gör</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
 </head>
@@ -55,16 +55,6 @@
             </div>
         </div>
     </header>
-    <!-- /end header section -->
-    <!--Navbar-->
-    <!-- <div class="navbar">
-        <!--Inre kallas nav p.g.a. screenreaders-->
-    <!-- <nav>
-            <a href="vad-vi-gor.html">Vad vi gör</a>
-            <a href="kundcase.html">Kundcase</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav> 
-    </div> -->
     <section class="bg-white section-padding-md">
         <div class="grid-container">
             <div class="container">
@@ -93,7 +83,7 @@
             </svg>
         </div>
         <div class="bg-green well" id="darfor">
-            <h2 class="section heading text-center white-text">Därför är vi <b>Sveriges snabbaste</b> webbyrå</h2>
+            <h2 class="text-center white-text">Därför är vi <b>Sveriges snabbaste</b> webbyrå</h2>
         </div>
     </section>
     <section id="darfor-boxes" class="bg-smoke">
@@ -108,7 +98,7 @@
                         <p class="text-left lg-body-text">Vårt unika nätverk av konsulter är alltid redo att kasta sig över ditt projekt. </p>
                     </div>
                 </div>
-                <div class="col-12 bg-green marketing-item container-row-static well">
+                <div id="world-green" class="col-12 bg-green marketing-item container-row-static well">
                     <div class="col-3 well">
                         <h3 class="marketing-heading text-left h3-to-h4">Globalt</h3>
                         <p class="text-left lg-body-text">Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
@@ -138,95 +128,120 @@
             </div>
         </div>
     </section>
-
-
-
-    <div class="bg-smoke">
-        <div class="bg-white">
-            <h3 class="red-text">Måste produkten lanseras nu på direkten?</h3>
-            <p class="black-text">Vi har sajten klar imorgon.</p>
-        </div>
-        <div class="bg-white">
-            <h3 class="red-text">Har du ett brådskande budskap att föra ut?</h3>
-            <p class="black-text">Vi kommunicerar ut det ASAP.</p>
-        </div>
-        <div class="bg-white">
-            <h3 class="red-text">Är webbprojektet farligt nära deadline?</h3>
-            <p class="black-text">Vi ror det iland på nolltid.</p>
-        </div>
-    </div>
-
-    <div class="bg-red">
-        <p class="white-text">Vi är specialister på responsiv webb, HTML, CSS och JavaScript.</p>
-        <button class="btn-white">Kontakta oss idag</button>
-    </div>
-    <section class="form-section section-padding-md">
-        <div class="form-wrapper bg-smoke grid-container">
-            <div class="form-container bg-white">
-                <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
-                <form>
-                    <div class="container">
-                        <div class="col-5">
-                            <div class="form-group">
-                                <label for="name">Namn</label>
-                                <div class="form-input">
-                                    <input type="text" name="name" required="">
-                                </div>
+    <section id="questions" class="section-padding-md bg-smoke">
+        <div class="grid-container">
+            <div class="container">
+                <div class="col-4 well container-col bg-white dynamic-margin">
+                    <div class="well">
+                        <h4 class="red-text text-left">Måste produkten lanseras på direkten?</h4>
+                        <div class="container-flex-start">
+                            <div class="square bg-orange">
                             </div>
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <div class="form-input">
-                                    <input type="email" name="email" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Telefon</label>
-                                <div class="form-input">
-                                    <input type="tel"> </div>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="form-group">
-                                <label>Meddelande</label>
-                                <div class="form-input">
-                                    <textarea></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Skicka Meddelande" class="btn btn-submit">
-                            </div>
+                            <p class="black-text text-left block">
+                                Vi har sajten klar imorgon.</p>
                         </div>
                     </div>
-                </form>
+                </div>
+                <div class="col-4 well container-col bg-white dynamic-margin">
+                    <div class="well">
+                        <h4 class="red-text text-left">Har du ett brådskande budskap att föra ut?</h4>
+                        <div class="container-flex-start">
+                            <div class="square bg-yellow">
+                            </div>
+                            <p class="black-text text-left">Vi kommunicerar ut det ASAP.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 well container-col bg-white dynamic-margin">
+                    <div class="well">
+                        <h4 class="red-text text-left">Är webbprojektet farligt nära deadline?</h4>
+                        <div class="container-flex-start">
+                            <div class="square bg-green">
+                            </div>
+                            <p class="black-text text-left">Vi ror det iland på nolltid.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="bg-blue">
-            <div class="grid-container">
-                <div class="container">
-                    <div class="col4">
-                        <h4>ASAP DEVELOPMENT</h4>
-                        <address>
+    <section id="specialister">
+        <div class="bg-red well">
+            <p class="lead headline-margin text-center white-text">ASAP är specialister på <b>responsiv webb</b>, <b>HTML</b>, <b>CSS</b> och <b>JavaScript</b>.</p>
+        </div>
+        <svg class="small-diagonal bg-red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none">
+            <polygon points="0 0 100 10 0 10" fill="white" />
+        </svg>
+    </section>
+    <section id="page-end">
+        <section class="form-section section-padding-md">
+            <div class="form-wrapper bg-smoke grid-container">
+                <div class="form-container bg-white">
+                    <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
+                    <form>
+                        <div class="container">
+                            <div class="col-5">
+                                <div class="form-group">
+                                    <label for="name">Namn</label>
+                                    <div class="form-input">
+                                        <input type="text" name="name" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <div class="form-input">
+                                        <input type="email" name="email" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefon</label>
+                                    <div class="form-input">
+                                        <input type="tel"> </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-group">
+                                    <label>Meddelande</label>
+                                    <div class="form-input">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Skicka Meddelande" class="btn btn-submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="bg-blue">
+                <div class="grid-container">
+                    <div class="container">
+                        <div class="col4">
+                            <h4>ASAP DEVELOPMENT</h4>
+                            <address>
                         Tomtebodavägen 3A<br>
                         171 65 Solna<br>
                         info@asapdev.se<br>
                         +46 8 466 60 00
                     </address>
+                        </div>
+                        <div class="col8"></div>
                     </div>
-                    <div class="col8"></div>
+                    <ul class="center-block ul-social">
+                        <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
+                        <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
+                        <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
+                    </ul>
+                    <a href="#" class="center-block btn btn-to-top"><i class="fa fa-angle-up"></i> </a>
                 </div>
-                <ul class="center-block ul-social">
-                    <li><i class="fa fa-facebook-square"></i> <a href="#">Facebook</a></li>
-                    <li><i class="fa fa-twitter"></i> <a href="#">Twitter</a></li>
-                    <li><i class="fa fa-instagram"></i> <a href="#">Instagram</a></li>
-                </ul>
-                <a href="#" class="center-block btn btn-to-top"><i class="fa fa-angle-up"></i> </a>
             </div>
-        </div>
-    </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/nav.js"></script>
+        </footer>
+        <script src="../js/main.js"></script>
+        <script src="../js/nav.js"></script>
+    </section>
 </body>
 
 </html>

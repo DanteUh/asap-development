@@ -33,9 +33,19 @@
     fill: $smoke;
 }
 
+.bg-orange {
+    background-color: $orange;
+    fill: $orange;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+    fill: $yellow;
+}
+
 .bg-lexcorp {
     color: $white;
-    background-image: -moz-linear-gradient( 90deg, rgb(41,37,36) 0%, rgb(52,47,44) 20%, rgb(61,58,55) 45%, rgb(64,63,61) 70%, rgb(63,68,72) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(41,37,36) 0%, rgb(52,47,44) 20%, rgb(61,58,55) 45%, rgb(64,63,61) 70%, rgb(63,68,72) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(41,37,36) 0%, rgb(52,47,44) 20%, rgb(61,58,55) 45%, rgb(64,63,61) 70%, rgb(63,68,72) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb(41, 37, 36) 0%, rgb(52, 47, 44) 20%, rgb(61, 58, 55) 45%, rgb(64, 63, 61) 70%, rgb(63, 68, 72) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(41, 37, 36) 0%, rgb(52, 47, 44) 20%, rgb(61, 58, 55) 45%, rgb(64, 63, 61) 70%, rgb(63, 68, 72) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(41, 37, 36) 0%, rgb(52, 47, 44) 20%, rgb(61, 58, 55) 45%, rgb(64, 63, 61) 70%, rgb(63, 68, 72) 100%);
 }

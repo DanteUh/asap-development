@@ -21,7 +21,20 @@
     height: 30%;
 }
 
-#darfor {
+.small-diagonal {
+    display: block;
+    width: 100%;
+    height: 50px;
+    polygon {
+        fill: $smoke;
+        @media screen and (min-width: 768px) {
+            fill: $white;
+        }
+    }
+}
+
+#darfor,
+#darfor-boxes {
     position: relative;
     top: -60px;
     @media screen and (min-width: 768px) {
@@ -29,12 +42,26 @@
     }
 }
 
-#darfor-boxes {
+#questions,
+#specialister {
     position: relative;
-    top: -60px;
+    top: -100px;
     @media screen and (min-width: 768px) {
-        position: static;
+        top: -40px;
     }
+}
+
+#page-end {
+    position: relative;
+    top: -148px;
+    @media screen and (min-width: 768px) {
+        top: -40px;
+    }
+}
+
+#world-green {
+    background: url("../images/img/about-globalt-dsktop-bg@2x.jpg");
+    background-size: cover;
 }
 
 .svg-icon-dyn {
@@ -47,6 +74,29 @@
 
 .container-row-static {
     @include flex-center();
-    //margin-left: -1rem;
-    //margin-right: -1rem;
+}
+
+.container-flex-start {
+    @include flex-center(flex-start,
+    flex-start,
+    row);
+}
+
+.dynamic-margin {
+    margin: ($main-margin / 2) 0 ($main-margin / 2) 0;
+    @media screen and (min-width: 768px) {
+        margin: $main-margin;
+    }
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    margin: 0.40rem;
+    float: left;
+}
+
+.block {
+    display: block;
+    float: right;
 }
