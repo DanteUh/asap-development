@@ -1089,17 +1089,25 @@ section.om-oss .section-heading {
   @media (max-width: 40rem) {
     .contact-main {
       flex-flow: column nowrap; } }
-  @media (min-width: 40rem) and (max-width: 60rem) {
-    .contact-main {
-      flex-flow: column wrap;
-      height: 50rem;
-      max-width: 60rem;
-      align-content: space-around; } }
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
     .contact-main {
       flex-flow: column wrap;
       height: 50rem;
       align-content: space-around; } }
+
+@media (min-width: 40rem) and (max-width: 60rem) {
+  .sonic {
+    order: 4; } }
+@media (min-width: 60rem) {
+  .sonic {
+    padding-top: 9.25rem; } }
+
+@media (min-width: 60rem) {
+  .daniel {
+    padding-top: 9.25rem; } }
+
+.contact-background {
+  padding-bottom: 4rem; }
 
 .contact-section p {
   font-size: 1.125rem;
@@ -1253,18 +1261,13 @@ section.om-oss .section-heading {
   margin-bottom: 6.5rem;
   height: 10.5rem;
   width: 10.5rem; }
+  @media (min-width: 768px) {
+    #contact-circle {
+      height: 12rem;
+      width: 12rem; } }
 
 #contact-circle-text {
-  margin-top: 2.5rem; }
-
-#contact-circle-container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row; }
-  @media (min-width: 768px) {
-    #contact-circle-container {
-      padding-top: 3.5rem; } }
+  margin-top: 2rem; }
 
 #contact-story-positioner {
   display: flex;

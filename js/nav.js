@@ -23,9 +23,9 @@ function navDropDown() {
 
 //navbar background change
 function navbarBg() {
-    var viewPort = document.getElementById("header");
+    var viewPort = document.getElementsByTagName("header")[0];
 
-    if (document.body.scrollTop > viewPort.scrollHeight || document.documentElement.scrollTop > viewPort.scrollHeight) {
+    if (document.body.scrollTop > (viewPort.scrollHeight - 80) || document.documentElement.scrollTop > (viewPort.scrollHeight - 80)) {
         document.getElementById("nav-bg-wrapper").className = "bg-blue";
     } else {
         document.getElementById("nav-bg-wrapper").className = "";
