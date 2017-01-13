@@ -463,6 +463,10 @@ th {
   padding-top: 3rem;
   padding-bottom: 3.75rem; }
 
+.section-padding-sm {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
 .col-1,
 .col-2,
 .col-3,
@@ -670,6 +674,14 @@ a {
   .hem .form-section {
     padding-top: 0; } }
 
+.form-section {
+  height: 100vh; }
+  @media (min-width: 768px) {
+    .form-section {
+      height: auto;
+      padding-top: 3rem;
+      padding-bottom: 3.75rem; } }
+
 .form-wrapper {
   padding: 1rem; }
   @media (min-width: 768px) {
@@ -737,9 +749,6 @@ address {
   list-style: none;
   margin: 0;
   padding: 0; }
-  @media (min-width: 768px) {
-    .ul-social {
-      text-align: center; } }
 
 .ul-social li {
   display: inline;
@@ -1036,23 +1045,59 @@ section.om-oss .section-heading {
     right: 0;
     top: 0; }
 
+@media (min-width: 768px) {
+  .quote-section .quote-header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row; } }
+
+.quote-section .quote {
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row; }
+
+.quote-section .quote img {
+  height: 50px; }
+
+.quote-section .quote-text {
+  padding: 1.5rem 0;
+  border-bottom: 1px black solid;
+  border-color: #44697d; }
+  @media (min-width: 768px) {
+    .quote-section .quote-text {
+      border-style: none; } }
+
+.quote-section .container:last-child {
+  border-color: none; }
+
 .contact-main {
   display: flex;
   align-items: center; }
   @media (max-width: 40rem) {
     .contact-main {
       flex-flow: column nowrap; } }
-  @media (min-width: 40rem) and (max-width: 60rem) {
-    .contact-main {
-      flex-flow: column wrap;
-      height: 50rem;
-      max-width: 60rem;
-      align-content: space-around; } }
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
     .contact-main {
       flex-flow: column wrap;
       height: 50rem;
       align-content: space-around; } }
+
+@media (min-width: 40rem) and (max-width: 60rem) {
+  .sonic {
+    order: 4; } }
+@media (min-width: 60rem) {
+  .sonic {
+    padding-top: 9.25rem; } }
+
+@media (min-width: 60rem) {
+  .daniel {
+    padding-top: 9.25rem; } }
+
+.contact-background {
+  padding-bottom: 4rem; }
 
 .contact-section p {
   font-size: 1.125rem;
@@ -1253,18 +1298,13 @@ section.om-oss .section-heading {
   margin-bottom: 6.5rem;
   height: 10.5rem;
   width: 10.5rem; }
+  @media (min-width: 768px) {
+    #contact-circle {
+      height: 12rem;
+      width: 12rem; } }
 
 #contact-circle-text {
-  margin-top: 2.5rem; }
-
-#contact-circle-container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row; }
-  @media (min-width: 768px) {
-    #contact-circle-container {
-      padding-top: 3.5rem; } }
+  margin-top: 2rem; }
 
 #contact-story-positioner {
   display: flex;

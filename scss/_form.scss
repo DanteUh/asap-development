@@ -4,6 +4,16 @@
         padding-top: 0; 
     }   
 }
+
+.form-section {
+    height: 100vh;
+    @media (min-width: 768px) {
+        height: auto;
+        padding-top: $section-padding-md-top;
+        padding-bottom: $section-padding-md-bottom;
+    }
+}
+
 .form-wrapper {
     padding: $main-padding;
     @media (min-width: 768px) {
