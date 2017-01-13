@@ -48,23 +48,20 @@
     margin-bottom: 6.5rem;
     height: 10.5rem;
     width: 10.5rem;
+    @media (min-width: 768px) {
+        height: 12rem;
+        width: 12rem;
+    }
 }
 
 #contact-circle-text {
-    margin-top: 2.5rem;
-}
-
-#contact-circle-container {
-    @include flex-center;
-    @media (min-width: 768px) {
-        padding-top: 3.5rem;
-    }
+    margin-top: 2rem;
 }
 
 #contact-story-positioner {
     display: flex;
-    flex-flow: column nowrap;
-    @media (min-width: 768px) {
-        flex-flow: row nowrap;
-    }
+flex-flow: column nowrap;
+@media (min-width: 768px) {
+    flex-flow: row nowrap;
+}
 }
