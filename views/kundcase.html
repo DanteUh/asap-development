@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css"> </head>
 
 <body>
+    <!-- Nav section -->
+    <nav class="navbar clearfix">
+        <div id="nav-bg-wrapper">
+            <div id="nav-top-row" class="clearfix">
+                <a class="site-logo" href="index.html">
+                    <img id="logo" src="../images/svg/asap-logo.svg" alt="ASAP logo">
+                </a>
+
+                <ul class="nav-list clearfix">
+                    <li><a href="../views/vad-vi-gor.html">Vad vi gör</a></li>
+                    <li><a href="../views/kundcase.html">Kundcase</a></li>
+                    <li><a href="v../iews/kontakt.html">Kontakt</a></li>
+                </ul>
+                <a id="hamburger" href="#" class="nav-collapse">
+                    <img src="../images/svg/icon-hamburger.svg" alt="hamburger menu">
+                </a>
+            </div>
+        </div>
+        <div id="menu-up" class="nav-menu lead bg-green">
+            <ul class="menu-list">
+                <li class="lead"><a href="../views/vad-vi-gor.html">Vad vi gör</a></li>
+                <li class="lead"><a href="../views/kundcase.html">Kundcase</a></li>
+                <li class="lead"><a href="../views/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- //End nav section -->
     <!--- header-section-->
     <header>
         <div class="header-img bg-blue" id="kundcase-bg">
@@ -42,7 +69,9 @@
                         <p>Pappersföretaget Dunder Mifflin behövde bli mer responsiva. 
 Det fixade vi över natten.</p>
                     </div>
-                    <div class="col-5"> <img src="../images/img/projekt-logo-mob-dunder_mifflin.jpg" alt="Dunder Mifflin" /> </div>
+                    <div class="col-5"> 
+                        <img class="img-responsive" src="../images/img/projekt-logo-mob-dunder_mifflin.jpg" alt="Dunder Mifflin" /> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,7 +106,8 @@ Det fixade vi över natten.</p>
                 </ul> <img src="../images/svg/alert-circle-projekt-left.svg" alt="På plats inom 2 timmar" /> </div>
             <div class="grid-container">
                 <div class="container">
-                    <div class="col-7"> <img src="../images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" /> </div>
+                    <div class="col-7"> 
+                    <img class="img-responsive" src="../images/img/projekt-logo-dsktop-vandelay.jpg" alt="Vandelay Industries" /> </div>
                     <div class="col-5">
                         <h3>Vandelay Industries</h3>
                         <p>Alla utvecklare på latexföretaget Vandelay blev magsjuka. ASAPs personal ryckte in omgående.</p>
@@ -175,6 +205,8 @@ Det fixade vi över natten.</p>
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
