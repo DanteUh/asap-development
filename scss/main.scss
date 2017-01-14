@@ -2,7 +2,7 @@
 @import 'fonts';
 @import 'mixins';
 @import 'variables';
-@import 'circle';
+//@import 'circle';
 @import 'shapes';
 @import 'images';
 @import 'backgrounds';
@@ -10,19 +10,15 @@
 @import 'type';
 @import 'buttons';
 @import 'form';
-
 @import 'header';
 @import 'top-nav';
 @import 'footer';
-
 //@import 'om-oss';
 @import 'vadvigor';
 @import 'projekt';
 @import 'contact-medarbetare';
 @import 'contact-misc';
 @import 'media';
-
-
 html {
     height: 100%;
 }
@@ -34,4 +30,3 @@ body {
     font: 16px/1.5 $font-family-sans-serif;
     font-weight: 300;
 }
-

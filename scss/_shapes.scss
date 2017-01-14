@@ -1,0 +1,52 @@
+/*
+.cirkel {
+    //Av någon anledning fungerade inte $green...
+    background-color: #45b29d;
+    fill: #45b29d;
+    border-radius: 50%;
+    @include flex-center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+*/
+
+.circle {
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.inner-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-section .container-col.inner-circle,
+.var-story .container-col.inner-circle {
+    @include flex-center(center, center, column);
+}
+
+.contact-section .circle-wrapper,
+.var-story .circle-wrapper {
+    padding-top: $section-padding-sm-top;
+    margin: 0 auto;
+    width: 80%;
+    @media (min-width: 480px) {
+        width: 60%;
+    }
+    @media (min-width: 768px) {
+        padding-top: 0;
+        width: auto;
+    }
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    margin: 0.40rem;
+    float: left;
+}

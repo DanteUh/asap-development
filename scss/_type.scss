@@ -45,6 +45,9 @@ p {
 
 .headline-margin {
     margin: $main-margin ($main-margin * 2);
+    h1 {
+        transition: color 0.5s linear;
+    }
 }
 
 .section-heading {
@@ -54,7 +57,6 @@ p {
         font-size: 2.25rem;
         margin-bottom: $base-line-height*2;
     }
-
 }
 
 //LEAD / BODY TEXT
@@ -109,6 +111,10 @@ p {
 
 .black-text {
     color: $gray-dark;
+}
+
+.transparent-text {
+    color: $transparent
 }
 
 //Alla länkar

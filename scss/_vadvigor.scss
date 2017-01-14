@@ -5,20 +5,20 @@ section.om-oss {
 }
 
 // boxar på förstasidan
-.marketing-list{
-        margin-bottom: 2.25rem;
-        .marketing-item {
-            text-align: center;
-            font-size: 1.125rem;
+.marketing-list {
+    margin-bottom: 2.25rem;
+    .marketing-item {
+        text-align: center;
+        font-size: 1.125rem;
+        .marketing-heading {
+            color: $red;
+        }
+        &.bg-green {
             .marketing-heading {
-                color: $red;
-            }
-            &.bg-green {
-                .marketing-heading {
-                    color: $white;
-                }           
+                color: $white;
             }
         }
+    }
 }
 
 .marketing-image {
@@ -73,6 +73,7 @@ section.om-oss {
         position: static;
     }
 }
+
 #darfor {
     .section-heading {
         margin-bottom: 1.5rem;
@@ -109,23 +110,6 @@ section.om-oss {
     }
 }
 
-.container-row-static {
-    @include flex-center();
-}
-
-.container-flex-start {
-    @include flex-center(flex-start,
-    flex-start,
-    row);
-}
-
-.dynamic-margin {
-    margin: ($main-margin / 2) 0 ($main-margin / 2) 0;
-    @media screen and (min-width: 768px) {
-        margin: $main-margin;
-    }
-}
-
 .about-list {
     .about-item {
         min-height: 16rem;
@@ -138,14 +122,6 @@ section.om-oss {
             @include flex-center();
         }
     }
-
-}
-
-.square {
-    height: 12px;
-    width: 12px;
-    margin: 0.40rem;
-    float: left;
 }
 
 .block {
