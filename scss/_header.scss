@@ -1,11 +1,6 @@
 // header-section
 header {
     width: 100%;
-    height: 100vh;
-}
-
-#header-vadvigor {
-    width: 100%;
     height: 80vh;
 }
 
@@ -24,6 +19,9 @@ header {
     width: 100%;
     height: 50%;
     @include flex-center(center, flex-end, column);
+    @media screen and (min-width: 480px) {
+        height: 100%;
+    }
 }
 
 .header-diagonal-top {
