@@ -41,6 +41,7 @@
         position: static;
     }
 }
+
 #darfor {
     .section-heading {
         margin-bottom: 1.5rem;
@@ -77,23 +78,6 @@
     }
 }
 
-.container-row-static {
-    @include flex-center();
-}
-
-.container-flex-start {
-    @include flex-center(flex-start,
-    flex-start,
-    row);
-}
-
-.dynamic-margin {
-    margin: ($main-margin / 2) 0 ($main-margin / 2) 0;
-    @media screen and (min-width: 768px) {
-        margin: $main-margin;
-    }
-}
-
 .about-list {
     .about-item {
         &.bg-white {
@@ -105,7 +89,6 @@
             @include flex-center();
         }
     }
-
 }
 
 .square {

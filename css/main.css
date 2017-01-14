@@ -374,22 +374,19 @@ th {
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'rudaregular';
   src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 /*
 .cirkel {
-    //Av någon anledning fungerade inte $green...
+    //Av n├Ñgon anledning fungerade inte $green...
     background-color: #45b29d;
     fill: #45b29d;
     border-radius: 50%;
@@ -502,6 +499,18 @@ th {
     justify-content: center;
     flex-direction: column; } }
 
+.container-row-static {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row; }
+
+.container-flex-start {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: row; }
+
 .section-padding-lg {
   padding-top: 8rem;
   padding-bottom: 3.75rem; }
@@ -513,6 +522,12 @@ th {
 .section-padding-sm {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
+
+.dynamic-margin {
+  margin: 0.375rem 0 0.375rem 0; }
+  @media screen and (min-width: 768px) {
+    .dynamic-margin {
+      margin: 0.75rem; } }
 
 .col-1,
 .col-2,
@@ -534,29 +549,39 @@ th {
 @media (min-width: 768px) {
   .col-1 {
     width: 12%; }
+
   .col-2 {
     width: 16.6666%; }
+
   .col-3 {
     width: 25%; }
+
   .col-4 {
     width: 33.3333%; }
+
   .col-5 {
     width: 41.6666%; }
+
   .col-6 {
     width: 50%; }
+
   .col-7 {
     width: 58.3333%; }
+
   .col-8 {
     width: 66.6666%; }
+
   .col-9 {
     width: 75%; }
+
   .col-10 {
     width: 83.3333%; }
+
   .col-11 {
     width: 91.6666%; }
+
   .col-12 {
     width: 100%; } }
-
 .well {
   padding: 1rem; }
 
@@ -656,6 +681,9 @@ p {
 
 .black-text {
   color: #333; }
+
+.transparent-text {
+  color: rgba(255, 255, 255, 0); }
 
 a {
   text-decoration: none; }
@@ -807,7 +835,7 @@ address {
   color: #95b4c5; }
 
 /*Media querys. 
-/Lägg dessa i respektive element.
+/L├ñgg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
@@ -1004,26 +1032,30 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
+
   .nav-menu {
     max-height: 0; }
+
   #menu-down {
     max-height: 0;
     padding: 0; }
+
   .nav-list li {
     display: inline; }
+
   .nav-list li a {
     display: block;
     margin: 1rem 0.75rem 0.5rem 0.95rem; }
+
   .site-logo {
     display: block;
     float: left; }
+
   #logo {
     width: 80px; } }
-
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
-
 section.om-oss .section-heading {
   color: #45b29d; }
 
@@ -1133,7 +1165,6 @@ section.om-oss .section-heading {
 @media (min-width: 40rem) and (max-width: 60rem) {
   .sonic {
     order: 4; } }
-
 @media (min-width: 60rem) {
   .sonic {
     padding-top: 9.25rem; } }
@@ -1263,27 +1294,8 @@ section.om-oss .section-heading {
     .svg-icon-dyn {
       height: 120px; } }
 
-.container-row-static {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row; }
-
-.container-flex-start {
-  display: flex;
-  align-content: flex-start;
-  justify-content: flex-start;
-  flex-direction: row; }
-
-.dynamic-margin {
-  margin: 0.375rem 0 0.375rem 0; }
-  @media screen and (min-width: 768px) {
-    .dynamic-margin {
-      margin: 0.75rem; } }
-
 .about-list .about-item.bg-white h3 {
   color: #df5a49; }
-
 .about-list .about-item .container {
   display: flex;
   align-content: center;
@@ -1368,3 +1380,5 @@ body {
   margin: 0;
   background-color: white;
   font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

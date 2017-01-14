@@ -30,6 +30,15 @@
     }
 }
 
+.container-row-static {
+    @include flex-center();
+}
+
+.container-flex-start {
+    @include flex-center(flex-start, flex-start, row);
+}
+
+//
 .section-padding-lg {
     padding-top: $section-padding-lg-top;
     padding-bottom: $section-padding-lg-bottom;
@@ -45,6 +54,15 @@
     padding-bottom: $section-padding-sm-bottom;
 }
 
+//
+.dynamic-margin {
+    margin: ($main-margin / 2) 0 ($main-margin / 2) 0;
+    @media screen and (min-width: 768px) {
+        margin: $main-margin;
+    }
+}
+
+//
 .col-1,
 .col-2,
 .col-3,
