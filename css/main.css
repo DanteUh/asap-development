@@ -984,8 +984,8 @@ header {
 #hamburger {
   display: block;
   float: right;
-  margin: 0.67rem 1rem;
-  width: 37px; }
+  margin: 1rem 1rem;
+  width: 24px; }
 
 #hamburger,
 #logo {
