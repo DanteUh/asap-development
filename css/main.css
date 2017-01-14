@@ -387,6 +387,52 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+/*
+.cirkel {
+    //Av någon anledning fungerade inte $green...
+    background-color: #45b29d;
+    fill: #45b29d;
+    border-radius: 50%;
+    @include flex-center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+*/
+.circle {
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  position: relative; }
+
+.inner-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.contact-section .container-col.inner-circle,
+.var-story .container-col.inner-circle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.contact-section .circle-wrapper,
+.var-story .circle-wrapper {
+  padding-top: 1.5rem;
+  margin: 0 auto;
+  width: 80%; }
+  @media (min-width: 480px) {
+    .contact-section .circle-wrapper,
+    .var-story .circle-wrapper {
+      width: 60%; } }
+  @media (min-width: 768px) {
+    .contact-section .circle-wrapper,
+    .var-story .circle-wrapper {
+      padding-top: 0;
+      width: auto; } }
+
 .bg-green {
   background-color: #45b29d;
   fill: #45b29d;
@@ -454,9 +500,7 @@ th {
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: column;
-    margin-left: -1rem;
-    margin-right: -1rem; } }
+    flex-direction: column; } }
 
 .section-padding-lg {
   padding-top: 8rem;
@@ -546,8 +590,7 @@ h1 {
       font-size: 3.75rem; } }
 
 h2 {
-  font-size: 2.25rem;
-  margin-bottom: 3rem; }
+  font-size: 2.25rem; }
 
 h3 {
   font-size: 1.875rem; }
@@ -568,6 +611,14 @@ p {
 .headline-margin {
   margin: 0.75rem 1.5rem; }
 
+.section-heading {
+  font-size: 1.875rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 768px) {
+    .section-heading {
+      font-size: 2.25rem;
+      margin-bottom: 3rem; } }
+
 .lead {
   font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif; }
   @media (min-width: 768px) {
@@ -578,7 +629,8 @@ p {
   font-size: 1rem; }
   @media (min-width: 768px) {
     .lg-body-text {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem;
+      line-height: 2; } }
 
 .lg-body-text-static {
   font-size: 1.125rem; }
@@ -687,7 +739,8 @@ a {
   padding-right: 1rem; }
   @media (min-width: 768px) {
     .form-container {
-      padding: 0; } }
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .form-wrapper .section-heading {
   color: #df5a49;
@@ -764,11 +817,9 @@ address {
   .hide-on-desktop {
     display: none !important; } }
 
-@media screen and (min-width: 768px) {
-  .circle-on-desktop {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%; } }
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important; } }
 
 header {
   width: 100%;
@@ -1069,12 +1120,16 @@ section.om-oss .section-heading {
   align-items: center; }
   @media (max-width: 40rem) {
     .contact-main {
-      flex-flow: column nowrap; } }
+      flex-flow: column nowrap; }
+      .contact-main .contact-card {
+        width: auto; } }
   @media (min-width: 40rem) {
     .contact-main {
       flex-flow: column wrap;
       height: 50rem;
-      align-content: space-around; } }
+      align-content: space-around; }
+      .contact-main .contact-card {
+        width: auto; } }
 
 @media (min-width: 40rem) and (max-width: 60rem) {
   .sonic {
@@ -1098,22 +1153,23 @@ section.om-oss .section-heading {
 .contact-card {
   display: flex;
   flex-direction: column;
-  width: 19.5625rem;
   margin-bottom: 1.5rem; }
 
 .contact-card-inner {
-  width: 19.5625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 1.5625rem;
   padding-bottom: 1.9375rem; }
+  .contact-card-inner a, .contact-card-inner i {
+    color: #333; }
 
 .contact-font {
   color: #777777;
   margin: 0rem 0rem 0.875rem 0rem; }
 
 .contact-heading {
+  font-size: 1.5rem;
   margin: 0; }
 
 .contact-card-inner div i {
@@ -1144,7 +1200,7 @@ section.om-oss .section-heading {
   top: -60px;
   background-position: -200px 0px;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/img/sektion-darfor-desktop@2x.jpg"); }
@@ -1178,6 +1234,9 @@ section.om-oss .section-heading {
     #darfor-boxes {
       position: static; } }
 
+#darfor .section-heading {
+  margin-bottom: 1.5rem; }
+
 #questions,
 #specialister {
   position: relative;
@@ -1199,7 +1258,7 @@ section.om-oss .section-heading {
   background-size: cover; }
 
 .svg-icon-dyn {
-  height: 60px;
+  height: 72px;
   width: auto; }
   @media screen and (min-width: 768px) {
     .svg-icon-dyn {
@@ -1223,6 +1282,15 @@ section.om-oss .section-heading {
     .dynamic-margin {
       margin: 0.75rem; } }
 
+.about-list .about-item.bg-white h3 {
+  color: #df5a49; }
+
+.about-list .about-item .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row; }
+
 .square {
   height: 12px;
   width: 12px;
@@ -1232,18 +1300,6 @@ section.om-oss .section-heading {
 .block {
   display: block;
   float: right; }
-
-.cirkel {
-  background-color: #45b29d;
-  fill: #45b29d;
-  border-radius: 50%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem;
-  text-align: center; }
 
 .karta {
   background-repeat: no-repeat;

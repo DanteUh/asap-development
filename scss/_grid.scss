@@ -25,8 +25,8 @@
 .container-col {
     @media (min-width: 768px) {
         @include flex-center(center, center, column);
-        margin-left: -$gutter-size;
-        margin-right: -$gutter-size;
+        //margin-left: -$gutter-size;
+        //margin-right: -$gutter-size;
     }
 }
 

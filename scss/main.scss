@@ -2,6 +2,8 @@
 @import 'fonts';
 @import 'mixins';
 @import 'variables';
+@import 'circle';
+@import 'shapes';
 @import 'backgrounds';
 @import 'grid';
 @import 'type';
@@ -15,9 +17,7 @@
 @import 'projekt';
 @import 'contact-medarbetare';
 @import 'images';
-@import 'shapes';
 @import 'vadvigor';
-@import 'circle';
 @import 'contact-misc';
 html {
     height: 100%;
@@ -29,3 +29,4 @@ body {
     background-color: white;
     font: 16px/1.5 $font-family-sans-serif, "Arial", sans-serif;
 }
+

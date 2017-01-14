@@ -12,10 +12,8 @@
     }
 }
 
-.circle-on-desktop {
-    @media screen and (min-width: 768px) {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
+.hide-on-mobile {
+    @media screen and (max-width: 768px) {
+        display: none !important;
     }
 }
