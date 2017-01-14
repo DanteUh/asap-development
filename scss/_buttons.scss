@@ -17,13 +17,19 @@
 }
 
 .btn-submit {
-    background-color: $red;
+    color: $red;
+    background-color: white;
     border-radius: $border-radius-base;
     border-color: $red;
-    border-bottom-color: $brown;
-    color: white;
+    border-bottom-color: $red;
     width: 100%
     //margin: 1rem 0 2rem 0;
+}
+
+.btn-submit:hover {
+    color: white;
+    background-color: $red;
+    transition: 0.5s;
 }
 
 .btn-to-top {
@@ -37,13 +43,28 @@
     width: 2.5rem;
 }
 
+.btn-to-top:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
 .btn-to-top i {
     line-height: 2rem;
+}
+
+.btn-to-top i:hover {
+    color: $gray-dark;
 }
 
 .btn-green {
     color: $green;
     border-color: $green;
+}
+
+.btn-green:hover {
+    color: white;
+    background-color: $green;
+    transition: 0.5s;
 }
 
 .btn-yellow {
