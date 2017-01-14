@@ -8,7 +8,7 @@ var smallFlash = document.getElementById("small-flash");
 var timesRun = 0;
 
 var interval = setInterval(function() {
-    indexHeader[timesRun].setAttribute("class", "white-text");
+    indexHeader[timesRun].setAttribute("class", "white-text text-center");
     timesRun++;
     if (timesRun === 3) {
         clearInterval(interval);
@@ -18,8 +18,8 @@ var interval = setInterval(function() {
 
 
 function displayFlash() {
-    largeFlash.setAttribute("class", "flash-after")
-    smallFlash.setAttribute("class", "flash-after")
+    largeFlash.setAttribute("class", "flash-after");
+    smallFlash.setAttribute("class", "flash-after");
 }
 
 

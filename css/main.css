@@ -523,6 +523,20 @@ th {
   justify-content: center;
   flex-direction: row; }
 
+.container-col-mobile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; }
+  .container-col-mobile h1 {
+    margin: 0.10rem; }
+  @media (min-width: 550px) {
+    .container-col-mobile {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row; } }
+
 .container-flex-start {
   display: flex;
   align-content: flex-start;
@@ -610,6 +624,9 @@ th {
   content: " ";
   display: block;
   clear: both; }
+
+.no-margin {
+  margin: 0; }
 
 a,
 header,
@@ -850,7 +867,7 @@ header {
   align-content: center;
   justify-content: flex-end;
   flex-direction: column; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 550px) {
     .main-headline-box {
       height: 100%; } }
 
@@ -869,7 +886,7 @@ header {
   align-self: center;
   display: none;
   transition: opacity 0.5s linear; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 550px) {
     #large-flash {
       display: block; } }
 
@@ -881,7 +898,7 @@ header {
   height: auto;
   position: -100px;
   transition: all 0.5s linear; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 550px) {
     #small-flash {
       display: none; } }
 
@@ -895,12 +912,8 @@ header {
   background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg"); }
 
 #index-bg {
-  background-image: url("../images/img/header-mobile-hem@2x.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../images/img/header-desktop-hem-3@2x.jpg");
   background-position-y: 0px; }
-  @media screen and (min-width: 480px) {
-    #index-bg {
-      background-image: url("../images/img/header-desktop-hem@2x.jpg");
-      background-position: center bottom; } }
 
 #kundcase-bg {
   background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
