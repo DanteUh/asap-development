@@ -34,6 +34,16 @@
     @include flex-center();
 }
 
+.container-col-mobile {
+    @include flex-center(center, center, column);
+    h1 {
+        margin: 0.10rem;
+    }
+    @media (min-width: 550px) {
+        @include flex-center();
+    }
+}
+
 .container-flex-start {
     @include flex-center(flex-start, flex-start, row);
 }
@@ -132,6 +142,10 @@
     content: " ";
     display: block;
     clear: both;
+}
+
+.no-margin {
+    margin: 0
 }
 
 a,
