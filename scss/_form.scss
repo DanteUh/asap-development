@@ -64,7 +64,9 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    outline: none;
+    border-color: white;
+    outline-color: $red;
+    transition: 0.3s;
 }
 
 textarea {
