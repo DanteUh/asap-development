@@ -16,6 +16,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ruda");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -369,24 +370,28 @@ td,
 th {
   padding: 0; }
 
+/*
 @font-face {
-  font-family: 'open_sanslight';
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'open_sansregular';
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'rudaregular';
-  src: url("../fonts/ruda-regular-webfont.woff2") format("woff2"), url("../fonts/ruda-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
+    font-family: 'rudaregular';
+    src: url('../fonts/ruda-regular-webfont.woff2') format('woff2'), url('../fonts/ruda-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
 /*
 .cirkel {
     //Av någon anledning fungerade inte $green...
@@ -578,7 +583,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "rudaregular", "Arial", sans-serif;
+  font-family: "Ruda", sans-serif;
   line-height: 1.1;
   font-weight: normal;
   margin: 0.75rem 0; }
@@ -620,7 +625,7 @@ p {
       margin-bottom: 3rem; } }
 
 .lead {
-  font: 1.125rem/1.5 "open_sanslight", "Arial", sans-serif; }
+  font: 1.125rem/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   @media (min-width: 768px) {
     .lead {
       font-size: 1.5rem; } }
@@ -670,7 +675,7 @@ a {
   border: 2px white solid;
   border-bottom: 5px white solid;
   color: white;
-  font-family: 'open_sansregular';
+  font-weight: 400;
   font-size: 1.125rem;
   padding: 0.7rem 1rem;
   text-align: center;
@@ -747,7 +752,7 @@ a {
   text-align: center; }
 
 form {
-  font-family: 'open_sansregular';
+  font-weight: normal;
   text-align: inherit;
   font-size: 1rem;
   color: #df5a49; }
@@ -781,7 +786,7 @@ footer .container {
   align-items: flex-start; }
 
 footer h4 {
-  font-family: 'open_sanslight';
+  font-weight: 300;
   margin-top: 0.75rem; }
 
 address {
@@ -1367,4 +1372,5 @@ body {
   height: 100%;
   margin: 0;
   background-color: white;
-  font: 16px/1.5 "open_sanslight", "Arial", sans-serif, "Arial", sans-serif; }
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
