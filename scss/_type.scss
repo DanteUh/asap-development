@@ -45,6 +45,9 @@ p {
 
 .headline-margin {
     margin: $main-margin ($main-margin * 2);
+    h1 {
+        transition: color 0.5s linear;
+    }
 }
 
 .section-heading {
@@ -111,7 +114,7 @@ p {
 }
 
 .transparent-text {
-    color: rgba(255, 255, 255, 0);
+    color: $transparent
 }
 
 //Alla länkar

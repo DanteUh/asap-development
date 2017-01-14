@@ -438,6 +438,12 @@ th {
       padding-top: 0;
       width: auto; } }
 
+.square {
+  height: 12px;
+  width: 12px;
+  margin: 0.40rem;
+  float: left; }
+
 .img-responsive {
   max-width: 100%;
   height: auto; }
@@ -647,6 +653,8 @@ p {
 
 .headline-margin {
   margin: 0.75rem 1.5rem; }
+  .headline-margin h1 {
+    transition: color 0.5s linear; }
 
 .section-heading {
   font-size: 1.875rem;
@@ -859,7 +867,8 @@ header {
   width: 57px;
   height: auto;
   align-self: center;
-  display: none; }
+  display: none;
+  transition: opacity 0.5s linear; }
   @media screen and (min-width: 480px) {
     #large-flash {
       display: block; } }
@@ -870,10 +879,17 @@ header {
   bottom: 30%;
   width: 38px;
   height: auto;
-  position: -100px; }
+  position: -100px;
+  transition: all 0.5s linear; }
   @media screen and (min-width: 480px) {
     #small-flash {
       display: none; } }
+
+.flash-before {
+  opacity: 0; }
+
+.flash-after {
+  opacity: 1; }
 
 #vad-vi-gor-bg {
   background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg"); }
@@ -1162,12 +1178,6 @@ section.om-oss .section-heading {
     align-content: center;
     justify-content: center;
     flex-direction: row; }
-
-.square {
-  height: 12px;
-  width: 12px;
-  margin: 0.40rem;
-  float: left; }
 
 .block {
   display: block;
