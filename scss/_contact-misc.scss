@@ -25,6 +25,16 @@
         height: 21.875rem;
     }
 }
+.karta-medarbetare {
+    position: relative;
+}
+.karta-medarbetare .section-heading {
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+}
 
 //Texten efter headern på kontakt-sidan:
 .contact-story-text {

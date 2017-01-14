@@ -629,7 +629,8 @@ p {
       margin-bottom: 3rem; } }
 
 .lead {
-  font: 1.125rem/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 1.125rem/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
   @media (min-width: 768px) {
     .lead {
       font-size: 1.5rem; } }
@@ -724,14 +725,20 @@ a {
   border-color: #df5a49; }
 
 @media (min-width: 768px) {
+  .form-section {
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3.75rem; } }
+
+@media (min-width: 768px) {
   .hem .form-section {
     padding-top: 0; } }
 
-.form-section {
-  height: 100vh; }
+.kontakt .form-section {
+  padding-top: 0;
+  padding-bottom: 0; }
   @media (min-width: 768px) {
-    .form-section {
-      height: auto;
+    .kontakt .form-section {
       padding-top: 3rem;
       padding-bottom: 3.75rem; } }
 
@@ -1215,6 +1222,7 @@ section.om-oss .section-heading {
   height: 50px; }
 
 .quote-section .quote-text-box {
+  font-size: 1.125rem;
   padding: 1.5rem 0;
   border-bottom: 1px black solid;
   border-color: #44697d; }
@@ -1281,13 +1289,14 @@ section.om-oss .section-heading {
   .contact-card-inner a, .contact-card-inner i {
     color: #333; }
 
-.contact-font {
+.contact-title {
   color: #777777;
   margin: 0rem 0rem 0.875rem 0rem; }
 
 .contact-heading {
   font-size: 1.5rem;
-  margin: 0; }
+  margin: 0;
+  color: #df5a49; }
 
 .contact-card-inner div i {
   font-size: 1.3rem; }
@@ -1300,9 +1309,13 @@ section.om-oss .section-heading {
       padding-top: 9.375rem;
       padding-bottom: 3.75rem; } }
 
+@media (min-width: 40rem) and (max-width: 60rem) {
+  #contact-media-query-squasher {
+    height: 42rem; } }
+
 @media (min-width: 60rem) {
   #contact-media-query-squasher {
-    height: 45rem; } }
+    height: 42rem; } }
 
 .karta {
   background-repeat: no-repeat;
@@ -1329,6 +1342,16 @@ section.om-oss .section-heading {
     .karta {
       background-image: url(../images/img/bg-mobile-konsulter@0,5x.jpg);
       height: 21.875rem; } }
+
+.karta-medarbetare {
+  position: relative; }
+
+.karta-medarbetare .section-heading {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0; }
 
 .contact-story-text {
   margin-bottom: 2.5rem; }
@@ -1375,7 +1398,15 @@ section.om-oss .section-heading {
   .hide-on-desktop {
     display: none !important; } }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .hide-on-tablet {
+    display: none !important; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .show-on-tablet {
+    display: block; } }
+
+@media screen and (max-width: 480px) {
   .hide-on-mobile {
     display: none !important; } }
 
