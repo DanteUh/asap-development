@@ -8,9 +8,12 @@
 .projekt-item {
     position: relative;
     text-align: center;
+
     @media (min-width: 768px) {
         text-align: left;
+        min-height: 21.875rem;
     }
+
     p {
         font-size: 1.125rem;
         line-height: 2;
@@ -28,6 +31,13 @@
     &.right {
         right: 0;
         top: 0;
+    }
+    .alert-text {
+        font-weight: 400;
+    }
+    .alert-num {
+        font-family: $font-family-headings;  
+        font-size: 1.5rem;   
     }
 }
 
@@ -65,13 +75,22 @@
     height: 50px;
 }
 
-.quote-section .quote-text {
+.quote-section .quote-text-box {
+    font-size: 1.125rem;
     padding: 1.5rem 0;
     border-bottom: 1px black solid;
     border-color: lighten( $blue, 10%);
     @media (min-width: 768px) {
         border-style: none;
     }
+}
+
+.quote-text {
+    font-style: italic;
+}
+.quote-person {
+    color: $green;
+    font-weight: normal;
 }
 
 .quote-section .container:last-child {

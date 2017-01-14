@@ -4,21 +4,21 @@
 @import 'variables';
 @import 'circle';
 @import 'shapes';
+@import 'images';
 @import 'backgrounds';
 @import 'grid';
 @import 'type';
 @import 'buttons';
 @import 'form';
-@import 'footer';
-@import 'media';
 @import 'header';
 @import 'top-nav';
-@import 'om-oss';
+@import 'footer';
+//@import 'om-oss';
+@import 'vadvigor';
 @import 'projekt';
 @import 'contact-medarbetare';
-@import 'images';
-@import 'vadvigor';
 @import 'contact-misc';
+@import 'media';
 html {
     height: 100%;
 }
@@ -27,6 +27,6 @@ body {
     height: 100%;
     margin: 0;
     background-color: white;
-    font: 16px/1.5 $font-family-sans-serif, "Arial", sans-serif;
+    font: 16px/1.5 $font-family-sans-serif;
+    font-weight: 300;
 }
-
