@@ -1,123 +1,114 @@
-// header-section
-header {
-    width: 100%;
-    height: 100vh;
-    @media screen and (min-width: 480px) {
-        height: 80vh;
+    // header-section
+    header {
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s ease;
+        @media screen and (min-width: 480px) {
+            height: 80vh;
+        }
     }
-}
-
-.header-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    background-position: center bottom 150px;
-    @include flex-center(center, flex-end, column);
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.main-headline-box {
-    width: 100%;
-    height: 50%;
-    @include flex-center(center, flex-end, column);
-    @media screen and (min-width: 550px) {
-        height: 100%;
+    
+    .main-headline-box {
+        width: 100%;
+        height: 50%;
+        @include flex-center(center, flex-end, column);
+        @media screen and (min-width: 550px) {
+            height: 100%;
+        }
     }
-}
-
-.header-diagonal-top {
-    display: block;
-    width: 100%;
-    height: 22%;
-}
-
-.header-diagonal-bottom {
-    width: 100%;
-    height: 28%;
-}
-
-.hem .header-diagonal-bottom p {
-    margin-top: -2rem;
-    @media screen and (min-width: 480px) {
-        margin-top: 0.75rem;
-    }
-}
-
-//blixt-ikon 
-#large-flash {
-    width: 57px;
-    height: auto;
-    align-self: center;
-    display: none;
-    transition: opacity 1s ease-in-out;
-    //480px
-    @media screen and (min-width: 550px) {
+    
+    .header-diagonal-top {
         display: block;
+        width: 100%;
+        height: 22%;
     }
-}
-
-#small-flash {
-    position: absolute;
-    right: 16px;
-    bottom: 30%;
-    width: 38px;
-    height: auto;
-    position: -100px;
-    transition: all 1s ease-in-out;
-    //480px
-    @media screen and (min-width: 550px) {
+    
+    .header-diagonal-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 28%;
+    }
+    
+    .hem .header-diagonal-bottom p {
+        margin-top: -2rem;
+        @media screen and (min-width: 480px) {
+            margin-top: 0.75rem;
+        }
+    }
+    
+    //blixt-ikon 
+    #large-flash {
+        width: 57px;
+        height: auto;
+        align-self: center;
         display: none;
+        transition: opacity 1s ease-in-out;
+        //480px
+        @media screen and (min-width: 550px) {
+            display: block;
+        }
     }
-}
-
-.flash-before {
-    opacity: 0;
-}
-
-.flash-after {
-    opacity: 1;
-}
-
-// De olika sidornas bakgrundsbilder  
-#vad-vi-gor-bg {
-    background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
-}
-
-#index-bg {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/img/header-desktop-hem-3@2x.jpg");
-    //background-position-y: -100px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100%;
-    width: 100%;
-    background-position: center top;
-    background-repeat: no-repeat;
-    @media only screen and (min-width: 768px) {
-        background-attachment: fixed;
+    
+    #small-flash {
+        position: absolute;
+        right: 16px;
+        bottom: 30%;
+        width: 38px;
+        height: auto;
+        position: -100px;
+        transition: all 1s ease-in-out;
+        //480px
+        @media screen and (min-width: 550px) {
+            display: none;
+        }
     }
-}
-
-#kundcase-bg {
-    background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
-    background-position: center left;
-    @media screen and (min-width: 480px) {
-        background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+    
+    .flash-before {
+        opacity: 0;
     }
-    // 1280px
-    @media screen and (min-width: 1280px) {
+    
+    .flash-after {
+        opacity: 1;
+    }
+    
+    // De olika sidornas bakgrundsbilder          
+    #index-bg {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/img/header-desktop-hem-3@2x.jpg");
+        background-position: center top;
+        @include header-img;
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+    }
+    
+    #vad-vi-gor-bg {
+        background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
+        background-position: center bottom 75px;
+        @include header-img;
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+    }
+    
+    #kundcase-bg {
+        background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
+        background-position: center left;
+        @include header-img;
+        @media screen and (min-width: 480px) {
+            background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+        }
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+        @media screen and (min-width: 1280px) {
+            background-position: center bottom;
+        }
+    }
+    
+    #kontakt-bg {
+        @include header-img;
         background-position: center bottom;
+        background-image: url("../images/img/header-desktop-kontakt@2x.jpg");
     }
-}
-
-#kontakt-bg {
-    background-image: url("../images/img/header-desktop-kontakt@2x.jpg");
-}
