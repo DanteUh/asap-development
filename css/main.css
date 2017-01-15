@@ -653,6 +653,7 @@ h4 {
   margin: 0.75rem 0; }
 
 h1 {
+  transition: font-size 0.5s ease;
   font-size: 3rem; }
   @media (min-width: 768px) {
     h1 {
@@ -692,6 +693,7 @@ p {
 
 .lead {
   font: 1.125rem/2 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2.2rem;
   font-weight: 300; }
   @media (min-width: 768px) {
     .lead {
@@ -887,28 +889,11 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 header {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  transition: all 0.5s ease; }
   @media screen and (min-width: 480px) {
     header {
       height: 80vh; } }
-
-.header-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  background-position: center bottom 150px;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  min-width: 100%;
-  min-height: 100%; }
 
 .main-headline-box {
   width: 100%;
@@ -964,34 +949,91 @@ header {
 .flash-after {
   opacity: 1; }
 
-#vad-vi-gor-bg {
-  background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg"); }
-
 #index-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../images/img/header-desktop-hem-3@2x.jpg");
+  background-position: center top;
+  position: relative;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100%;
   width: 100%;
-  background-position: center top;
-  background-repeat: no-repeat; }
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; }
   @media only screen and (min-width: 768px) {
     #index-bg {
       background-attachment: fixed; } }
 
+#vad-vi-gor-bg {
+  background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
+  background-position: center bottom 75px;
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    #vad-vi-gor-bg {
+      background-attachment: fixed; } }
+
 #kundcase-bg {
   background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
-  background-position: center left; }
+  background-position: center left;
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; }
   @media screen and (min-width: 480px) {
     #kundcase-bg {
       background-image: url("../images/img/header-desktop-kundcase@2x.jpg"); } }
+  @media only screen and (min-width: 768px) {
+    #kundcase-bg {
+      background-attachment: fixed; } }
   @media screen and (min-width: 1280px) {
     #kundcase-bg {
       background-position: center bottom; } }
 
 #kontakt-bg {
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-position: center bottom;
   background-image: url("../images/img/header-desktop-kontakt@2x.jpg"); }
 
 .navbar {
