@@ -4,7 +4,6 @@ header {
     height: 100vh;
     @media screen and (min-width: 480px) {
         height: 80vh;
-        
     }
 }
 
@@ -45,7 +44,7 @@ header {
     height: auto;
     align-self: center;
     display: none;
-    transition: opacity 0.5s linear;
+    transition: opacity 1s ease-in-out;
     //480px
     @media screen and (min-width: 550px) {
         display: block;
@@ -59,7 +58,7 @@ header {
     width: 38px;
     height: auto;
     position: -100px;
-    transition: all 0.5s linear;
+    transition: all 1s ease-in-out;
     //480px
     @media screen and (min-width: 550px) {
         display: none;
