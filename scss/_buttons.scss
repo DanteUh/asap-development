@@ -1,19 +1,36 @@
 //Buttons
 .btn {
-    @include flex-center;
-    //margin: $main-margin;
+    //@include flex-center;
+    display: block;
+    margin-bottom: 0; // For input.btn
     background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    white-space: nowrap;
     border-radius: $border-radius-base;
     border: $btn-border-width white solid;
     border-bottom: $btn-border-bottom-width white solid;
     color: white;
-    //font-family: 'open_sansregular';
     font-weight: 400;
     font-size: 1.125rem;
     padding: 0.7rem $main-padding;
-    text-align: center;
     text-transform: uppercase;
     width: 18rem;
+    &,
+    &:active {
+        &:focus {
+            @include tab-focus;
+            outline-color: $red;
+        }
+    }
+    &:active {
+        outline: 0;
+        background-image: none;
+        box-shadow: none;
+    }
 }
 
 .btn-submit {
@@ -22,13 +39,13 @@
     border-radius: $border-radius-base;
     border-color: $red;
     border-bottom-color: $red;
-    width: 100%
-    //margin: 1rem 0 2rem 0;
+    width: 100%;
 }
 
 .btn-submit:hover {
     color: white;
     background-color: $red;
+    border-bottom-color: darken($red, 15%);
     transition: 0.5s;
 }
 
@@ -36,6 +53,7 @@
     border-bottom-color: white;
     border-radius: $border-radius-base;
     font-size: 2rem;
+    line-height: 1;
     padding: 0;
     color: white;
     margin-top: $main-margin*2;
@@ -64,6 +82,7 @@
 .btn-green:hover {
     color: white;
     background-color: $green;
+    border-bottom-color: darken($green, 15%);
     transition: 0.5s;
 }
 
