@@ -46,7 +46,7 @@ p {
 .headline-margin {
     margin: $main-margin ($main-margin * 2);
     h1 {
-        transition: color 0.5s linear;
+        transition: color 1s ease-in-out;
     }
 }
 

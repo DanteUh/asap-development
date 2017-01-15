@@ -444,6 +444,15 @@ th {
   margin: 0.40rem;
   float: left; }
 
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #45b29d;
+  margin-left: auto;
+  margin-right: auto; }
+
 .img-responsive {
   max-width: 100%;
   height: auto; }
@@ -661,7 +670,7 @@ p {
 .headline-margin {
   margin: 0.75rem 1.5rem; }
   .headline-margin h1 {
-    transition: color 0.5s linear; }
+    transition: color 1s ease-in-out; }
 
 .section-heading {
   font-size: 1.875rem;
@@ -922,7 +931,7 @@ header {
   height: auto;
   align-self: center;
   display: none;
-  transition: opacity 0.5s linear; }
+  transition: opacity 1s ease-in-out; }
   @media screen and (min-width: 550px) {
     #large-flash {
       display: block; } }
@@ -934,7 +943,7 @@ header {
   width: 38px;
   height: auto;
   position: -100px;
-  transition: all 0.5s linear; }
+  transition: all 1s ease-in-out; }
   @media screen and (min-width: 550px) {
     #small-flash {
       display: none; } }
