@@ -14,6 +14,18 @@
     text-align: center;
     text-transform: uppercase;
     width: 18rem;
+    &,
+    &:active {
+        &:focus {
+            @include tab-focus;
+            outline-color: $red;
+        }
+    }
+    &:active {
+        outline: 0;
+        background-image: none;
+        box-shadow: none;
+    }
 }
 
 .btn-submit {
@@ -22,13 +34,13 @@
     border-radius: $border-radius-base;
     border-color: $red;
     border-bottom-color: $red;
-    width: 100%
-    //margin: 1rem 0 2rem 0;
+    width: 100%;
 }
 
 .btn-submit:hover {
     color: white;
     background-color: $red;
+    border-bottom-color: darken($red, 15%);
     transition: 0.5s;
 }
 
@@ -64,6 +76,7 @@
 .btn-green:hover {
     color: white;
     background-color: $green;
+    border-bottom-color: darken($green, 15%);
     transition: 0.5s;
 }
 

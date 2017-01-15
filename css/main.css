@@ -394,7 +394,7 @@ th {
 */
 /*
 .cirkel {
-    //Av n├Ñgon anledning fungerade inte $green...
+    //Av någon anledning fungerade inte $green...
     background-color: #45b29d;
     fill: #45b29d;
     border-radius: 50%;
@@ -581,39 +581,29 @@ th {
 @media (min-width: 768px) {
   .col-1 {
     width: 12%; }
-
   .col-2 {
     width: 16.6666%; }
-
   .col-3 {
     width: 25%; }
-
   .col-4 {
     width: 33.3333%; }
-
   .col-5 {
     width: 41.6666%; }
-
   .col-6 {
     width: 50%; }
-
   .col-7 {
     width: 58.3333%; }
-
   .col-8 {
     width: 66.6666%; }
-
   .col-9 {
     width: 75%; }
-
   .col-10 {
     width: 83.3333%; }
-
   .col-11 {
     width: 91.6666%; }
-
   .col-12 {
     width: 100%; } }
+
 .well {
   padding: 1rem; }
 
@@ -682,7 +672,7 @@ p {
       margin-bottom: 3rem; } }
 
 .lead {
-  font: 1.125rem/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.125rem/2 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
   @media (min-width: 768px) {
     .lead {
@@ -742,6 +732,14 @@ a {
   text-align: center;
   text-transform: uppercase;
   width: 18rem; }
+  .btn:focus, .btn:active:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    outline-color: #df5a49; }
+  .btn:active {
+    outline: 0;
+    background-image: none;
+    box-shadow: none; }
 
 .btn-submit {
   color: #df5a49;
@@ -754,6 +752,7 @@ a {
 .btn-submit:hover {
   color: white;
   background-color: #df5a49;
+  border-bottom-color: #bb3221;
   transition: 0.5s; }
 
 .btn-to-top {
@@ -783,6 +782,7 @@ a {
 .btn-green:hover {
   color: white;
   background-color: #45b29d;
+  border-bottom-color: #307b6c;
   transition: 0.5s; }
 
 .btn-yellow {
@@ -1052,30 +1052,26 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
-
   .nav-menu {
     max-height: 0; }
-
   #menu-down {
     max-height: 0;
     padding: 0; }
-
   .nav-list li {
     display: inline; }
-
   .nav-list li a {
     display: block;
     margin: 1rem 0.75rem 0.5rem 0.95rem; }
-
   .site-logo {
     display: block;
     float: left; }
-
   #logo {
     width: 80px; } }
+
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
+
 footer {
   color: white;
   background-color: #324d5c;
@@ -1321,6 +1317,7 @@ section.om-oss .section-heading {
 @media (min-width: 40rem) and (max-width: 60rem) {
   .sonic {
     order: 4; } }
+
 @media (min-width: 60rem) {
   .sonic {
     padding-top: 9.25rem; } }
@@ -1373,6 +1370,7 @@ section.om-oss .section-heading {
 @media (min-width: 40rem) and (max-width: 60rem) {
   #contact-media-query-squasher {
     height: 42rem; } }
+
 @media (min-width: 60rem) {
   #contact-media-query-squasher {
     height: 42rem; } }
@@ -1448,7 +1446,7 @@ section.om-oss .section-heading {
       flex-flow: row nowrap; } }
 
 /*Media querys. 
-/L├ñgg dessa i respektive element.
+/Lägg dessa i respektive element.
 /breakpoints:
 /DESKTOP 1280px
 /TABLET 768px
@@ -1479,5 +1477,3 @@ body {
   background-color: white;
   font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
-
-/*# sourceMappingURL=main.css.map */
