@@ -9,7 +9,8 @@ window.addEventListener("scroll", navbarBg);
 
 
 //menu drop when hamburger menu is clicked
-function navDropDown() {
+function navDropDown(event) {
+    event.preventDefault();
     var menu = document.getElementsByClassName("nav-menu")[0];
 
 

@@ -1,3 +1,7 @@
+.hem .projekt .section-heading {
+    margin-bottom: 2.25rem;  
+}
+
 .projekt {
     .section-heading {
         color: $green;
@@ -80,6 +84,9 @@
     padding: 1.5rem 0;
     border-bottom: 1px black solid;
     border-color: lighten( $blue, 10%);
+    &.last {
+        border-bottom: none; 
+    }
     @media (min-width: 768px) {
         border-style: none;
     }
@@ -91,6 +98,7 @@
 .quote-person {
     color: $green;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 .quote-section .container:last-child {
