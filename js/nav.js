@@ -26,7 +26,7 @@ function navDropDown(event) {
 function navbarBg() {
     var viewPort = document.getElementsByTagName("header")[0];
 
-    if (document.body.scrollTop > (viewPort.scrollHeight - 80) || document.documentElement.scrollTop > (viewPort.scrollHeight - 80)) {
+    if (document.body.scrollTop > (60) || document.documentElement.scrollTop > (60)) {
         document.getElementById("nav-bg-wrapper").className = "bg-blue";
     } else {
         document.getElementById("nav-bg-wrapper").className = "";
