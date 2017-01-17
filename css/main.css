@@ -906,7 +906,8 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 28%; }
+  height: 28%;
+  margin-top: -1px; }
 
 .hem .header-diagonal-bottom p {
   margin-top: -2rem; }
