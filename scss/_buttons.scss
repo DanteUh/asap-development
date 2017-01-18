@@ -1,24 +1,23 @@
 //Buttons
 .btn {
-    //@include flex-center;
     display: block;
-    margin-bottom: 0; // For input.btn
-    background-color: transparent;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
     text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    white-space: nowrap;
-    border-radius: $border-radius-base;
+    text-transform: uppercase;
     border: $btn-border-width white solid;
     border-bottom: $btn-border-bottom-width white solid;
-    color: white;
-    font-weight: 400;
-    font-size: 1.125rem;
+    border-radius: $border-radius-base;
+    margin-bottom: 0; // For input.btn
     padding: 0.7rem $main-padding;
-    text-transform: uppercase;
+    background-color: transparent;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;    
     width: 18rem;
+    touch-action: manipulation;
     &:focus {
         @include tab-focus;
         outline: 0;
@@ -37,57 +36,47 @@
     border-color: $red;
     border-bottom-color: $red;
     width: 100%;
-    &:hover {
+    &:hover,
+    &:focus  {
         color: white;
         background-color: $red;
         border-bottom-color: darken($red, 15%);
         transition: 0.5s;
     }
-    &:focus {
-        color: white;
-        background-color: $red;
-        border-bottom-color: darken($red, 15%);
-    }
 }
 
 .btn-to-top {
-    border-bottom-color: white;
+    background-color: darken($blue, 5%);
+    border-width: 1px;
+    border-color: lighten($blue, 10%);
     border-radius: $border-radius-base;
     font-size: 2rem;
     line-height: 1;
     padding: 0;
     color: white;
-    margin-top: $main-margin*2;
-    margin-bottom: -$main-margin*1.5;
     width: 2.5rem;
 }
 
 .btn-to-top:hover {
-    background-color: white;
+    background-color: darken($blue, 10%);
+    border-color: lighten($blue, 10%);
     transition: 0.5s;
+    color: lighten($blue, 50%);
 }
 
 .btn-to-top i {
     line-height: 2rem;
 }
 
-.btn-to-top i:hover {
-    color: $gray-dark;
-}
-
 .btn-green {
     color: $green;
     border-color: $green;
-    &:hover {
+    &:hover,
+    &:focus {
         color: white;
         background-color: $green;
         border-bottom-color: darken($green, 15%);
         transition: 0.5s;
-    }
-    &:focus{
-        color: white;
-        background-color: $green;
-        border-bottom-color: darken($green, 15%);
     }
 }
 
