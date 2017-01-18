@@ -48,6 +48,13 @@
     @include flex-center(flex-start, flex-start, row);
 }
 
+.container-start-center {
+    @include flex-center(center, center, column);
+    @media (min-width: 768px) {
+        @include flex-center(center, flex-start, column);
+    }
+}
+
 //
 .section-padding-lg {
     padding-top: $section-padding-lg-top;
