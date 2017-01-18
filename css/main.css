@@ -503,7 +503,7 @@ th {
 
 .bg-lexcorp {
   color: #fff;
-  background-image: -ms-linear-gradient(90deg, #292524 0%, #342f2c 20%, #3d3a37 45%, #403f3d 70%, #3f4448 100%); }
+  background-image: linear-gradient(90deg, #292524 0%, #342f2c 20%, #3d3a37 45%, #403f3d 70%, #3f4448 100%); }
 
 .grid-container {
   padding-left: 1rem;
