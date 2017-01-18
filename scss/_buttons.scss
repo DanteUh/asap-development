@@ -19,12 +19,9 @@
     padding: 0.7rem $main-padding;
     text-transform: uppercase;
     width: 18rem;
-    &,
-    &:active {
-        &:focus {
-            @include tab-focus;
-            outline-color: $red;
-        }
+    &:focus {
+        @include tab-focus;
+        outline: 0;
     }
     &:active {
         outline: 0;
@@ -40,13 +37,17 @@
     border-color: $red;
     border-bottom-color: $red;
     width: 100%;
-}
-
-.btn-submit:hover {
-    color: white;
-    background-color: $red;
-    border-bottom-color: darken($red, 15%);
-    transition: 0.5s;
+    &:hover {
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
+        transition: 0.5s;
+    }
+    &:active {
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
+    }
 }
 
 .btn-to-top {
@@ -77,14 +78,19 @@
 .btn-green {
     color: $green;
     border-color: $green;
+    &:hover {
+        color: white;
+        background-color: $green;
+        border-bottom-color: darken($green, 15%);
+        transition: 0.5s;
+    }
+    &:active{
+        color: white;
+        background-color: $green;
+        border-bottom-color: darken($green, 15%);
+    }
 }
 
-.btn-green:hover {
-    color: white;
-    background-color: $green;
-    border-bottom-color: darken($green, 15%);
-    transition: 0.5s;
-}
 
 .btn-yellow {
     color: $yellow;

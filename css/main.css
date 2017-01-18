@@ -746,10 +746,10 @@ a {
   padding: 0.7rem 1rem;
   text-transform: uppercase;
   width: 18rem; }
-  .btn:focus, .btn:active:focus {
+  .btn:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
-    outline-color: #df5a49; }
+    outline: 0; }
   .btn:active {
     outline: 0;
     background-image: none;
@@ -762,12 +762,15 @@ a {
   border-color: #df5a49;
   border-bottom-color: #df5a49;
   width: 100%; }
-
-.btn-submit:hover {
-  color: white;
-  background-color: #df5a49;
-  border-bottom-color: #bb3221;
-  transition: 0.5s; }
+  .btn-submit:hover {
+    color: white;
+    background-color: #df5a49;
+    border-bottom-color: #bb3221;
+    transition: 0.5s; }
+  .btn-submit:active {
+    color: white;
+    background-color: #df5a49;
+    border-bottom-color: #bb3221; }
 
 .btn-to-top {
   border-bottom-color: white;
@@ -793,12 +796,15 @@ a {
 .btn-green {
   color: #45b29d;
   border-color: #45b29d; }
-
-.btn-green:hover {
-  color: white;
-  background-color: #45b29d;
-  border-bottom-color: #307b6c;
-  transition: 0.5s; }
+  .btn-green:hover {
+    color: white;
+    background-color: #45b29d;
+    border-bottom-color: #307b6c;
+    transition: 0.5s; }
+  .btn-green:active {
+    color: white;
+    background-color: #45b29d;
+    border-bottom-color: #307b6c; }
 
 .btn-yellow {
   color: #efc94c;
@@ -864,7 +870,6 @@ input, textarea {
   width: 100%; }
 
 input:focus, textarea:focus {
-  border-color: white;
   outline-color: #df5a49;
   transition: 0.3s; }
 
