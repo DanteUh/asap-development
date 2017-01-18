@@ -767,7 +767,7 @@ a {
     background-color: #df5a49;
     border-bottom-color: #bb3221;
     transition: 0.5s; }
-  .btn-submit:active {
+  .btn-submit:focus {
     color: white;
     background-color: #df5a49;
     border-bottom-color: #bb3221; }
@@ -801,7 +801,7 @@ a {
     background-color: #45b29d;
     border-bottom-color: #307b6c;
     transition: 0.5s; }
-  .btn-green:active {
+  .btn-green:focus {
     color: white;
     background-color: #45b29d;
     border-bottom-color: #307b6c; }
