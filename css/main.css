@@ -762,9 +762,11 @@ p {
 .text-right {
   text-align: right; }
 
-@media (min-width: 768px) {
-  .text-center-sm {
-    text-align: center; } }
+.text-center-sm {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .text-center-sm {
+      text-align: left; } }
 
 .white-text, .nav-list li a,
 .nav-menu li a {
