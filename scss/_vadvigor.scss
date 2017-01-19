@@ -9,7 +9,10 @@ section.om-oss {
     margin-bottom: 2.25rem;
     .marketing-item {
         text-align: center;
-        font-size: 1.125rem;
+        p {
+            font-size: 1.125rem;
+            line-height: 2rem;
+        }
         .marketing-heading {
             color: $red;
         }
