@@ -42,12 +42,13 @@
     padding-bottom: 4rem;
 }
 
-.contact-section {
+
+/*.contact-section {
     p {
         font-size: 1.125rem;
         line-height: 2rem;
     }
-}
+}*/
 
 //Varje kontaktruta
 .contact-card {
@@ -63,7 +64,8 @@
     align-items: center;
     padding-top: 1.5625rem;
     padding-bottom: 1.9375rem;
-    a, i {
+    a,
+    i {
         color: $gray-dark;
     }
 }
@@ -97,7 +99,7 @@
 //Se till att kontaktrutorna inte flyter iväg
 #contact-media-query-squasher {
     @media (min-width: 40rem) and (max-width: 60rem) {
-        height: 42rem;    
+        height: 42rem;
     }
     @media (min-width: 60rem) {
         height: 42rem;
