@@ -102,6 +102,12 @@ p {
     text-align: right;
 }
 
+.text-center-sm {
+    @media (min-width: 768px) {    
+         text-align: center;
+    }
+}
+
 //TEXT COLORS
 .white-text {
     color: white;
