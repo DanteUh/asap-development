@@ -1,5 +1,5 @@
 .hem .projekt .section-heading {
-    margin-bottom: 2.25rem;  
+    margin-bottom: 2.25rem;
 }
 
 .projekt {
@@ -12,16 +12,14 @@
 .projekt-item {
     position: relative;
     text-align: center;
-
     @media (min-width: 768px) {
         text-align: left;
         min-height: 21.875rem;
     }
-
-    p {
+    /*p {
         font-size: 1.125rem;
         line-height: 2rem;
-    }
+    }*/
 }
 
 .projekt-alert {
@@ -40,8 +38,8 @@
         font-weight: 400;
     }
     .alert-num {
-        font-family: $font-family-headings;  
-        font-size: 1.5rem;   
+        font-family: $font-family-headings;
+        font-size: 1.5rem;
     }
 }
 
@@ -85,7 +83,7 @@
     border-bottom: 1px black solid;
     border-color: lighten( $blue, 10%);
     &.last {
-        border-bottom: none; 
+        border-bottom: none;
     }
     @media (min-width: 768px) {
         border-style: none;
@@ -95,6 +93,7 @@
 .quote-text {
     font-style: italic;
 }
+
 .quote-person {
     color: $green;
     font-weight: normal;
