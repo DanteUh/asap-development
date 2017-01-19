@@ -787,6 +787,13 @@ a {
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
   text-transform: uppercase;
   border: 2px white solid;
   border-bottom: 5px white solid;
@@ -795,12 +802,7 @@ a {
   padding: 0.7rem 1rem;
   background-color: transparent;
   background-image: none;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 18rem;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation; }
+  width: 18rem; }
   .btn:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -817,7 +819,7 @@ a {
   border-color: #df5a49;
   border-bottom-color: #df5a49;
   width: 100%; }
-  .btn-submit:hover, .btn-submit:focus {
+  .btn-submit:focus, .btn-submit:hover {
     color: white;
     background-color: #df5a49;
     border-bottom-color: #bb3221;
@@ -846,7 +848,7 @@ a {
 .btn-green {
   color: #45b29d;
   border-color: #45b29d; }
-  .btn-green:hover, .btn-green:focus {
+  .btn-green:focus, .btn-green:hover {
     color: white;
     background-color: #45b29d;
     border-bottom-color: #307b6c;

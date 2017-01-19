@@ -5,19 +5,22 @@
     font-size: 1.125rem;
     font-weight: 400;
     text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;  
+    user-select: none;
+    cursor: pointer;
     text-transform: uppercase;
     border: $btn-border-width white solid;
     border-bottom: $btn-border-bottom-width white solid;
-    border-radius: $border-radius-base;
+    border-radius: $border-radius-base; 
     margin-bottom: 0; // For input.btn
     padding: 0.7rem $main-padding;
     background-color: transparent;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;    
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214 
     width: 18rem;
-    touch-action: manipulation;
+    &:focus,
+    &:hover {
+    }
     &:focus {
         @include tab-focus;
         outline: 0;
@@ -36,8 +39,8 @@
     border-color: $red;
     border-bottom-color: $red;
     width: 100%;
-    &:hover,
-    &:focus  {
+    &:focus,
+    &:hover  {
         color: white;
         background-color: $red;
         border-bottom-color: darken($red, 15%);
@@ -71,8 +74,8 @@
 .btn-green {
     color: $green;
     border-color: $green;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
         color: white;
         background-color: $green;
         border-bottom-color: darken($green, 15%);
