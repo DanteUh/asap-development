@@ -1272,6 +1272,9 @@ section.om-oss .section-heading {
       .small-diagonal polygon {
         fill: #fff; } }
 
+.content-diagonal-bottom {
+  margin-top: -1px; }
+
 #darfor .section-heading {
   margin-bottom: 1.5rem; }
 
