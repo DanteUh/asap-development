@@ -98,13 +98,11 @@
     </section>
 
     <section class="bg-smoke about-list">
-
         <div class="bg-white section-padding-md about-item">
-
             <div class="grid-container">
                 <div class="container">
                     <div class="col-5 container-start-center">
-                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-arrow.svg" onerror="this.onerror=null; this.src='image.png'">
+                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-arrow.svg" onerror="this.onerror=null; this.src='image.png'" alt="">
                     </div>
                     <div class="col-7">
                         <h3 class="marketing-heading h3-to-h4">Flexibelt</h3>
@@ -122,7 +120,7 @@
                         <p class="lg-body-text">Medarbetare i fem tidszoner gör att flitens lampa alltid lyser på ASAP.</p>
                     </div>
                     <div class="col-5 container-start-center">
-                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bullseye.svg" onerror="this.onerror=null; this.src='image.png'">
+                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bullseye.svg" onerror="this.onerror=null; this.src='image.png'" alt="">
                     </div>
                 </div>
             </div>
@@ -132,7 +130,7 @@
             <div class="grid-container">
                 <div class="container">
                     <div class="col-5 container-start-center">
-                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bars.svg" onerror="this.onerror=null; this.src='image.png'">
+                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bars.svg" onerror="this.onerror=null; this.src='image.png'" alt="">
                     </div>
                     <div class="col-7">
                         <h3 class="marketing-heading h3-to-h4">Effektivt</h3>
@@ -150,7 +148,7 @@
                         <p class="lg-body-text">Inga möten. Inga fikapauser. Inget julbord. Vi jobbar.</p>
                     </div>
                     <div class="col-5 container-start-center">
-                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bulb.svg" onerror="this.onerror=null; this.src='image.png'">
+                        <img class="svg-icon-dyn" src="../images/icons/icon-flat3d-bulb.svg" onerror="this.onerror=null; this.src='image.png'" alt="">
                     </div>
                 </div>
             </div>
@@ -195,56 +193,57 @@
         </div>
     </section>
 
-    <section>
+    <div>
         <div class="bg-red well">
             <p class="lead headline-margin text-center white-text">ASAP är specialister på <b>responsiv webb</b>, <b>HTML</b>, <b>CSS</b> och <b>JavaScript</b>.</p>
         </div>
         <svg class="small-diagonal bg-red" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none" height="50">
             <polygon points="0 0 100 10 0 10" fill="white" height="50"/>
         </svg>
-    </section>
+    </div>
 
-        <section class="form-section">
-            <div class="form-wrapper bg-smoke grid-container">
-                <div class="form-container bg-white">
-                    <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
-                    <form>
-                        <div class="container">
-                            <div class="col-5">
-                                <div class="form-group">
-                                    <label for="name">Namn</label>
-                                    <div class="form-input">
-                                        <input type="text" name="name" required="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <div class="form-input">
-                                        <input type="email" name="email" required="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Telefon</label>
-                                    <div class="form-input">
-                                        <input type="tel"> </div>
+    <section class="form-section section-padding-md">
+        <div class="form-wrapper bg-smoke grid-container">
+            <div class="form-container bg-white">
+                <h2 class="section-heading">Vi svarar innan du hinner blinka</h2>
+                <form>
+                    <div class="container">
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label for="your-name">Namn</label>
+                                <div class="form-input">
+                                    <input type="text" name="your-name"  id="your-name" required="">
                                 </div>
                             </div>
-                            <div class="col-5">
-                                <div class="form-group">
-                                    <label>Meddelande</label>
-                                    <div class="form-input">
-                                        <textarea></textarea>
-                                    </div>
+                            <div class="form-group">
+                                <label for="your-email">E-mail</label>
+                                <div class="form-input">
+                                    <input type="email" name="your-email" id="your-email" required="">
                                 </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Skicka Meddelande" class="btn btn-submit">
-                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="your-phone">Telefon</label>
+                                <div class="form-input">
+                                    <input type="tel" name="your-phone" id="your-phone"> </div>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label for="your-message">Meddelande</label>
+                                <div class="form-input">
+                                    <textarea name="your-message" id="your-message" required=""> </textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Skicka Meddelande" class="btn btn-submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
+
         
         <footer>
             <div class="bg-blue">
