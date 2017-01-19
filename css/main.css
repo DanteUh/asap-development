@@ -530,20 +530,6 @@ th {
   justify-content: center;
   flex-direction: row; }
 
-.container-col-mobile {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column; }
-  .container-col-mobile h1 {
-    margin: 0.10rem; }
-  @media (min-width: 550px) {
-    .container-col-mobile {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      flex-direction: row; } }
-
 .container-flex-start {
   display: flex;
   align-content: flex-start;
@@ -690,7 +676,7 @@ p {
 
 .headline-margin {
   margin: 0.75rem 1.5rem; }
-  .headline-margin h1 {
+  .headline-margin h1 span {
     transition: color 1s ease-in-out; }
 
 .section-heading {
@@ -707,7 +693,8 @@ p {
   font-weight: 300; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      line-height: 2.25rem; } }
 
 .lg-body-text {
   font-size: 1rem; }

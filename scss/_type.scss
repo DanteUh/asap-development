@@ -47,7 +47,9 @@ p {
 .headline-margin {
     margin: $main-margin ($main-margin * 2);
     h1 {
-        transition: color 1s ease-in-out;
+        span {
+            transition: color 1s ease-in-out;
+        }
     }
 }
 
@@ -68,6 +70,7 @@ p {
     font-weight: 300;
     @media (min-width: 768px) {
         font-size: 1.5rem;
+        line-height: 2.25rem;
     }
 }
 
