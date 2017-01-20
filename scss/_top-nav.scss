@@ -40,7 +40,7 @@
 }
 
 .nav-list .active a {
-   border-bottom: 3px solid white; 
+    border-bottom: 3px solid white;
 }
 
 .nav-menu {
@@ -50,14 +50,14 @@
     border-radius: 0 0 10px 10px;
     @include flex-center(center, center, column);
     transition: max-height 0.6s ease-in-out;
-    transform-origin:left top;
+    transform-origin: left top;
 }
 
 .menu-list {
     list-style-type: none;
     text-align: center;
-    padding: $main-padding * 2;
-    li {
+    width: 100%;
+    margin-left: -2.5rem;    li {
         padding: $main-padding * 2;
     }
 }
@@ -76,10 +76,12 @@
     position: relative;
     //top: -5px;
 }
-.site-logo { 
+
+.site-logo {
     float: left;
     padding: 1.1rem 1rem 0.70rem 1rem;
 }
+
 #logo {
     width: 80px;
 }
@@ -129,7 +131,7 @@
         margin: 1rem 0.75rem 0.5rem 0.95rem;
     }
     .site-logo {
-        display:block;
+        display: block;
         float: left;
     }
     #logo {

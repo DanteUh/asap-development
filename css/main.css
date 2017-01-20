@@ -1089,7 +1089,8 @@ header {
 .menu-list {
   list-style-type: none;
   text-align: center;
-  padding: 2rem; }
+  width: 100%;
+  margin-left: -2.5rem; }
   .menu-list li {
     padding: 2rem; }
 
