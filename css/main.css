@@ -880,19 +880,11 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 header {
   width: 100%;
-  height: 100vh;
-  transition: all 0.5s ease; }
-  @media screen and (min-width: 480px) {
-    header {
-      height: 80vh; } }
-
-#header-test {
-  width: 100%;
   height: 440px;
   height: 100vh;
   transition: all 0.5s ease; }
   @media screen and (min-width: 480px) {
-    #header-test {
+    header {
       height: 730px;
       height: 80vh; } }
 
