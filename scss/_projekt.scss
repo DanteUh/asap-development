@@ -17,8 +17,8 @@
         min-height: 21.875rem;
     }
     .img-responsive {
-       padding-top: 1.5rem;
-       padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         @media (min-width: 768px) {
             padding-top: 0;
             padding-bottom: 0;
@@ -93,11 +93,13 @@
         border-style: none;
     }
 }
+
 .quote-header {
     .section-heading {
         margin-bottom: 2.25rem;
     }
 }
+
 .quote-text {
     font-style: italic;
 }
@@ -109,5 +111,5 @@
 }
 
 .quote-section .container:last-child {
-    border-color: none;
+    border-color: transparent;
 }
