@@ -50,12 +50,14 @@ address {
 .ul-social li a:hover {
     color: lighten($blue, 40%);
 }
+
 .btn-to-top {
     position: absolute;
     bottom: 1rem;
-    left: 50%;
-    margin-left: -1.25rem;
+    right: 50%;
+    margin-left: 1.25rem;
     @media (min-width: 768px) {
+        bottom: 1.5rem;
         right: 1rem;
         margin-left: 0;
     }
