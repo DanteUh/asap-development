@@ -459,7 +459,6 @@ th {
 
 .bg-green {
   background-color: #45b29d;
-  fill: #45b29d;
   color: #fff; }
 
 .bg-white {
@@ -468,30 +467,24 @@ th {
 
 .bg-blue {
   background-color: #324d5c;
-  fill: #324d5c;
   color: #fff; }
 
 .bg-red {
   background-color: #df5a49;
-  fill: #df5a49;
   color: #fff; }
 
 .bg-gray-dark {
   background-color: #333;
-  fill: #333;
   color: #fff; }
 
 .bg-smoke {
-  background-color: #e8e8e8;
-  fill: #e8e8e8; }
+  background-color: #e8e8e8; }
 
 .bg-orange {
-  background-color: #e27a3f;
-  fill: #e27a3f; }
+  background-color: #e27a3f; }
 
 .bg-yellow {
-  background-color: #efc94c;
-  fill: #efc94c; }
+  background-color: #efc94c; }
 
 .bg-lexcorp {
   color: #fff;
@@ -748,8 +741,6 @@ a {
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
   cursor: pointer;
   text-transform: uppercase;
   border: 2px white solid;
@@ -934,7 +925,6 @@ header {
   bottom: 30%;
   width: 38px;
   height: auto;
-  position: -100px;
   transition: all 1s ease-in-out; }
   @media screen and (min-width: 550px) {
     #small-flash {
@@ -1407,7 +1397,7 @@ section.om-oss .section-heading {
   margin-bottom: 0; }
 
 .quote-section .container:last-child {
-  border-color: none; }
+  border-color: transparent; }
 
 .contact-main {
   display: flex;
@@ -1465,12 +1455,12 @@ section.om-oss .section-heading {
   margin: 0rem 0rem 0.875rem 0rem; }
 
 .contact-heading {
-  font-size: 1.5rem;
+  font-size: 1.3125rem;
   margin: 0;
   color: #df5a49; }
 
 .contact-card-inner div i {
-  font-size: 1.3rem; }
+  font-size: 1rem; }
 
 #contact-heading {
   padding-bottom: 6rem;
