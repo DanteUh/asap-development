@@ -1078,7 +1078,6 @@ header {
   overflow: hidden;
   position: relative;
   top: 59px;
-  border-radius: 0 0 10px 10px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1087,10 +1086,12 @@ header {
   transform-origin: left top; }
 
 .menu-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   text-align: center;
   width: 100%;
-  margin-left: -2.5rem; }
+  border-bottom: 1px solid #324d5c; }
   .menu-list li {
     padding: 2rem; }
 
