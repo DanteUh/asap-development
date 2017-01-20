@@ -1303,12 +1303,13 @@ address {
 .btn-to-top {
   position: absolute;
   bottom: 1rem;
-  right: 50%;
-  margin-left: 1.25rem; }
+  left: 50%;
+  margin-left: -1.25rem; }
   @media (min-width: 768px) {
     .btn-to-top {
       bottom: 1.5rem;
       right: 1rem;
+      left: auto;
       margin-left: 0; } }
 
 section.om-oss .section-heading {
