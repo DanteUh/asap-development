@@ -42,8 +42,12 @@ function navbarBg() {
     if(menu.id !== "menu-down") {
         if (document.body.scrollTop > (60) || document.documentElement.scrollTop > (60)) {
             navWrapper.className = "bg-blue";
+            closeIcon.className = "shown";
+            openIcon.className = "hidden";
         } else {
             navWrapper.className = "bg-transparent";
+            openIcon.className = "shown";
+            closeIcon.className = "hidden";
         }
     }
 }
