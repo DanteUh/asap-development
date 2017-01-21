@@ -769,6 +769,18 @@ p {
 a {
   text-decoration: none; }
 
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
 .btn {
   display: block;
   color: white;
