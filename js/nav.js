@@ -22,8 +22,10 @@ function navDropDown(event) {
         openIcon.className = "hidden";
     } else if (menu.id === "menu-down") {
         menu.setAttribute("id", "menu-up");
-        if (document.body.scrollTop < (60)) {
-            navWrapper.className = "bg-transparent";
+        if ( document.body.scrollTop > 60 || window.pageYOffset > 60 || document.documentElement.scrollTop > 60)  {
+            //
+        }else{
+             navWrapper.className = "bg-transparent";
         }
         openIcon.className = "shown";
         closeIcon.className = "hidden";
@@ -36,7 +38,7 @@ function navbarBg() {
     var viewPort = document.getElementsByTagName("header")[0];
 
     if(menu.id !== "menu-down") {
-        if (document.body.scrollTop > (60) || document.documentElement.scrollTop > (60)) {
+        if ( document.body.scrollTop > 60 || window.pageYOffset > 60 || document.documentElement.scrollTop > 60) {
             navWrapper.className = "bg-blue";
         } else {
             navWrapper.className = "bg-transparent";
