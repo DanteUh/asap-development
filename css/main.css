@@ -790,7 +790,6 @@ textarea {
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
-  cursor: pointer;
   text-transform: uppercase;
   border: 2px white solid;
   border-bottom: 5px white solid;
@@ -799,7 +798,8 @@ textarea {
   padding: 0.7rem 1rem;
   background-color: transparent;
   background-image: none;
-  width: 18rem; }
+  width: 18rem;
+  transition: all 0.35s ease; }
   .btn:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -819,8 +819,11 @@ textarea {
   .btn-submit:focus, .btn-submit:hover {
     color: white;
     background-color: #df5a49;
-    border-bottom-color: #bb3221;
-    transition: 0.5s; }
+    border-bottom-color: #bb3221; }
+  .btn-submit:active {
+    color: white;
+    background-color: #df5a49;
+    border-bottom-color: #bb3221; }
 
 .btn-to-top {
   background-color: #293f4b;
@@ -836,7 +839,6 @@ textarea {
 .btn-to-top:hover {
   background-color: #20313b;
   border-color: #44697d;
-  transition: 0.5s;
   color: #b6cbd7; }
 
 .btn-to-top i {
@@ -848,8 +850,11 @@ textarea {
   .btn-green:focus, .btn-green:hover {
     color: white;
     background-color: #45b29d;
-    border-bottom-color: #307b6c;
-    transition: 0.5s; }
+    border-bottom-color: #307b6c; }
+  .btn-green:active {
+    color: white;
+    background-color: #df5a49;
+    border-bottom-color: #bb3221; }
 
 .btn-yellow {
   color: #efc94c;
@@ -1007,9 +1012,6 @@ header {
   background-position: center top;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100%;
   width: 100%;
   min-width: 100%;
@@ -1036,9 +1038,6 @@ header {
   background-position: center bottom 75px;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100%;
   width: 100%;
   min-width: 100%;
@@ -1065,9 +1064,6 @@ header {
   background-position: center left;
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100%;
   width: 100%;
   min-width: 100%;
@@ -1098,9 +1094,6 @@ header {
 #kontakt-bg {
   position: relative;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100%;
   width: 100%;
   min-width: 100%;
@@ -1226,7 +1219,8 @@ header {
   padding: 1.1rem 1rem 0.70rem 1rem; }
 
 #logo {
-  width: 80px; }
+  width: 80px;
+  height: 25px; }
 
 .shown {
   display: block; }

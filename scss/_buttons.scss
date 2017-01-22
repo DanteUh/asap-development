@@ -19,7 +19,6 @@ textarea {
     text-align: center;
     white-space: nowrap;
     //vertical-align: middle;
-    cursor: pointer;
     text-transform: uppercase;
     border: $btn-border-width white solid;
     border-bottom: $btn-border-bottom-width white solid;
@@ -40,6 +39,7 @@ textarea {
         background-image: none;
         box-shadow: none;
     }
+    transition: all 0.35s ease;
 }
 
 .btn-submit {
@@ -54,7 +54,11 @@ textarea {
         color: white;
         background-color: $red;
         border-bottom-color: darken($red, 15%);
-        transition: 0.5s;
+    }
+    &:active {
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
     }
 }
 
@@ -73,7 +77,6 @@ textarea {
 .btn-to-top:hover {
     background-color: darken($blue, 10%);
     border-color: lighten($blue, 10%);
-    transition: 0.5s;
     color: lighten($blue, 50%);
 }
 
@@ -89,7 +92,11 @@ textarea {
         color: white;
         background-color: $green;
         border-bottom-color: darken($green, 15%);
-        transition: 0.5s;
+    }
+    &:active { 
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
     }
 }
 
