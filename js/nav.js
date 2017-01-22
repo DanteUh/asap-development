@@ -10,8 +10,6 @@ var navWrapper = document.getElementById("nav-bg-wrapper");
 hamburger.addEventListener("click", navDropDown);
 window.addEventListener("scroll", navbarBg);
 
-
-
 //menu drop when hamburger menu is clicked
 function navDropDown(event) {
     event.preventDefault();
@@ -22,8 +20,6 @@ function navDropDown(event) {
         navWrapper.className = "bg-blue";
         closeIcon.className = "shown";
         openIcon.className = "hidden";
-
-
     } else if (menu.id === "menu-down") {
         menu.setAttribute("id", "menu-up");
         if (document.body.scrollTop < (60)) {
