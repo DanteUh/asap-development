@@ -1,7 +1,8 @@
 
 function runScroll(event) {
 	event.preventDefault();
-	scrollTo(document.body, 0, 600);
+	scrollTo(document.body, 0, 300);
+	scrollTo(document.documentElement, 0, 300);
 }
 
 var scrollme = document.getElementById("scrollTop");
