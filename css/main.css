@@ -1060,8 +1060,8 @@ header {
       background-attachment: fixed; } }
 
 #kundcase-bg {
-  background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
-  background-position: center left;
+  background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+  background-position: center center;
   position: relative;
   background-size: cover;
   height: 100%;
@@ -1089,7 +1089,7 @@ header {
       background-attachment: fixed; } }
   @media screen and (min-width: 1280px) {
     #kundcase-bg {
-      background-position: center bottom; } }
+      background-position: center center; } }
 
 #kontakt-bg {
   position: relative;

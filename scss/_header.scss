@@ -95,8 +95,9 @@
     }
     
     #kundcase-bg {
-        background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
-        background-position: center left;
+        //background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
+        background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+        background-position: center center;
         @include header-img;
         @media screen and (min-width: 480px) {
             background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
@@ -105,7 +106,7 @@
             background-attachment: fixed;
         }
         @media screen and (min-width: 1280px) {
-            background-position: center bottom;
+            background-position: center center;
         }
     }
     
