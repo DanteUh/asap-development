@@ -77,7 +77,8 @@
     
     // De olika sidornas bakgrundsbilder          
     #index-bg {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/img/header-desktop-hem-3@2x.jpg");
+        //background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/img/header-desktop-hem-3@2x.jpg");
+        background: url("../images/img/header-desktop-hem-3@2x.jpg");
         background-position: center top;
         @include header-img;
         @media only screen and (min-width: 768px) {
