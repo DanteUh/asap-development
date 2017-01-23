@@ -14,7 +14,7 @@ var interval = setInterval(function() {
         clearInterval(interval);
         displayFlash();
     }
-}, 800);
+}, 600);
 
 
 function displayFlash() {
