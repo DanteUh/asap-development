@@ -1,21 +1,52 @@
+var domReady = function(callback) {
+    var ready = false;
 
-function runScroll(event) {
-	event.preventDefault();
-	scrollTo(document.body, 0, 300);
-	scrollTo(document.documentElement, 0, 300);
-}
+    var detach = function() {
+        if(document.addEventListener) {
+            document.removeEventListener("DOMContentLoaded", completed);
+            window.removeEventListener("load", completed);
+        } else {
+            document.detachEvent("onreadystatechange", completed);
+            window.detachEvent("onload", completed);
+        }
+    };
+    var completed = function() {
+        if(!ready && (document.addEventListener || event.type === "load" || document.readyState === "complete")) {
+            ready = true;
+            detach();
+            callback();
+        }
+    };
 
-var scrollme = document.getElementById("scrollTop");
-scrollme.addEventListener("click",runScroll,false);
+    if(document.readyState === "complete") {
+        callback();
+    } else if(document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", completed);
+        window.addEventListener("load", completed);
+    } else {
+        document.attachEvent("onreadystatechange", completed);
+        window.attachEvent("onload", completed);
 
-function scrollTo(element, to, duration) {
-  if (duration <= 0) return;
-  var difference = to - element.scrollTop;
-  var perTick = difference / duration * 10;
+        var top = false;
 
-  setTimeout(function() {
-    element.scrollTop = element.scrollTop + perTick;
-    if (element.scrollTop == to) return;
-    scrollTo(element, to, duration - 10);
-  }, 10);
-}
+        try {
+            top = window.frameElement == null && document.documentElement;
+        } catch(e) {}
+
+        if(top && top.doScroll) {
+            (function scrollCheck() {
+                if(ready) return;
+
+                try {
+                    top.doScroll("left");
+                } catch(e) {
+                    return setTimeout(scrollCheck, 50);
+                }
+
+                ready = true;
+                detach();
+                callback();
+            })();
+        }
+    }
+};
