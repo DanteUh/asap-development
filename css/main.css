@@ -1224,10 +1224,12 @@ header {
   left: 0;
   right: 0;
   z-index: 9999;
-  height: 60px;
-  transition: background-color 1s ease; }
+  height: 60px; }
+  #nav-bg-wrapper.bg-blue {
+    transition: background-color 0.15s ease; }
   #nav-bg-wrapper.bg-transparent {
-    transition-delay: 0.6s !important; }
+    transition-delay: 0.6s !important;
+    transition: background-color 0.6s ease; }
 
 .nav-menu {
   overflow: hidden;
@@ -1310,7 +1312,8 @@ header {
   display: block;
   height: auto;
   width: 100%;
-  max-height: 1000px; }
+  max-height: 600px;
+  transition-delay: 0.05s !important; }
 
 @media (min-width: 768px) {
   #hamburger {
