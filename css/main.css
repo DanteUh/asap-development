@@ -1386,16 +1386,19 @@ header {
   width: 24px;
   height: 24px;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  vertical-align: middle;
+  content: "";
+  background-size: 100% 100%; }
 
 #openIcon {
-  background-image: url("../images/svg/icon-hamburger.svg");
+  background: center center url("../images/svg/icon-hamburger.svg");
   background-repeat: no-repeat;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg); }
 
 #closeIcon {
-  background-image: url("../images/icons/icon-flat3d-close.svg");
+  background: center center url("../images/icons/icon-flat3d-close.svg");
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   background-repeat: no-repeat; }

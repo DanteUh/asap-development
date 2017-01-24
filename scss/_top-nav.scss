@@ -211,16 +211,19 @@
     width: 24px;
     height: 24px;
     backface-visibility: hidden;
+    vertical-align: middle;
+    content: "";
+    background-size: 100% 100%;
 }
 
 #openIcon {
-    background-image: url("../images/svg/icon-hamburger.svg");
+    background: center center url("../images/svg/icon-hamburger.svg");
     background-repeat: no-repeat;
     transform: rotateY(0deg);
 }
 
 #closeIcon {
-    background-image: url("../images/icons/icon-flat3d-close.svg");
+    background: center center url("../images/icons/icon-flat3d-close.svg");
     transform: rotateY( 180deg);
     background-repeat: no-repeat;
 }
