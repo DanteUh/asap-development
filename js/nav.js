@@ -47,7 +47,7 @@ domReady(function() {
     window.addEventListener("scroll", navbarBg);
 
     /**
-     * menu drop when hamburger menu is clicked
+     * Click handler for mobile-nav hamburger
      *
      */
     function navDropDown(event) {
@@ -64,6 +64,7 @@ domReady(function() {
             menu.setAttribute("id", "menu-up");
             hamburger.setAttribute("class", "nav-collapse");
             if (document.body.scrollTop > 60 || window.pageYOffset > 60 || document.documentElement.scrollTop > 60) {
+
                 //
             } else {
                 navWrapper.className = "bg-transparent";
@@ -88,6 +89,36 @@ domReady(function() {
                 navWrapper.className = "bg-transparent";
             }
         }
+    }
+
+    /**
+     * Event handler for scroll-to-top
+     * 
+     */
+    function runScroll(event) {
+        event.preventDefault();
+        scrollTo(document.body, 0, 300);
+        scrollTo(document.documentElement, 0, 300);
+        //scrollTo(window.pageYOffset, 0, 300);
+    }
+
+    var scrollTopBtn = document.getElementById("scrollTop");
+    scrollTopBtn.addEventListener("click", runScroll, false);
+
+    /**
+     * Scroll to top function
+     * 
+     */
+    function scrollTo(element, to, duration) {
+        if (duration <= 0) return;
+        var difference = to - element.scrollTop;
+        var perTick = difference / duration * 10;
+
+        setTimeout(function() {
+            element.scrollTop = element.scrollTop + perTick;
+            if (element.scrollTop == to) return;
+            scrollTo(element, to, duration - 10);
+        }, 10);
     }
 
 });
