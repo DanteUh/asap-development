@@ -1172,18 +1172,18 @@ header {
   display: none; }
 
 #hamburger {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  transition: transform 0.9s ease;
   display: block;
   position: absolute;
   right: 0;
   padding: 1.0938rem 1rem 0.9062rem 1rem; }
-  #hamburger img {
-    width: 24px;
-    height: 24px; }
 
-#hamburger,
 #logo {
   transition: 0.5s linear; }
-  #hamburger:hover,
   #logo:hover {
     transform: scale(1.05); }
 
@@ -1224,6 +1224,38 @@ header {
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
+.icon-container {
+  float: right;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  perspective: 70px; }
+
+#hamburger figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  width: 24px;
+  height: 24px; }
+
+#openIcon {
+  left: 5px;
+  background-image: url("../images/svg/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  transform: rotateY(0deg); }
+
+#closeIcon {
+  right: 5px;
+  background-image: url("../images/icons/icon-flat3d-close.svg");
+  transform: rotateY(180deg);
+  background-repeat: no-repeat; }
+
+.flipped {
+  transform: rotateY(180deg); }
+
 footer {
   position: relative;
   color: white;
