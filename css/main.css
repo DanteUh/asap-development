@@ -986,13 +986,13 @@ header {
   height: 440px;
   height: 100vh;
   transition: all 0.5s ease; }
-  @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
-    header {
-      height: 140vh; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     header {
       height: 730px;
       height: 80vh; } }
+  @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
+    header {
+      height: 140vh; } }
 
 .main-headline-box {
   width: 100%;
