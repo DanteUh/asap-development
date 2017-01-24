@@ -4,8 +4,11 @@
         height: 440px;
         height: 100vh;
         transition: all 0.5s ease;
-        @media screen and (min-width: 480px) and (max-width: 667px){
-            height: 130vh;
+        @media screen 
+        and (min-width: 480px) 
+        and (max-width: 667px)
+        and (orientation: landscape){
+            height: 140vh;
         }
 
         @media screen and (min-width: 768px) {
@@ -19,12 +22,19 @@
         height: 50%;
         @include flex-center(center, flex-end, column);
         h1 {
-            font-size: 2.25rem;
+            font-size: 3rem;
             margin-top: 0;
             margin-bottom: 0.75rem;
-             @media screen and (min-width: 668px) {
-                font-size: 3rem;
-             }
+
+            @media screen and (min-width: 480px)
+            and (max-width: 667px)
+            and (orientation: landscape){
+                font-size: 2.75rem;
+            }
+
+            @media screen and (min-width: 668px) {
+                font-size: 3.75rem;
+            }
         }
         @media screen and (min-width: 668px) {
             height: 100%;
