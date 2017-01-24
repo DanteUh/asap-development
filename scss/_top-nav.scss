@@ -124,11 +124,11 @@
 }
 
 #hamburger {
-    width: 100%;
-    height: 100%;
+    width: 3.75rem;
+    height: 3.75rem;
     transform-style: preserve-3d;
     transform-origin: center center;
-    transition: transform 0.9s ease;
+    transition: transform 0.35s ease;
     display: block;
     position: absolute;
     right: 0;
@@ -204,22 +204,22 @@
     margin: 0;
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    left: 50%;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
     width: 24px;
     height: 24px;
+    backface-visibility: hidden;
 }
 
 #openIcon {
-    left: 5px;
     background-image: url("../images/svg/icon-hamburger.svg");
     background-repeat: no-repeat;
     transform: rotateY(0deg);
 }
 
 #closeIcon {
-    right: 5px;
     background-image: url("../images/icons/icon-flat3d-close.svg");
     transform: rotateY( 180deg);
     background-repeat: no-repeat;
