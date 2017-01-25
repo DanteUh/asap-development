@@ -143,6 +143,9 @@
     transform-origin: center center;
     transition: transform 0.35s ease;
 }
+.ie11 #hamburger{
+    transition: none;
+}
 
 #hamburger figure {
     margin: 0;
@@ -162,6 +165,10 @@
     transition: transform 0.35s ease;
 }
 
+.flipped{
+    transform: rotateY( 180deg);
+}
+
 #openIcon {
     background: center center url("../images/svg/icon-hamburger.svg");
     background-repeat: no-repeat;
@@ -176,9 +183,6 @@
     z-index: 1040;
 }
 
-.flipped {
-    transform: rotateY( 180deg);
-}
 
 #logo {
     transition: 0.5s linear;

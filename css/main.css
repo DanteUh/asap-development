@@ -1336,6 +1336,9 @@ header {
   transition: transform 0.35s ease;
   transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
 
+.ie11 #hamburger {
+  transition: none; }
+
 #hamburger figure {
   margin: 0;
   display: block;
@@ -1357,6 +1360,10 @@ header {
   transition: transform 0.35s ease;
   transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
 
+.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
 #openIcon {
   background: center center url("../images/svg/icon-hamburger.svg");
   background-repeat: no-repeat;
@@ -1370,10 +1377,6 @@ header {
           transform: rotateY(-180deg);
   background-repeat: no-repeat;
   z-index: 1040; }
-
-.flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
 
 #logo {
   transition: 0.5s linear; }
