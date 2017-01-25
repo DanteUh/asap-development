@@ -1192,63 +1192,21 @@ header {
   height: 25px; }
 
 .shown {
-  display: inline-block !important;
-  backface-visibility: visible !important; }
+  display: inline-block; }
 
 .hidden {
-  display: none !important;
-  backface-visibility: hidden !important; }
-
-/* Hamburger */
-.icon-container {
-  position: absolute;
-  right: 0;
-  width: 3.75rem;
-  height: 3.75rem;
-  perspective: 3.75rem;
-  transform-style: preserve-3d; }
+  display: none; }
 
 #hamburger {
-  display: block;
-  position: relative;
   width: 3.75rem;
   height: 3.75rem;
-  padding: 1.0938rem 1rem 0.9062rem 1rem;
   transform-style: preserve-3d;
   transform-origin: center center;
-  transition: transform 0.35s ease; }
-
-#hamburger figure {
-  margin: 0;
+  transition: transform 0.35s ease;
   display: block;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -12px;
-  margin-left: -12px;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  content: "";
-  background-size: 100% 100%;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.35s ease; }
-
-#openIcon {
-  background: center center url("../images/svg/icon-hamburger.svg");
-  background-repeat: no-repeat;
-  transform: rotateY(0deg);
-  z-index: 1041; }
-
-#closeIcon {
-  background: center center url("../images/icons/icon-flat3d-close.svg");
-  transform: rotateY(-180deg);
-  background-repeat: no-repeat;
-  z-index: 1040; }
-
-.flipped {
-  transform: rotateY(180deg); }
+  right: 0;
+  padding: 1.0938rem 1rem 0.9062rem 1rem; }
 
 #logo {
   transition: 0.5s linear; }
@@ -1293,6 +1251,41 @@ header {
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
+.icon-container {
+  float: right;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  perspective: 70px; }
+
+#hamburger figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  content: "";
+  background-size: 100% 100%; }
+
+#openIcon {
+  background: center center url("../images/svg/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  transform: rotateY(0deg); }
+
+#closeIcon {
+  background: center center url("../images/icons/icon-flat3d-close.svg");
+  transform: rotateY(180deg);
+  background-repeat: no-repeat; }
+
+.flipped {
+  transform: rotateY(180deg); }
+
 footer {
   position: relative;
   color: white;
@@ -1732,4 +1725,4 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=css.main.css.map */

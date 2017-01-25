@@ -57,12 +57,26 @@ domReady(function() {
         if (menu.id === "menu-up") {
             menu.setAttribute("id", "menu-down");
             navWrapper.className = "bg-blue";
-            //closeIcon.className = "shown";
-            //openIcon.className = "hidden";
-            hamburger.setAttribute("class", "nav-collapse flipped");
+            //IE fallback
+            if (document.documentMode) {
+                closeIcon.className = "shown";
+                openIcon.className = "hidden";
+                //all others
+            } else {
+                hamburger.setAttribute("class", "nav-collapse flipped");
+            }
+
         } else if (menu.id === "menu-down") {
             menu.setAttribute("id", "menu-up");
-            hamburger.setAttribute("class", "nav-collapse");
+            //IE fallback
+            if (document.documentMode) {
+                closeIcon.className = "hidden";
+                openIcon.className = "shown";
+                //all others
+            } else {
+                hamburger.setAttribute("class", "nav-collapse");
+            }
+
             if (document.body.scrollTop > 60 || window.pageYOffset > 60 || document.documentElement.scrollTop > 60) {
 
                 //
