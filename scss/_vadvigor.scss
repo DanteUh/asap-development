@@ -96,7 +96,7 @@ section.om-oss {
 
 .svg-icon-dyn {
     height: 72px;
-    width: auto;
+    width: 100%;
     @media screen and (min-width: 480px) {
         height: 120px;
         align-self: flex-start;
