@@ -116,14 +116,18 @@
 }
 
 .shown {
-    display: inline-block;
+    display: inline-block !important;
+    backface-visibility: visible !important;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+    backface-visibility: hidden !important;
 }
 
+
 /* Hamburger */
+
 .icon-container {
     position: absolute;
     right: 0;
