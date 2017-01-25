@@ -1403,6 +1403,8 @@ header {
 @media (min-width: 768px) {
   #hamburger {
     display: none; }
+  .icon-container {
+    display: none; }
   .nav-menu {
     max-height: 0; }
   #menu-down {
