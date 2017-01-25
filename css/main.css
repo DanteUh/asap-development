@@ -1310,9 +1310,21 @@ header {
 .hidden {
   display: none; }
 
-#hamburger {
+/* Hamburger */
+.icon-container {
+  position: absolute;
+  right: 0;
   width: 3.75rem;
   height: 3.75rem;
+  -webkit-perspective: 3.75rem;
+          perspective: 3.75rem; }
+
+#hamburger {
+  display: block;
+  position: relative;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 1.0938rem 1rem 0.9062rem 1rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: center center;
@@ -1320,11 +1332,41 @@ header {
           transform-origin: center center;
   transition: -webkit-transform 0.35s ease;
   transition: transform 0.35s ease;
-  transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+  transition: transform 0.35s ease, -webkit-transform 0.35s ease; }
+
+#hamburger figure {
+  margin: 0;
   display: block;
   position: absolute;
-  right: 0;
-  padding: 1.0938rem 1rem 0.9062rem 1rem; }
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  vertical-align: middle;
+  content: "";
+  background-size: 100% 100%; }
+
+#openIcon {
+  background: center center url("../images/svg/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  z-index: 1041; }
+
+#closeIcon {
+  background: center center url("../images/icons/icon-flat3d-close.svg");
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-repeat: no-repeat;
+  z-index: 1040; }
+
+.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
 
 #logo {
   transition: 0.5s linear; }
@@ -1366,46 +1408,6 @@ header {
 @media screen and (min-width: 480px) {
   .navbar {
     padding: 0; } }
-
-.icon-container {
-  float: right;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  -webkit-perspective: 70px;
-          perspective: 70px; }
-
-#hamburger figure {
-  margin: 0;
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -12px;
-  margin-left: -12px;
-  width: 24px;
-  height: 24px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  vertical-align: middle;
-  content: "";
-  background-size: 100% 100%; }
-
-#openIcon {
-  background: center center url("../images/svg/icon-hamburger.svg");
-  background-repeat: no-repeat;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg); }
-
-#closeIcon {
-  background: center center url("../images/icons/icon-flat3d-close.svg");
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-repeat: no-repeat; }
-
-.flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
 
 footer {
   position: relative;
