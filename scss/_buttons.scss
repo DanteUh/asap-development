@@ -90,8 +90,39 @@
     }
     &:active { 
         color: white;
-        background-color: $red;
-        border-bottom-color: darken($red, 15%);
+        background-color: $green;
+        border-bottom-color: darken($green, 15%);
+    }
+}
+
+.btn-blue {
+    color: $blue;
+    border-color: $blue;
+    &:focus,
+    &:hover {
+        color: white;
+        background-color: $blue;
+        border-bottom-color: darken($blue, 15%);
+    }
+    &:active { 
+        color: white;
+        background-color: $blue;
+        border-bottom-color: darken($blue, 15%);
+    }
+}
+
+.btn-blue-fill {
+    border-color: $blue;
+    border-bottom-color: darken($blue, 5%);
+    background-color: $blue;
+    &:hover {
+        background-color: lighten($blue, 5%);
+        border-color: lighten($blue, 5%);
+        border-bottom-color: $blue;
+        color: $white;
+    }
+    &:focus,
+    &.focus {
     }
 }
 
