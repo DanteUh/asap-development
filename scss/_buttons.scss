@@ -6,7 +6,6 @@
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
-    //vertical-align: middle;
     text-transform: uppercase;
     border: $btn-border-width white solid;
     border-bottom: $btn-border-bottom-width white solid;
@@ -16,8 +15,6 @@
     background-color: transparent;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214 
     width: 18rem;
-    //&:focus,
-    //&:hover {}
     &:focus {
         @include tab-focus;
         outline: 0;
@@ -31,7 +28,6 @@
 }
 
 .btn-sm {
-    //padding: 0.375rem 1rem;
     width: auto;
     font-size: 1rem;
     display: inline-block;
@@ -88,7 +84,7 @@
         background-color: $green;
         border-bottom-color: darken($green, 15%);
     }
-    &:active { 
+    &:active {
         color: white;
         background-color: $green;
         border-bottom-color: darken($green, 15%);
@@ -104,7 +100,7 @@
         background-color: $blue;
         border-bottom-color: darken($blue, 15%);
     }
-    &:active { 
+    &:active {
         color: white;
         background-color: $blue;
         border-bottom-color: darken($blue, 15%);
@@ -122,8 +118,7 @@
         color: $white;
     }
     &:focus,
-    &.focus {
-    }
+    &.focus {}
 }
 
 .btn-yellow {
