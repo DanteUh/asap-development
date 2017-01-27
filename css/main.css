@@ -661,8 +661,20 @@ th {
   padding-top: 3rem;
   padding-bottom: 3.75rem; }
 
+.section-padding-top-md {
+  padding-top: 3rem; }
+
+.section-padding-btm-md {
+  padding-bottom: 3.75rem; }
+
 .section-padding-sm {
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.section-padding-top-sm {
+  padding-top: 1.5rem; }
+
+.section-padding-btm-sm {
   padding-bottom: 1.5rem; }
 
 .dynamic-margin {
