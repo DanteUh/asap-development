@@ -6,7 +6,6 @@
     right: 0;
     z-index: 9999;
     padding: 0;
-    //transition: 0.35s ease;
     @include flex-center(center, center, column);
 }
 
@@ -147,7 +146,8 @@
     transform-origin: center center;
     transition: transform 0.35s ease;
 }
-.ie11 #hamburger{
+
+.ie11 #hamburger {
     transition: none;
 }
 
@@ -169,7 +169,7 @@
     transition: transform 0.35s ease;
 }
 
-.flipped{
+.flipped {
     transform: rotateY( 180deg);
 }
 
@@ -186,7 +186,6 @@
     background-repeat: no-repeat;
     z-index: 1040;
 }
-
 
 #logo {
     transition: 0.5s linear;
@@ -242,8 +241,5 @@
 @media screen and (min-width: 480px) {
     .navbar {
         padding: 0;
-    }
-    #nav-bg-wrapper {
-        //padding: $main-padding ($main-padding * 4) 0 ($main-padding * 4);
     }
 }

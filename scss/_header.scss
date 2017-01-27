@@ -4,19 +4,13 @@
         height: 440px;
         height: 100vh;
         transition: all 0.5s ease;
-
-        @media screen and (min-width: 480px){
+        @media screen and (min-width: 480px) {
             height: 730px;
             height: 80vh;
         }
-
-        @media screen 
-        and (min-width: 480px) 
-        and (max-width: 667px)
-        and (orientation: landscape){
+        @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
             height: 140vh;
         }
-
     }
     
     .main-headline-box {
@@ -27,13 +21,9 @@
             font-size: 3rem;
             margin-top: 0;
             margin-bottom: 0.75rem;
-
-            @media screen and (min-width: 480px)
-            and (max-width: 667px)
-            and (orientation: landscape){
+            @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
                 font-size: 2.75rem;
             }
-
             @media screen and (min-width: 668px) {
                 font-size: 3.75rem;
             }
@@ -107,7 +97,6 @@
     
     // De olika sidornas bakgrundsbilder          
     #index-bg {
-        //background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../images/img/header-desktop-hem-3@2x.jpg");
         background: url("../images/img/header-desktop-hem-3@2x.jpg");
         background-position: center top;
         @include header-img;
@@ -126,7 +115,6 @@
     }
     
     #kundcase-bg {
-        //background-image: url("../images/img/header-mobile-kundcase@2x.jpg");
         background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
         background-position: center center;
         @include header-img;

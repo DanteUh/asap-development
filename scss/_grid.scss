@@ -4,13 +4,10 @@
     box-sizing: border-box;
     max-width: 1002px;
     margin: 0 auto;
-    @media (min-width: 768px) {
-        //padding-left: 0;
-        //padding-right: 0;
-    }
-    content:" ";
-    display:block;
-    clear:both;
+    @media (min-width: 768px) {}
+    content: " ";
+    display: block;
+    clear: both;
 }
 
 // flex-container
@@ -25,8 +22,6 @@
 .container-col {
     @media (min-width: 768px) {
         @include flex-center(center, center, column);
-        //margin-left: -$gutter-size;
-        //margin-right: -$gutter-size;
     }
 }
 

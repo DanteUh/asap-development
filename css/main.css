@@ -952,14 +952,16 @@ form {
   font-size: 1rem;
   color: #df5a49; }
 
-input, textarea {
+input,
+textarea {
   box-sizing: border-box;
   margin-bottom: 0.75rem;
   padding: 0.7rem 1rem;
   border: #df5a49 2px solid;
   width: 100%; }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline-color: #df5a49;
   transition: 0.3s; }
 
@@ -969,7 +971,9 @@ textarea {
     textarea {
       height: 9.2rem; } }
 
-input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   font-size: 1rem; }
 
 header {
@@ -1404,11 +1408,7 @@ section.om-oss .section-heading {
 .marketing-list {
   margin-bottom: 2.25rem; }
   .marketing-list .marketing-item {
-    text-align: center;
-    /*p {
-        font-size: 1.125rem;
-        line-height: 2rem;
-    }*/ }
+    text-align: center; }
     .marketing-list .marketing-item .marketing-heading {
       color: #df5a49; }
     .marketing-list .marketing-item.bg-green .marketing-heading {
@@ -1628,12 +1628,6 @@ section.om-oss .section-heading {
 .contact-background {
   padding-bottom: 4rem; }
 
-/*.contact-section {
-    p {
-        font-size: 1.125rem;
-        line-height: 2rem;
-    }
-}*/
 .contact-card {
   display: flex;
   flex-direction: column;
